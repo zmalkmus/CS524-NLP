@@ -1,1 +1,2 @@
 # CS524-NLP
+## DUE OCTOBER 28
