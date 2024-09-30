@@ -1,7 +1,12 @@
-# CS524-NLP
-## DUE OCTOBER 28
-## Team 7 --  G. K. Chesterton -- data science plot analysis
+# CS524 - NLP Project 1
 
+#### Team: 7 
+
+#### Author: G. K. Chesterton 
+
+#### Task: Data Science Plot Analysis
+
+#### DUE: OCTOBER 28
 
 ## Project Instructions
 
@@ -19,7 +24,7 @@ This assignment will involve data extraction, feature engineering, statistical m
 * Study the provided crime novels and their annotations.
 * Examine how often key characters (protagonist, antagonist, victim, etc.) are introduced, the sequence of events, and common narrative structures.
 * Analyze differences across different novels
-* repare a short report (2 pages) summarizing key insights and narrative patterns.
+* Prepare a short report (2 pages) summarizing key insights and narrative patterns.
 
 #### Feature Engineering: Extract features from the text for plot analysis. Suggested features include:
 
