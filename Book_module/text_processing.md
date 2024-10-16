@@ -1,11 +1,4 @@
-# Normalization Strategy
-
-## Text Hierarchy Split
-
-The goal of splitting the text into this hierarchy is to make the text more manageable during processing 
-as well as preserve enough context for making determinations about the story.
-
-Chapter -> Paragraph -> Sentence
+# Text Processing
 
 ## Normalization
 
@@ -25,15 +18,22 @@ Chapter -> Paragraph -> Sentence
 * Special names of places or things with special characters within them should have the special characters removed (e.g. "Koh-i-noor" to "Kohinoor")
 * Puncuation followed by a quotation mark (e.g. '?"') will not be assumed to be the end of a sentence unless the following character is a newline (\n) 
 
-# Processing Techniques
+## Processing Techniques
 
-## Name Recording
+### Text Hierarchy Split
 
-* Will look for names through text by comparing each word to a names database
+The goal of splitting the text into this hierarchy is to make the text more manageable during processing 
+as well as preserve enough context for making determinations about the story.
+
+Chapter -> Paragraph -> Sentence
+
+### Name Recording
+
+* Will look for names through text by comparing each word to a names [database](https://www.back4app.com/database/back4app/list-of-names-dataset/all-names)
 * Names will be stored in a unique list to keep track of all characters
 * If a name immediately follows another (e.g. John Doe), it will be considered a first and last name
 * No duplicate names will be assumed
 
-## Text Evaluation Strategy
+### Text Evaluation Strategy
 
 Will be filled out once algorithm finalized
