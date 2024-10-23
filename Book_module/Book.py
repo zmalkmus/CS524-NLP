@@ -3,6 +3,8 @@ import sys
 import re
 from bs4 import BeautifulSoup
 
+from unidecode import unidecode
+
 import spacy
 import string 
 
@@ -27,7 +29,7 @@ class Book():
         """
             Book_number needs to be between [1-3]
         """
-        print("Initilizing book")
+        print(f"[__init__]: Initilizing book: {book_number}")
         self.book_num = book_number
         self.url = None
         self.raw_text = None
@@ -40,7 +42,8 @@ class Book():
         self.pre_process_string = str()
         self.names = list()
         self.full_text_tokenization = list()
-
+        self.special_characters = list()
+        
     def print_info_by_attr(self, attribute_name: str):
 
         print(getattr(self, attribute_name, "Attribute not found"))
@@ -67,14 +70,14 @@ class Book():
 
         if from_txt is True:
             if txt_file_path is None:
-                print("No file specified! Falling back to URL", file=sys.stderr)
+                print("get_book(): No file specified! Falling back to URL", file=sys.stderr)
             try:
                 with open(txt_file_path, 'r') as f:
                     self.raw_text = f.read()
-                    print("Text obtained!")
+                    print(f"get_book(): Text obtained for book number {self.book_num}")
                     return 0
             except:
-                print("Failed to open file! Falling back to URL", file=sys.stderr)
+                print("get_book(): Failed to open file! Falling back to URL", file=sys.stderr)
 
         response = requests.get(url)
 
@@ -83,7 +86,7 @@ class Book():
             self.raw_text = soup.text
             return 0
         else:
-            print("Error: Failed to retrieve the webpage", file=sys.stderr)
+            print("get_book(): Failed to retrieve the webpage", file=sys.stderr)
             return 1
 
     def tokenize(self):
@@ -94,31 +97,32 @@ class Book():
         stop_words = set(stopwords.words('english'))
         self.text_tokenization_no_stop = [word for word in self.full_text_tokenization if word not in stop_words]
         
-        print(self.full_text_tokenization)
-        print(self.text_tokenization_no_stop)
-        
-        
-        
-    def __extract_chapters(self, book_num : int = 0):
+        # print(self.full_text_tokenization)
+        # print(self.text_tokenization_no_stop)
 
+    def __extract_chapters(self):
+        
+        print(f"Extracting chapters for book {self.book_num}")
+        
+        """_summary_
+
+            Seperates out chapters in each book. Must specify a book number
+                as each book has different chapter regexs going on. 
+            
+        Returns:
+            1 on an error, 0 on success
         """
-            Obtain raw vector of words from raw string
 
-        """
-
-        # Extract Chapters
-        # I know this is jank, but because of the fact Gutenberg is not consistent with
-        #   how they have their chapters, I have to try each type or whatever. 
-
+        # Set prefixes / suffixes for regex patterns
         chapter_positions = []
         chapters_nums = chapter_prefix = chapter_suffix = None
 
-        if book_num == 1:
+        if self.book_num == 1:
             chapters_nums = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 
                              'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV']
             chapter_prefix = "Chapter "
             chapter_suffix = ".\n"
-        elif book_num == 2:
+        elif self.book_num == 2:
             # Fill in when we get a new book
             chapters_nums  = ["The Blue Cross", "The Secret Garden", "The Queer Feet", 
                               "The Flying Stars", "The Invisible Man", "The Honour of Israel Gow", 
@@ -127,20 +131,21 @@ class Book():
                               "The Three Tools of Death"]
             chapter_prefix = "\n"
             chapter_suffix = "\n"
-        elif book_num == 3:
+        elif self.book_num == 3:
             chapters_nums = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']
             chapter_prefix = "\n"
-            chapter_suffix = "\..*?\n"            
+            chapter_suffix = r"\..*?\n"            
         else:
             print("Error: Book number invalid!", file=sys.stderr)
             return 1
         
-        # Get chapters!
+        # Get chapter character positions
         for chap in chapters_nums:
             pattern = f"{chapter_prefix}{chap}{chapter_suffix}"
             search_result = re.search(pattern, self.raw_text, flags=re.DOTALL | re.IGNORECASE)
             chapter_positions.append((search_result.start(), search_result.end()))
         
+        # Using chapter character positions, extract each chapter
         for idx in range(len(chapter_positions)):
 
             if idx == len(chapter_positions) - 1:
@@ -148,15 +153,26 @@ class Book():
             else:
                 self.chapters.append(self.raw_text[chapter_positions[idx][1]: chapter_positions[idx + 1][0]])
 
-        # Seperate out paragraphs --> 2 >= \n
-        # Get rid of new lines --> Happens after paragraph seperation
-        # Get rid of any empty lines --> Generally the start/end of paragraphs
+        return 0
 
+    def __extract_paragraphs(self):
+        
+        """_summary_
+            Goes through each chapter, and splits chapters into their paragraphs
+            
+            The paragraph delimiter is '\\n\\n'
+            
+            self.paragraphs is a 2d list [chapter][paragraph]
+            
+            self.global_paragraphs: 1d list of ALL paragraphs
+                Have not added this in yet. Can though, wouldn't be all that hard
+            
+        """
         for chapter in self.chapters:
             self.paragraphs.append(chapter.split("\n\n"))
             self.paragraphs[-1] = [x.replace("\n"," ") for x in self.paragraphs[-1]]
             self.paragraphs[-1] = [x for x in self.paragraphs[-1] if x != '']
-
+        
     def __extract_sentences(self):
         
         for chapter in self.paragraphs:
@@ -172,7 +188,17 @@ class Book():
         
         self.raw_text = self.raw_text.lower()
         self.raw_text = self.raw_text.replace("\r", "")
-        self.raw_text = self.raw_text.replace("_", " ") #Special Character
+        
+        # Remove special characters, collect them for now. Probably can get rid
+        #   of storing them. 
+        for character in self.raw_text:
+            if character.isascii() is False:
+                self.special_characters.append(character)
+                
+        self.special_characters = list(set(self.special_characters))
+        self.raw_text = unidecode(self.raw_text)
+        
+        # Strip certain punctuation
         self.raw_text = self.raw_text.replace(";", " ")
         self.raw_text = self.raw_text.replace("-"," ")
         self.raw_text = self.raw_text.replace("—", " ")
@@ -197,8 +223,17 @@ class Book():
         self.pre_process_string = ' '.join(self.sentences)
         # print(self.combined_sentence)
         
-    def __extract_names(self):
-        
+    def extract_names(self):
+        """
+            Using spacy en_core_web_sm model, attempt to extract all names
+                from the txt file. We go sentence by sentence in order to 
+                get a more accurate extraction. Sentences offer more of 
+                a bound.
+            
+            self.names is set to whatever names are extracted
+
+            Requirements that you download: 
+        """
         nlp = spacy.load("en_core_web_sm")
         all_names = []
         for sentence in self.sentences:
@@ -207,24 +242,16 @@ class Book():
             names = [ent.text for ent in doc.ents if ent.label_ == "PERSON"]
 
             all_names.extend(names)
-            
-        # Remove duplicates
-        unique_names = list(set(all_names))
-        
-        print(unique_names)
-        
-        self.names = unique_names
-        
-    def pre_process(self, book_num: int = 0):
-        
-        if book_num == 0:
-            print("Error: Normalize() did not get a book number", file=sys.stderr)
-            return 1
-        
+
+        self.names = list(set(all_names))
+
+    def pre_process(self):
+                
         self.__strip_header_footer()
         self.__clean_raw_string()
-        self.__extract_chapters(book_num)
+        self.__extract_chapters()
+        self.__extract_paragraphs()
         self.__extract_sentences()
         self.__combine_cleaned_sentences()
-        self.__extract_names()
-    
+        self.extract_names()
+        

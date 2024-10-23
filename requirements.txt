@@ -1,3 +1,6 @@
-beautifulsoup4==4.12.3
-spacy==3.8.2
-nltk==3.9.1
+beautifulsoup4
+spacy
+thinc
+# English model used for name extraction. Used by spacy
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.4.1/en_core_web_sm-3.4.1.tar.gz
+nltk
