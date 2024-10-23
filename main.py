@@ -1,19 +1,19 @@
 from Book_module.Book import Book
 
 def main():
-    print("Hello, World!")
 
-    book_one = Book()
+    book_one = Book(1)
+    book_two = Book(2)
+    book_three = Book(3)
 
     book_1_url = "https://www.gutenberg.org/cache/epub/1695/pg1695.txt"   # The Man Who Was Thursday: A Nightmare
-    book_2_url = "https://www.gutenberg.org/cache/epub/70964/pg70964.txt" # The wrong letter
+    book_2_url = "https://www.gutenberg.org/cache/epub/204/pg204.txt" # The innonce of father brown
     book_3_url = "https://www.gutenberg.org/cache/epub/1720/pg1720.txt"   # The Man Who Knew Too Much
 
-    book_one.print_info_by_attr("raw_text")
-
-    book_one.get_book(book_1_url)
-
-    # book_one.print_info("raw_text")
+    book_one.get_book(book_1_url, from_txt=True, txt_file_path="books/book_one.txt")
+    book_two.get_book(book_2_url, from_txt=True, txt_file_path="books/book_two.txt")
+    book_one.pre_process(1)
+    book_one.tokenize()
 
 if __name__ == "__main__":
     main()
