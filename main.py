@@ -13,21 +13,12 @@ def main():
     book_one.get_book(book_1_url, from_txt=True, txt_file_path="books/book_one.txt")
     book_two.get_book(book_2_url, from_txt=True, txt_file_path="books/book_two.txt")
     book_three.get_book(book_3_url, from_txt=True , txt_file_path="books/book_three.txt")
-<<<<<<< HEAD
     book_one.pre_process()
-    book_two.pre_process()
-    book_one.pre_process()
-    book_three.pre_process()
-    book_three.print_info_by_attr("names")
-    book_three.print_info_by_attr("special_characters")
-    # book_one.tokenize()
-=======
+    # book_two.pre_process()
     # book_three.pre_process()
-    book_one.pre_process()
     # book_three.print_info_by_attr("names")
     # book_three.print_info_by_attr("special_characters")
     book_one.tokenize()
->>>>>>> 39c41fb (Cleaned up tokenization code)
 
 if __name__ == "__main__":
     main()
