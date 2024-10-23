@@ -45,6 +45,11 @@ class Book():
         # These should be the final tokenized / cleaned text
         self.sentences_tokenized = list()
         self.text_tokenized = list()
+
+        # Features
+        self.word_count = 0
+        self.sentence_count = 0
+        self.first_mentions = dict()
             
     def print_info_by_attr(self, attribute_name: str):
         print(getattr(self, attribute_name, "Attribute not found"))
@@ -100,7 +105,7 @@ class Book():
         self.text_tokenized = [ word.strip("\n") for word in self.text_tokenized if \
                                 word.isalpha() is True and \
                                 word not in stop_words]
-        print(self.text_tokenized)
+        # print(self.text_tokenized)
         # Sentences:
         for idx in range(len(self.sentences)):
             self.sentences_tokenized.append(' '.join([word.strip("\n") for word in word_tokenize(self.sentences[idx]) 
@@ -279,8 +284,19 @@ class Book():
 
         self.names = list(set(all_names))
 
+    def find_first_mentions(self):
+        """
+            Find the first mention of each name in the book by chapter
+        """
+        for name in self.names:
+            self.first_mentions[name] = -1
+            for idx, chapter in enumerate(self.chapters):
+                if name in chapter:
+                    self.first_mentions[name] = idx
+                    break
+
     def pre_process(self):
-                
+
         self.__strip_header_footer()
         self.__clean_raw_string()
         self.__extract_chapters()
@@ -288,4 +304,11 @@ class Book():
         self.__extract_sentences()
         self.__combine_cleaned_sentences()
         self.extract_names()
+        self.tokenize()
+
+    def feature_extraction(self):
+        """
+            Extract features from the book
+        """
+        self.find_first_mentions()
         
