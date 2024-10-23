@@ -31,30 +31,24 @@ class Book():
         """
         print(f"[__init__]: Initilizing book: {book_number}")
         self.book_num = book_number
-        self.url = None
         self.raw_text = None
-        self.tokenize_method = None
-        self.normalize_method = None
-        self.raw_word_vec = None
+        
         self.chapters = list() # Holds a string for each of the chapters
         self.paragraphs = list() # Holds lists of strings for each paragraph in each chapter
         self.sentences = list()
         self.pre_process_string = str()
-        self.names = list()
-        self.full_text_tokenization = list()
-        self.special_characters = list()
         
-    def print_info_by_attr(self, attribute_name: str):
+        self.names = list()
+        self.names_tokenized = list()
+        self.special_characters = list()
 
+        # These should be the final tokenized / cleaned text
+        self.sentences_tokenized = list()
+        self.text_tokenized = list()
+            
+    def print_info_by_attr(self, attribute_name: str):
         print(getattr(self, attribute_name, "Attribute not found"))
         return
-    
-
-    def __parse_metadata(self):
-        """
-            Parses metadata from gutenberg info
-        """
-        pass
 
     def get_book(self, url: str, from_txt: bool = False, txt_file_path: str = None):
         """
@@ -90,15 +84,47 @@ class Book():
             return 1
 
     def tokenize(self):
-        
-        self.full_text_tokenization = word_tokenize(self.pre_process_string)
-        self.full_text_tokenization = [word for word in self.full_text_tokenization if word not in string.punctuation]        
-
+        """
+            Tokenizes the entire text string, as well as the sentences
+            
+            We also strip any remaining punctuation, and get rid of stop words
+            
+            At the end of the sentence tokenization, we call extract names
+                since this more than likely would allow for a much better
+                name extraction since sentences are cleaner!
+        """
         stop_words = set(stopwords.words('english'))
-        self.text_tokenization_no_stop = [word for word in self.full_text_tokenization if word not in stop_words]
+        self.text_tokenized = word_tokenize(self.pre_process_string)
+ 
+        # Full text string
+        self.text_tokenized = [ word.strip("\n") for word in self.text_tokenized if \
+                                word.isalpha() is True and \
+                                word not in stop_words]
+        print(self.text_tokenized)
+        # Sentences:
+        for idx in range(len(self.sentences)):
+            self.sentences_tokenized.append(' '.join([word.strip("\n") for word in word_tokenize(self.sentences[idx]) 
+                                                        if word.isalpha() is True
+                                                        and word not in stop_words]))
+            if self.sentences_tokenized[-1] == '':
+                self.sentences_tokenized.pop()
+                        
+        # # This needs fixing!!!!!!! --> Name extraction...?
         
-        # print(self.full_text_tokenization)
-        # print(self.text_tokenization_no_stop)
+        # nlp = spacy.load("en_core_web_sm")
+        # all_names = []
+        # for sentence in self.sentences_tokenized:
+        #     doc = nlp(sentence)
+            
+        #     names = [ent.text for ent in doc.ents if ent.label_ == "PERSON"]
+
+        #     all_names.extend(names)
+
+        # self.names_tokenized = list(set(all_names))
+        
+        
+        # print(self.names)
+        # print(self.names_tokenized)
 
     def __extract_chapters(self):
         
@@ -118,22 +144,22 @@ class Book():
         chapters_nums = chapter_prefix = chapter_suffix = None
 
         if self.book_num == 1:
-            chapters_nums = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 
-                             'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV']
-            chapter_prefix = "Chapter "
-            chapter_suffix = ".\n"
+            chapters_nums = [r'I', r'II', r'III', r'IV', r'V', r'VI', r'VII', r'VIII', 
+                             r'IX', r'X', r'XI', r'XII', r'XIII', r'XIV', r'XV']
+            chapter_prefix = r"Chapter "
+            chapter_suffix = r".\n.*?\n" # Gets rid of the next line (chapter title)
         elif self.book_num == 2:
             # Fill in when we get a new book
-            chapters_nums  = ["The Blue Cross", "The Secret Garden", "The Queer Feet", 
-                              "The Flying Stars", "The Invisible Man", "The Honour of Israel Gow", 
-                              "The Wrong Shape", "The Sins of Prince Saradine", "The Hammer of God", 
-                              "The Eye of Apollo", "The Sign of the Broken Sword", 
-                              "The Three Tools of Death"]
-            chapter_prefix = "\n"
-            chapter_suffix = "\n"
+            chapters_nums  = [r"The Blue Cross", r"The Secret Garden", r"The Queer Feet", 
+                              r"The Flying Stars", r"The Invisible Man", r"The Honour of Israel Gow", 
+                              r"The Wrong Shape", r"The Sins of Prince Saradine", r"The Hammer of God", 
+                              r"The Eye of Apollo", r"The Sign of the Broken Sword", 
+                              r"The Three Tools of Death"]
+            chapter_prefix = r"\n"
+            chapter_suffix = r"\n"
         elif self.book_num == 3:
-            chapters_nums = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']
-            chapter_prefix = "\n"
+            chapters_nums = [r'I', r'II', r'III', r'IV', r'V', r'VI', r'VII', r'VIII']
+            chapter_prefix = r"\n"
             chapter_suffix = r"\..*?\n"            
         else:
             print("Error: Book number invalid!", file=sys.stderr)
@@ -175,17 +201,24 @@ class Book():
         
     def __extract_sentences(self):
         
+        # Get full list of sentences
         for chapter in self.paragraphs:
             for paragraph in chapter:
                 self.sentences.extend(sent_tokenize(paragraph))
 
+        # Strip any extra spaces.
         for i in range(len(self.sentences)):
             self.sentences[i] = ' '.join(self.sentences[i].split())
-
-        # print(*self.sentences, sep="\n")
         
     def __clean_raw_string(self):
-        
+        """
+            Get rid of certain characters before we do any text extraction
+            
+            Lowercase everything
+            remove '\\r', since gutenberg uses it
+            Replace non-ascii characters with ascii equivelant
+            Strip certain puncutation
+        """
         self.raw_text = self.raw_text.lower()
         self.raw_text = self.raw_text.replace("\r", "")
         
@@ -205,6 +238,7 @@ class Book():
         self.raw_text = self.raw_text.replace(",", " ")
         self.raw_text = self.raw_text.replace("(", " ")
         self.raw_text = self.raw_text.replace(")", " ")
+        self.raw_text = self.raw_text.replace("`", " ")
         
     def __strip_header_footer(self):
         
