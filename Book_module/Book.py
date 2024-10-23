@@ -207,16 +207,24 @@ class Book():
         self.raw_text = self.raw_text.replace(")", " ")
         
     def __strip_header_footer(self):
-        
         # Strip header
         pattern = r"\*\*\* START OF THE PROJECT GUTENBERG EBOOK.*? \*\*\*\n"
         search_result = re.search(pattern, self.raw_text, flags=re.DOTALL | re.IGNORECASE)
-        self.raw_text = self.raw_text[search_result.end():]
+        
+        if search_result:
+            self.raw_text = self.raw_text[search_result.end():]
+        else:
+            print("Warning: Header not found. Proceeding without stripping header.")
         
         # Strip footer
         pattern = r"\*\*\* END OF THE PROJECT GUTENBERG EBOOK.*? \*\*\*\n"
         search_result = re.search(pattern, self.raw_text, flags=re.DOTALL | re.IGNORECASE)
-        self.raw_text = self.raw_text[:search_result.start()]
+        
+        if search_result:
+            self.raw_text = self.raw_text[:search_result.start()]
+        else:
+            print("Warning: Footer not found. Proceeding without stripping footer.")
+
         
     def __combine_cleaned_sentences(self):
         
