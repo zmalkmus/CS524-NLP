@@ -11,7 +11,7 @@ import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.tag import pos_tag
 from nltk.chunk import ne_chunk
-from nltk.corpus import stopwords
+from nltk.corpus import stopwords, names
 from nltk.stem import WordNetLemmatizer
 
 # Make sure to download the required resources
@@ -20,6 +20,8 @@ nltk.download('maxent_ne_chunker')
 nltk.download('words')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
+nltk.download('stopwords')
+nltk.download('names')
 
 class Book:
 
@@ -37,6 +39,7 @@ class Book:
         self.pre_process_string = str()
         
         self.names = list()
+        self.name_variations = dict()
         self.names_tokenized = list()
         self.special_characters = list()
 
@@ -52,6 +55,10 @@ class Book:
         self.character_proximity = dict()
         self.character_mentions_first = dict()
         self.chapter_count = 0
+
+        self.stop_words = set(stopwords.words('english'))
+        self.common_words = set(stopwords.words('english')) | set(nltk.corpus.words.words())
+        self.all_names = set(names.words())
             
     def print_info_by_attr(self, attribute_name: str):
         print(getattr(self, attribute_name, "Attribute not found"))
