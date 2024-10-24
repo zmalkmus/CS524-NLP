@@ -18,7 +18,6 @@ def main():
     # book_three.print_info_by_attr("names")
     # book_three.print_info_by_attr("special_characters")
     book_one.feature_extraction()
-    print(book_one.character_mentions_all)
 
 if __name__ == "__main__":
     main()

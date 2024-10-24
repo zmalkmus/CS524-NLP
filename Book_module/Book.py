@@ -190,8 +190,7 @@ class Book():
             self.chapters_normalized.append(' '.join([word.strip("\n") for word in word_tokenize(self.chapters[-1])
                                                         if word.isalpha() is True
                                                         and word not in stop_words]))
-
-        print(self.chapters[0])
+            
         return 0
 
     def __extract_paragraphs(self):
@@ -311,7 +310,9 @@ class Book():
         """
             Get the chapter count for the book
         """
-        self.chapter_count = len(self.chapters) # NEEDS TO BE UPDATED SO ITS NORMALIZED CORRECTLY
+        self.chapter_count = len(self.chapters_normalized)
+    
+    # ========================= Character Features =========================
 
     def __extract_first_mentions(self):
         """
@@ -319,7 +320,7 @@ class Book():
         """
         for name in self.names:
             self.character_mentions_first[name] = -1
-            for idx, chapter in enumerate(self.chapters):
+            for idx, chapter in enumerate(self.chapters_normalized):
                 if name in chapter:
                     self.character_mentions_first[name] = idx
                     break
@@ -377,6 +378,8 @@ class Book():
 
                     # Increment the count for this pair
                     self.character_proximity[key] = self.character_proximity.get(key, 0) + 1
+
+    # ========================= Event Features =========================
 
     def pre_process(self):
 
