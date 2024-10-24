@@ -214,17 +214,51 @@ class Book:
             
     def extract_names(self):
         """
-            Uses spaCy's model to extract names from the text.
-            Processes sentence by sentence for accuracy.
+        Improved name extraction method that filters out non-names and
+        maps different mentions of the same character to a canonical name.
         """
         nlp = spacy.load("en_core_web_sm")
+        doc = nlp(self.pre_process_string)
         all_names = []
-        for sentence in self.sentences:
-            doc = nlp(sentence)
-            names = [ent.text for ent in doc.ents if ent.label_ == "PERSON"]
-            all_names.extend(names)
 
-        self.names = list(set(all_names))
+        # Extract PERSON entities
+        for ent in doc.ents:
+            if ent.label_ == 'PERSON':
+                all_names.append(ent.text)
+
+        # Remove any extra whitespace
+        all_names = [name.strip() for name in all_names if name.strip()]
+
+        # Build a frequency distribution
+        name_freq = nltk.FreqDist(all_names)
+
+        # Exclude names that are common words or too short
+        common_words = self.common_words
+        titles = set(['Mr', 'Mrs', 'Miss', 'Sir', 'Lady', 'Dr', 'Master', 'Captain', 'Uncle', 'Aunt'])
+        filtered_names = []
+        for name in all_names:
+            parts = name.split()
+            if any(part.lower() in common_words or part in titles or len(part) <= 2 for part in parts):
+                continue
+            filtered_names.append(name)
+
+        # Map name variations to canonical names
+        name_variations = {}
+        canonical_names = {}
+
+        for name in filtered_names:
+            parts = name.split()
+            canonical_name = name  # Assume the full name is canonical
+            for part in parts:
+                if part not in common_words and len(part) > 2:
+                    name_variations[part] = canonical_name
+            name_variations[name] = canonical_name
+            canonical_names[canonical_name] = canonical_names.get(canonical_name, 0) + name_freq[name]
+
+        # Keep only the most frequent canonical names
+        min_freq = 2  # Adjust this threshold as needed
+        self.names = [name for name, freq in canonical_names.items() if freq >= min_freq]
+        self.name_variations = name_variations
 
     # ========================= Feature Extraction =========================
 
