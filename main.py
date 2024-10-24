@@ -17,7 +17,7 @@ def main():
     book_one.pre_process()
     # book_three.print_info_by_attr("names")
     # book_three.print_info_by_attr("special_characters")
-    book_one.tokenize()
+    book_one.feature_extraction()
 
 if __name__ == "__main__":
     main()
