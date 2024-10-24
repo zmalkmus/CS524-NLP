@@ -49,7 +49,9 @@ class Book():
         # Features
         self.word_count = 0
         self.sentence_count = 0
-        self.first_mentions = dict()
+        self.character_mentions_all = dict()
+        self.character_proximity = dict()
+        self.character_mentions_first = dict()
             
     def print_info_by_attr(self, attribute_name: str):
         print(getattr(self, attribute_name, "Attribute not found"))
@@ -284,16 +286,90 @@ class Book():
 
         self.names = list(set(all_names))
 
-    def find_first_mentions(self):
+    # ========================= Feature Extraction =========================
+
+    def __get_word_count(self):
+        """
+            Get the word count for the book
+        """
+        self.word_count = len(self.text_tokenized)
+
+    def __get_sentence_count(self):
+        """
+            Get the sentence count for the book
+        """
+        self.sentence_count = len(self.sentences_tokenized)
+    
+    def __get_chapter_count(self):
+        """
+            Get the chapter count for the book
+        """
+        self.chapter_count = len(self.chapters) # NEEDS TO BE UPDATED SO ITS NORMALIZED CORRECTLY
+
+    def __extract_first_mentions(self):
         """
             Find the first mention of each name in the book by chapter
         """
         for name in self.names:
-            self.first_mentions[name] = -1
+            self.character_mentions_first[name] = -1
             for idx, chapter in enumerate(self.chapters):
                 if name in chapter:
-                    self.first_mentions[name] = idx
+                    self.character_mentions_first[name] = idx
                     break
+
+    def __extract_all_mentions(self):
+        """
+        Extract the total number of mentions of each name in the book.
+        """
+        for name in self.names:
+            self.character_mentions_all[name] = self.text_tokenized.count(name)
+
+    def __extract_character_proximity(self):
+        """
+        Extracts the proximity of characters based on surrounding sentences.
+
+        Surrounding Sentences: Expanding to the neighboring sentences 
+        (previous and next) could capture indirect interactions, 
+        such as when characters are discussed in sequence.
+        """
+
+        if not hasattr(self, 'nlp'):
+            self.nlp = spacy.load("en_core_web_sm")
+
+        # Process sentences to extract names in each sentence
+        names_in_sentence = []
+        for sentence in self.sentences_tokenized:
+            doc = self.nlp(sentence)
+            # Get the set of names in the sentence
+            names_in_sentence.append(set([ent.text for ent in doc.ents if ent.label_ == "PERSON"]))
+
+        # Surrounding Sentences Proximity
+        for i in range(len(names_in_sentence)):
+            # Initialize a set to hold names in the surrounding window
+            names_in_window = set()
+            
+            # Include names from the previous sentence if it exists
+            if i > 0:
+                names_in_window.update(names_in_sentence[i - 1])
+            
+            # Include names from the current sentence
+            names_in_window.update(names_in_sentence[i])
+            
+            # Include names from the next sentence if it exists
+            if i < len(names_in_sentence) - 1:
+                names_in_window.update(names_in_sentence[i + 1])
+            
+            # Generate all unique pairs of names in the window
+            names_in_window = list(names_in_window)
+            for idx1 in range(len(names_in_window)):
+                for idx2 in range(idx1 + 1, len(names_in_window)):
+                    name1 = names_in_window[idx1]
+                    name2 = names_in_window[idx2]
+                    # Create a sorted tuple to avoid duplicate pairs
+                    key = tuple(sorted((name1, name2)))
+
+                    # Increment the count for this pair
+                    self.character_proximity[key] = self.character_proximity.get(key, 0) + 1
 
     def pre_process(self):
 
@@ -307,8 +383,11 @@ class Book():
         self.tokenize()
 
     def feature_extraction(self):
-        """
-            Extract features from the book
-        """
-        self.find_first_mentions()
+
+        self.__extract_first_mentions()
+        self.__extract_character_proximity()
+        self.__extract_all_mentions()
+        self.__get_chapter_count()
+        self.__get_sentence_count()
+        self.__get_word_count()
         
