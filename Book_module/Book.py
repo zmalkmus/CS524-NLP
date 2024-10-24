@@ -11,7 +11,7 @@ import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.tag import pos_tag
 from nltk.chunk import ne_chunk
-from nltk.corpus import stopwords, names
+from nltk.corpus import stopwords, names 
 from nltk.stem import WordNetLemmatizer
 
 # Make sure to download the required resources
@@ -22,6 +22,10 @@ nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
 nltk.download('stopwords')
 nltk.download('names')
+nltk.download('vader_lexicon')
+
+from nltk.sentiment import SentimentIntensityAnalyzer
+from collections import defaultdict, Counter
 
 class Book:
 
@@ -33,8 +37,8 @@ class Book:
         self.file_path = file_path
         self.raw_text = None
         
-        self.chapters = list() # Holds a string for each of the chapters
-        self.paragraphs = list() # Holds lists of strings for each paragraph in each chapter
+        self.chapters = list()  # Holds a string for each of the chapters
+        self.paragraphs = list()  # Holds lists of strings for each paragraph in each chapter
         self.sentences = list()
         self.pre_process_string = str()
         
@@ -59,6 +63,15 @@ class Book:
         self.stop_words = set(stopwords.words('english'))
         self.common_words = set(stopwords.words('english')) | set(nltk.corpus.words.words())
         self.all_names = set(names.words())
+
+        # New features
+        self.character_sentiments = dict()
+        self.crime_keywords = [
+            'murder', 'kill', 'dead', 'body', 'weapon', 'crime', 'blood', 'knife', 
+            'gun', 'death', 'victim', 'suspect'
+        ]
+        self.crime_keyword_frequency = Counter()
+        self.crime_first_introduction = -1
             
     def print_info_by_attr(self, attribute_name: str):
         print(getattr(self, attribute_name, "Attribute not found"))
@@ -85,22 +98,21 @@ class Book:
             Tokenizes the entire text string, as well as the sentences
             
             We also strip any remaining punctuation, and get rid of stop words
-            
-            At the end of the sentence tokenization, we call extract names
-                since this more than likely would allow for a much better
-                name extraction since sentences are cleaner!
         """
         stop_words = set(stopwords.words('english'))
         self.text_tokenized = word_tokenize(self.pre_process_string)
  
         # Full text string
-        self.text_tokenized = [word.strip("\n") for word in self.text_tokenized if \
-                                word.isalpha() and \
-                                word not in stop_words]
+        self.text_tokenized = [
+            word.strip("\n") for word in self.text_tokenized 
+            if word.isalpha() and word not in stop_words
+        ]
         # Sentences:
-        for idx in range(len(self.sentences)):
-            tokenized_sentence = [word.strip("\n") for word in word_tokenize(self.sentences[idx]) 
-                                  if word.isalpha() and word not in stop_words]
+        for sentence in self.sentences:
+            tokenized_sentence = [
+                word.strip("\n") for word in word_tokenize(sentence) 
+                if word.isalpha() and word not in stop_words
+            ]
             sentence = ' '.join(tokenized_sentence)
             if sentence:
                 self.sentences_tokenized.append(sentence)
@@ -146,8 +158,10 @@ class Book:
 
             # Normalize chapter text
             stop_words = set(stopwords.words('english'))
-            chapter_normalized = ' '.join([word.strip("\n") for word in word_tokenize(chapter)
-                                            if word.isalpha() and word not in stop_words])
+            chapter_normalized = ' '.join([
+                word.strip("\n") for word in word_tokenize(chapter)
+                if word.isalpha() and word not in stop_words
+            ])
             self.chapters_normalized.append(chapter_normalized)
 
         return 0
@@ -176,12 +190,11 @@ class Book:
     def __clean_raw_string(self):
         """
             Cleans the raw text by:
-            - Converting to lowercase
             - Removing carriage returns
             - Replacing non-ASCII characters
             - Stripping certain punctuation
         """
-        self.raw_text = self.raw_text.lower()
+        # Do not lowercase before NER, as capitalization is important
         self.raw_text = self.raw_text.replace("\r", "")
         
         # Remove special characters, collect them for now.
@@ -240,7 +253,7 @@ class Book:
         name_freq = nltk.FreqDist(all_names)
 
         # Exclude names that are common words or too short
-        common_words = self.common_words
+        common_words = set(stopwords.words('english')) | set(nltk.corpus.words.words())
         titles = set(['Mr', 'Mrs', 'Miss', 'Sir', 'Lady', 'Dr', 'Master', 'Captain', 'Uncle', 'Aunt'])
         filtered_names = []
         for name in all_names:
@@ -299,21 +312,17 @@ class Book:
             Extract the total number of mentions of each name in the book.
         """
         for name in self.names:
-            self.character_mentions_all[name] = self.normalized_text.count(name)
+            self.character_mentions_all[name] = self.text_tokenized.count(name)
 
     def __extract_character_proximity(self):
         """
             Extracts the proximity of characters based on surrounding sentences.
-
-            Surrounding Sentences: Expanding to the neighboring sentences 
-            (previous and next) could capture indirect interactions, 
-            such as when characters are discussed in sequence.
         """
         nlp = spacy.load("en_core_web_sm")
 
         # Process sentences to extract names in each sentence
         names_in_sentence = []
-        for sentence in self.sentences_tokenized:
+        for sentence in self.sentences:
             doc = nlp(sentence)
             # Get the set of names in the sentence
             names_in_sentence.append(set([ent.text for ent in doc.ents if ent.label_ == "PERSON"]))
@@ -346,13 +355,53 @@ class Book:
                     # Increment the count for this pair
                     self.character_proximity[key] = self.character_proximity.get(key, 0) + 1
 
+    # ========================= New Feature Extraction Methods =========================
+
+    def __character_sentiment_analysis(self):
+        """
+        Performs sentiment analysis on sentences related to each character.
+        """
+        sia = SentimentIntensityAnalyzer()
+        for character in self.names:
+            sentiments = []
+            for sentence in self.sentences:
+                if character in sentence:
+                    sentiment = sia.polarity_scores(sentence)['compound']
+                    sentiments.append(sentiment)
+            if sentiments:
+                average_sentiment = sum(sentiments) / len(sentiments)
+                self.character_sentiments[character] = average_sentiment
+            else:
+                self.character_sentiments[character] = 0
+
+    def __analyze_crime_keywords(self):
+        """
+        Analyzes frequency and distribution of crime-related keywords.
+        """
+        for sentence in self.sentences:
+            tokens = word_tokenize(sentence.lower())
+            for keyword in self.crime_keywords:
+                if keyword in tokens:
+                    self.crime_keyword_frequency[keyword] += 1
+
+    def __crime_first_introduction(self):
+        """
+        Determines the position in the text where crime is first introduced.
+        """
+        for idx, sentence in enumerate(self.sentences):
+            tokens = word_tokenize(sentence.lower())
+            if any(keyword in tokens for keyword in self.crime_keywords):
+                self.crime_first_introduction = idx
+                break
+        else:
+            self.crime_first_introduction = -1  # Indicates not found
+
     # ========================= Event Features =========================
 
     def pre_process(self):
         self.__get_book()
         self.__strip_header_footer()
         self.__clean_raw_string()
-        self.normalized_text = self.raw_text
         self.__extract_chapters()
         self.__extract_paragraphs()
         self.__extract_sentences()
@@ -367,3 +416,7 @@ class Book:
         self.__get_chapter_count()
         self.__get_sentence_count()
         self.__get_word_count()
+        self.__character_sentiment_analysis()
+        self.__analyze_crime_keywords()
+        self.__crime_first_introduction()
+
