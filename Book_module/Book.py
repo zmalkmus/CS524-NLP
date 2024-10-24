@@ -299,7 +299,7 @@ class Book:
             Extract the total number of mentions of each name in the book.
         """
         for name in self.names:
-            self.character_mentions_all[name] = self.text_tokenized.count(name)
+            self.character_mentions_all[name] = self.normalized_text.count(name)
 
     def __extract_character_proximity(self):
         """
@@ -352,6 +352,7 @@ class Book:
         self.__get_book()
         self.__strip_header_footer()
         self.__clean_raw_string()
+        self.normalized_text = self.raw_text
         self.__extract_chapters()
         self.__extract_paragraphs()
         self.__extract_sentences()
