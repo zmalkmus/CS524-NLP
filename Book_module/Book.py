@@ -45,6 +45,7 @@ class Book():
         # These should be the final tokenized / cleaned text
         self.sentences_tokenized = list()
         self.text_tokenized = list()
+        self.chapters_normalized = list()
 
         # Features
         self.word_count = 0
@@ -156,7 +157,6 @@ class Book():
             chapter_prefix = r"Chapter "
             chapter_suffix = r".\n.*?\n" # Gets rid of the next line (chapter title)
         elif self.book_num == 2:
-            # Fill in when we get a new book
             chapters_nums  = [r"The Blue Cross", r"The Secret Garden", r"The Queer Feet", 
                               r"The Flying Stars", r"The Invisible Man", r"The Honour of Israel Gow", 
                               r"The Wrong Shape", r"The Sins of Prince Saradine", r"The Hammer of God", 
@@ -186,6 +186,12 @@ class Book():
             else:
                 self.chapters.append(self.raw_text[chapter_positions[idx][1]: chapter_positions[idx + 1][0]])
 
+            stop_words = set(stopwords.words('english'))
+            self.chapters_normalized.append(' '.join([word.strip("\n") for word in word_tokenize(self.chapters[-1])
+                                                        if word.isalpha() is True
+                                                        and word not in stop_words]))
+
+        print(self.chapters[0])
         return 0
 
     def __extract_paragraphs(self):
@@ -204,7 +210,7 @@ class Book():
         for chapter in self.chapters:
             self.paragraphs.append(chapter.split("\n\n"))
             self.paragraphs[-1] = [x.replace("\n"," ") for x in self.paragraphs[-1]]
-            self.paragraphs[-1] = [x for x in self.paragraphs[-1] if x != '']
+            self.paragraphs[-1] = [x for x in self.paragraphs[-1] if x != '']     
         
     def __extract_sentences(self):
         
@@ -236,6 +242,7 @@ class Book():
                 self.special_characters.append(character)
                 
         self.special_characters = list(set(self.special_characters))
+        
         self.raw_text = unidecode(self.raw_text)
         
         # Strip certain punctuation
