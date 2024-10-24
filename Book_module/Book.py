@@ -45,6 +45,7 @@ class Book():
         # These should be the final tokenized / cleaned text
         self.sentences_tokenized = list()
         self.text_tokenized = list()
+        self.chapters_normalized = list()
             
     def print_info_by_attr(self, attribute_name: str):
         print(getattr(self, attribute_name, "Attribute not found"))
