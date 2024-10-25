@@ -36,6 +36,7 @@ class Book:
         print(f"[__init__]: Initializing book from file: {file_path}")
         self.file_path = file_path
         self.raw_text = None
+        self.normalized_text = None
         
         self.chapters = list()  # Holds a string for each of the chapters
         self.paragraphs = list()  # Holds lists of strings for each paragraph in each chapter
@@ -301,11 +302,10 @@ class Book:
             Find the first mention of each name in the book by chapter
         """
         for name in self.names:
-            self.character_mentions_first[name] = -1
-            for idx, chapter in enumerate(self.chapters_normalized):
-                if name in chapter:
-                    self.character_mentions_first[name] = idx
-                    break
+            if name in self.text_tokenized:
+                self.character_mentions_first[name] = self.text_tokenized.index(name)
+            else:
+                self.character_mentions_first[name] = -1
 
     def __extract_all_mentions(self):
         """
@@ -402,6 +402,7 @@ class Book:
         self.__get_book()
         self.__strip_header_footer()
         self.__clean_raw_string()
+        self.normalized_text = self.raw_text
         self.__extract_chapters()
         self.__extract_paragraphs()
         self.__extract_sentences()
