@@ -86,7 +86,7 @@ class Book:
             print(f"get_book(): Failed to open file '{self.file_path}'. Error: {e}", file=sys.stderr)
             return 1
 
-    def normalize(self):
+    def __normalize(self):
         """
         Normalizes the raw text by:
         - Stripping headers and footers
@@ -126,7 +126,7 @@ class Book:
 
         self.normalized_text = text
 
-    def tokenize(self):
+    def __tokenize(self):
         """
         Tokenizes the entire text string and sentences.
         Converts tokens to lowercase and removes stop words and non-alphabetic tokens.
@@ -226,7 +226,7 @@ class Book:
         """
         self.pre_process_string = ' '.join(self.sentences)
             
-    def extract_names(self):
+    def __extract_names(self):
         """
         Improved name extraction method that filters out non-names and
         maps different mentions of the same character to a canonical name.
@@ -405,13 +405,13 @@ class Book:
 
     def pre_process(self):
         if self.__get_book() == 0:
-            self.normalize()
+            self.__normalize()
             self.__extract_chapters()
             self.__extract_paragraphs()
             self.__extract_sentences()
             self.__combine_cleaned_sentences()
-            self.extract_names()
-            self.tokenize()
+            self.__extract_names()
+            self.__tokenize()
         else:
             print("Error: Could not get the book text.", file=sys.stderr)
 
