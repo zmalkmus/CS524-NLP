@@ -21,7 +21,7 @@ however, were due to dexterity and not to violence. On a cloudless
 summer morning he had come down a country road white with dust, and,
 pausing outside a farmhouse, had told the farmer's daughter, with
 elegant indifference, that the local police were in pursuit of him.
-The girl's name was Bridget Royce, a somber and even sullen type of
+The girl's name was Bridget, a somber and even sullen type of
 beauty, and she looked at him darkly, as if in doubt, and said, "Do
 you want me to hide you?" Upon which he only laughed, leaped lightly
 over the stone wall, and strode toward the farm, merely throwing
@@ -52,7 +52,7 @@ light as if in a microscope. The girl described the scene later,
 with all the passionate realism of her race, and, whether or no the
 policemen had a similar eye for the picturesque, they had at least
 an eye for the facts of the case, and were compelled to give up the
-chase and retire from the scene. Bridget Royce remained as if in a
+chase and retire from the scene. Bridget remained as if in a
 trance, staring at the sunlit garden in which a man had just
 vanished like a fairy. She was still in a sinister mood, and the
 miracle took in her mind a character of unfriendliness and fear, as
@@ -171,7 +171,7 @@ with a big handsome man in a fur coat, who brought into the dingy
 little station the indescribable glow of the great cities and the
 luxuries of the great world.
 
-For this was Sir Walter Carey, an official of such eminence in
+For this was Sir Walter, an official of such eminence in
 Dublin Castle that nothing short of the case of Prince Michael would
 have brought him on such a journey in the middle of the night. But
 the case of Prince Michael, as it happened, was complicated by
@@ -200,7 +200,7 @@ castle; and those who knew him thought him capable of imitating the
 primitive Irish chieftains who fell fighting against the sea.
 
 "I saw some queer-looking people leaving as I came in," said Sir
-Walter Carey. "I suppose they were your witnesses. But why do they
+Walter. "I suppose they were your witnesses. But why do they
 turn up here at this time of night?"
 
 Morton smiled grimly.  "They come here by night because they would
@@ -293,7 +293,7 @@ hour ago, and I sent that banshee up to the tower and told her to
 sing out like that if she could get a glimpse of our friend writing
 his proclamation."
 
-"Do you mean that girl Bridget Royce?" asked Morton, drawing his
+"Do you mean that girl Bridget?" asked Morton, drawing his
 frosty brows together. "Has she turned king's evidence to that
 extent?"
 
@@ -376,7 +376,7 @@ the group began to break up in the manner indicated. Morton moved
 toward the window immediately in front of them, where the hidden
 outlaw had just snuffed the candle; Nolan, a little farther westward
 to the next window; while Wilson, followed by Macbride with the
-ladder, went round to the two windows at the back. Sir Walter Carey
+ladder, went round to the two windows at the back. Sir Walter
 himself, followed by his secretary, began to walk round toward the
 only door, to demand admittance in a more regular fashion.
 
@@ -443,7 +443,7 @@ silently pointed with his lean forefinger at the open page of the
 large notebook. The writer had suddenly stopped writing, even in the
 middle of a word.
 
-"I said it was like an explosion," said Sir Walter Carey at last.
+"I said it was like an explosion," said Sir Walter at last.
 "And really the man himself seems to have suddenly exploded. But he
 has blown himself up somehow without touching the tower. He's burst
 more like a bubble than a bomb."
@@ -672,7 +672,7 @@ Francis Morton and James Nolan. It is my duty to warn you--"
 "No, no, Mr. Wilson," cried Fisher, suddenly.  "You shall not commit
 a third murder."
 
-Sir Walter Carey rose from his chair, which fell over with a crash
+Sir Walter rose from his chair, which fell over with a crash
 behind him. "What does all this mean?" he called out in an
 authoritative manner.
 
@@ -792,7 +792,7 @@ ever fought for England. I managed to save Michael from the worst,
 but we had to send that perfectly innocent man to penal servitude
 for a crime we know he never committed, and it was only afterward
 that we could connive in a sneakish way at his escape. And Sir
-Walter Carey is Prime Minister of this country, which he would
+Walter is Prime Minister of this country, which he would
 probably never have been if the truth had been told of such a
 horrible scandal in his department. It might have done for us
 altogether in Ireland; it would certainly have done for him. And he
