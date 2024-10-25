@@ -1,7 +1,7 @@
 VIII. THE VENGEANCE OF THE STATUE
 
 It was on the sunny veranda of a seaside hotel, overlooking a
-pattern of flower beds and a strip of blue sea, that Horne Fisher
+pattern of flower beds and a strip of blue sea, that Fisher
 and Harold March had their final explanation, which might be called
 an explosion.
 
@@ -14,7 +14,7 @@ which had stood so long that men were used to it, as they are used
 to a hereditary despotism, had begun to be accused of blunders and
 even of financial abuses. Some said that the experiment of
 attempting to establish a peasantry in the west of England, on the
-lines of an early fancy of Horne Fisher's, had resulted in nothing
+lines of an early fancy of Fisher's, had resulted in nothing
 but dangerous quarrels with more industrial neighbors. There had
 been particular complaints of the ill treatment of harmless
 foreigners, chiefly Asiatics, who happened to be employed in the new
@@ -47,7 +47,7 @@ there's something I must get off my chest. The more I found out, the
 less I understood how you could stand it. And I tell you I'm going
 to stand it no longer."
 
-Horne Fisher gazed across at him gravely and attentively, but rather
+Fisher gazed across at him gravely and attentively, but rather
 as if he were a long way off.
 
 "You know I always liked you," said Fisher, quietly, "but I also
@@ -111,7 +111,7 @@ sensation I never remember having had before."
 
 "What the devil do you mean?"
 
-"I am feeling proud of my family," said Horne Fisher.
+"I am feeling proud of my family," said Fisher.
 
 Harold March stared at him with round blue eyes, and seemed too much
 mystified even to ask a question. Fisher leaned back in his chair in
@@ -236,7 +236,7 @@ open, and even watching. One thing at least would always make the
 old gentleman open his eyes. The one thing he really cared for in
 this world was his hobby of armored weapons, especially Eastern
 weapons, and he would talk for hours about Damascus blades and Arab
-swordmanship. Lord James Herries, the Chancellor of the Exchequer,
+swordmanship. Lord Herries, the Chancellor of the Exchequer,
 was a short, dark, sturdy man with a very sallow face and a very
 sullen manner, which contrasted with the gorgeous flower in his
 buttonhole and his festive trick of being always slightly
@@ -270,13 +270,13 @@ continued. "It's odd those little things seem specially big when
 there are bigger things to worry about. We'd better go in and do
 some work."
 
-Horne Fisher evidently allowed for all the neurotic possibilities of
+Fisher evidently allowed for all the neurotic possibilities of
 Archer and the dissipated habits of Herries; and whatever his faith
 in their present firmness, did not unduly tax their time and
 attention, even in the case of the Prime Minister. He had got the
 consent of the latter finally to the committing of the important
 documents, with the orders to the Western armies, to the care of a
-less conspicuous and more solid person--an uncle of his named Horne
+less conspicuous and more solid person--an uncle of his named 
 Hewitt, a rather colorless country squire who had been a good
 soldier, and was the military adviser of the committee. He was
 charged with expediting the government pledge, along with the
@@ -291,7 +291,7 @@ spectacles and a grimace that expressed the intention of keeping his
 mouth shut. Nobody else shared their captivity except the hotel
 proprietor, a crusty Kentish man with a crab-apple face, one or two
 of his servants, and another servant privately attached to Lord
-James Herries. He was a young Scotchman named Campbell, who looked
+Herries. He was a young Scotchman named Campbell, who looked
 much more distinguished than his bilious-looking master, having
 chestnut hair and a long saturnine face with large but fine
 features. He was probably the one really efficient person in the
@@ -302,7 +302,7 @@ feel a sort of grotesque sublimity about these dubious figures,
 defiant in the twilight of danger, as if they were hunchbacks and
 cripples left alone to defend a town. All were working hard; and he
 himself looked up from writing a page of memoranda in a private room
-to see Horne Fisher standing in the doorway, accoutered as if for
+to see Fisher standing in the doorway, accoutered as if for
 travel. He fancied that Fisher looked a little pale; and after a
 moment that gentleman shut the door behind him and said, quietly:
 
@@ -347,8 +347,8 @@ the old inn parlor, which was oak-paneled and ordinarily rather
 dark; but on that occasion it was full of the white light of a
 curiously clear morning--the moon had shone brilliantly for the
 last two or three nights. He was himself somewhat in shadow in the
-corner of the window seat; and Lord James Herries, coming in hastily
-from the garden behind, did not see him. Lord James clutched the
+corner of the window seat; and Lord Herries, coming in hastily
+from the garden behind, did not see him. Lord Herries clutched the
 back of a chair, as if to steady himself, and, sitting down abruptly
 at the table, littered with the last meal, poured himself out a
 tumbler of brandy and drank it. He sat with his back to March, but
@@ -377,7 +377,7 @@ The monstrous stone image of Britannia was lying prone and face
 downward on the garden path; and there stuck out at random from
 underneath it, like the legs of a smashed fly, an arm clad in a
 white shirt sleeve and a leg clad in a khaki trouser, and hair of
-the unmistakable sandy gray that belonged to Horne Fisher's
+the unmistakable sandy gray that belonged to Fisher's
 unfortunate uncle. There were pools of blood and the limbs were
 quite stiff in death.
 
@@ -494,7 +494,7 @@ March did not answer; he was mesmerized by the strange stones that
 glittered on the strange sword hilt; and their possible significance
 was broadening upon him like a dreadful dawn. It was a curious
 Asiatic weapon. He knew what name was connected in his memory with
-curious Asiatic weapons. Lord James spoke his secret thought for
+curious Asiatic weapons. Lord Herries spoke his secret thought for
 him, and yet it startled him like an irrelevance.
 
 "Where is the Prime Minister?"  Herries had cried, suddenly, and
@@ -532,7 +532,7 @@ the detective had gone off to busy himself with that department of
 the business, to telephone and write his report, when Herries had
 gone back, probably to the brandy bottle, and the Prime Minister had
 blandly sauntered away toward a comfortable armchair in another part
-of the garden, Horne Fisher spoke directly to Harold March.
+of the garden, Fisher spoke directly to Harold March.
 
 "My friend," he said, "I want you to come with me at once; there is
 no one else I can trust so much as that. The journey will take us
@@ -567,7 +567,7 @@ Something in the speaker's pendent eyelids and grave gray eyes
 suddenly shook March to his foundations; and he cried, distractedly,
 "I don't understand!" as men do when they fear that they do
 understand. There was no sound for a space but the happy chatter of
-the birds, and then Horne Fisher said, calmly:
+the birds, and then Fisher said, calmly:
 
 "It was I who killed my uncle. If you particularly want more, it
 was I who stole the state papers from him."
@@ -583,7 +583,7 @@ already pinned to the ground with that stone incubus. The other,
 which is much smaller and less puzzling, is the fact of the sword
 that cut his throat being slightly stained at the point, instead of
 a good deal more stained at the edge. Well, I can dispose of the
-first question easily. Horne Hewitt took off his own coat before he
+first question easily. Hewitt took off his own coat before he
 was killed. I might say he took off his coat to be killed."
 
 "Do you call that an explanation?" exclaimed March.  "The words seem
@@ -603,7 +603,7 @@ sword of that particular pattern."
 "But it was quite a queer and exceptional pattern," argued March;
 "surely it is far too fantastic a coincidence to imagine--"
 
-"It was a fantastic coincidence," reflected Horne Fisher. "It's
+"It was a fantastic coincidence," reflected Fisher. "It's
 extraordinary what coincidences do sometimes occur. By the oddest
 chance in the world, by one chance in a million, it so happened that
 another sword of exactly the same shape was in the same garden at
@@ -706,7 +706,7 @@ Receding farther and farther behind them was the semicircle of the
 last hills; and it was quite suddenly that they saw afar off the dim
 line of the sea. It was not a strip of bright blue as they had seen
 it from the sunny veranda, but of a sinister and smoky violet, a
-tint that seemed ominous and dark. Here Horne Fisher dismounted once
+tint that seemed ominous and dark. Here Fisher dismounted once
 more.
 
 "We must walk the rest of the way," he said, "and the last bit of
