@@ -1,67 +1,6 @@
-The Project Gutenberg eBook of The Man Who Knew Too Much
-    
-This ebook is for the use of anyone anywhere in the United States and
-most other parts of the world at no cost and with almost no restrictions
-whatsoever. You may copy it, give it away or re-use it under the terms
-of the Project Gutenberg License included with this ebook or online
-at www.gutenberg.org. If you are not located in the United States,
-you will have to check the laws of the country where you are located
-before using this eBook.
-
-Title: The Man Who Knew Too Much
-
-Author: G. K. Chesterton
-
-Release date: April 1, 1999 [eBook #1720]
-                Most recently updated: December 31, 2020
-
-Language: English
-
-Credits: Scanned by Georges Allaire
-        
-        Etext prepared by Dianne Bean of Phoenix, Arizona.
-        
-        HTML file produced by David Widger
-
-
-*** START OF THE PROJECT GUTENBERG EBOOK THE MAN WHO KNEW TOO MUCH ***
-
-
-
-
-Scanned by Georges Allaire <gall@globetrotter.net>
-Etext prepared by Dianne Bean of Phoenix, Arizona.
-
-
-
-
-
-THE MAN WHO KNEW TOO MUCH
-By Gilbert K. Chesterton
-
-
-
-
-CONTENTS
-
-THE MAN WHO KNEW TOO MUCH:
-  I. THE FACE IN THE TARGET
-  II. THE VANISHING PRINCE
-  III. THE SOUL OF THE SCHOOLBOY
-  IV. THE BOTTOMLESS WELL
-  V. THE FAD OF THE FISHERMAN
-  VI. THE HOLE IN THE WALL
-  VII. THE TEMPLE OF  SILENCE
-  VIII. THE VENGEANCE OF THE STATUE
-
-
-
-
-THE MAN WHO KNEW TOO MUCH
-
 I. THE FACE IN THE TARGET
 
-Harold March, the rising reviewer and social critic, was walking
+Harold, the rising reviewer and social critic, was walking
 vigorously across a great tableland of moors and commons, the
 horizon of which was fringed with the far-off woods of the famous
 estate of Torwood Park. He was a good-looking young man in tweeds,
@@ -70,9 +9,9 @@ sun in the very landscape of liberty, he was still young enough to
 remember his politics and not merely try to forget them. For his
 errand at Torwood Park was a political one; it was the place of
 appointment named by no less a person than the Chancellor of the
-Exchequer, Sir Howard Horne, then introducing his so-called
+Exchequer, Sir Howard, then introducing his so-called
 Socialist budget, and prepared to expound it in an interview with so
-promising a penman. Harold March was the sort of man who knows
+promising a penman. Harold was the sort of man who knows
 everything about politics, and nothing about politicians. He also
 knew a great deal about art, letters, philosophy, and general
 culture; about almost everything, indeed, except the world he was
@@ -98,7 +37,7 @@ like a large bird, it was perhaps with some of the premonitions
 proper to a man who meets the strangest friendship of his life.
 
 The man was apparently fishing; or at least was fixed in a
-fisherman's attitude with more than a fisherman's immobility. March
+fisherman's attitude with more than a fisherman's immobility. Harold
 was able to examine the man almost as if he had been a statue for
 some minutes before the statue spoke. He was a tall, fair man,
 cadaverous, and a little lackadaisical, with heavy eyelids and a
@@ -123,14 +62,14 @@ answering an unspoken query. "When I do I have to throw it back
 again; especially the big fish. But some of the little beasts
 interest me when I get 'em."
 
-"A scientific interest, I suppose?" observed March.
+"A scientific interest, I suppose?" observed Harold.
 
 "Of a rather amateurish sort, I fear," answered the strange
 fisherman. "I have a sort of hobby about what they call 'phenomena
 of phosphorescence.' But it would be rather awkward to go about in
 society carrying stinking fish."
 
-"I suppose it would," said March, with a smile.
+"I suppose it would," said Harold, with a smile.
 
 "Rather odd to enter a drawing-room carrying a large luminous cod,"
 continued the stranger, in his listless way. "How quaint it would
@@ -140,7 +79,7 @@ lampshades; the blue sea-snail that glitters all over like
 starlight; and some of the red starfish really shine like red stars.
 But, naturally, I'm not looking for them here."
 
-March thought of asking him what he was looking for; but, feeling
+Harold thought of asking him what he was looking for; but, feeling
 unequal to a technical discussion at least as deep as the deep-sea
 fishes, he returned to more ordinary topics.
 
@@ -156,7 +95,7 @@ cliffs that juts forward just at right angles to the slope of turf
 sweeping up to it. That's like a silent collision. It's like a
 breaker and the back-wash of a wave."
 
-March looked at the low-browed crag overhanging the green slope and
+Harold looked at the low-browed crag overhanging the green slope and
 nodded. He was interested in a man who turned so easily from the
 technicalities of science to those of art; and asked him if he
 admired the new angular artists.
@@ -175,7 +114,7 @@ almost too quickly and completely to be realized. From behind the
 overhanging rock came a noise and rush like that of a railway train;
 and a great motor car appeared. It topped the crest of cliff, black
 against the sun, like a battle-chariot rushing to destruction in
-some wild epic. March automatically put out his hand in one futile
+some wild epic. Harold automatically put out his hand in one futile
 gesture, as if to catch a falling tea-cup in a drawing-room.
 
 For the fraction of a flash it seemed to leave the ledge of rock
@@ -202,13 +141,13 @@ the wide mouth shut so tight as to be traced by a mere line; the
 nose short with the sort of nostrils that seem to gape with an
 appetite for the air. The oddest thing about the face was that one
 of the eyebrows was cocked up at a much sharper angle than the
-other. March thought he had never seen a face so naturally alive as
+other. Harold thought he had never seen a face so naturally alive as
 that dead one. And its ugly energy seemed all the stranger for its
 halo of hoary hair. Some papers lay half fallen out of the pocket,
-and from among them March extracted a card-case. He read the name on
+and from among them Harold extracted a card-case. He read the name on
 the card aloud.
 
-"Sir Humphrey Turnbull. I'm sure I've heard that name somewhere."
+"Sir Turnbull. I'm sure I've heard that name somewhere."
 
 His companion only gave a sort of a little sigh and was silent for a
 moment, as if ruminating, then he merely said, "The poor fellow is
@@ -221,17 +160,17 @@ police are informed. In fact, I think it will be well if nobody
 except the police is informed. Don't be surprised if I seem to be
 keeping it dark from some of our neighbors round here." Then, as if
 prompted to regularize his rather abrupt confidence, he said: "I've
-come down to see my cousin at Torwood; my name is Horne Fisher.
+come down to see my cousin at Torwood; my name is Horne.
 Might be a pun on my pottering about here, mightn't it?"
 
-"Is Sir Howard Horne your cousin?" asked March.  "I'm going to
+"Is Sir Howard your cousin?" asked Harold.  "I'm going to
 Torwood Park to see him myself; only about his public work, of
 course, and the wonderful stand he is making for his principles. I
 think this Budget is the greatest thing in English history. If it
 fails, it will be the most heroic failure in English history. Are
-you an admirer of your great kinsman, Mr. Fisher?"
+you an admirer of your great kinsman, Mr. Horne?"
 
-"Rather," said Mr. Fisher.  "He's the best shot I know."
+"Rather," said Mr. Horne.  "He's the best shot I know."
 
 Then, as if sincerely repentant of his nonchalance, he added, with a
 sort of enthusiasm:
@@ -253,7 +192,7 @@ lay near the edge; it was almost incredible that any one could have
 deliberately driven into such a death trap, especially in broad
 daylight.
 
-"I can't make head or tail of it," said March.  "Was he blind? Or
+"I can't make head or tail of it," said Harold.  "Was he blind? Or
 blind drunk?"
 
 "Neither, by the look of him," replied the other.
@@ -261,13 +200,13 @@ blind drunk?"
 "Then it was suicide."
 
 "It doesn't seem a cozy way of doing it," remarked the man called
-Fisher. "Besides, I don't fancy poor old Puggy would commit suicide,
+Horne. "Besides, I don't fancy poor old Puggy would commit suicide,
 somehow."
 
 "Poor old who?" inquired the wondering journalist. "Did you know
 this unfortunate man?"
 
-"Nobody knew him exactly," replied Fisher, with some vagueness. "But
+"Nobody knew him exactly," replied Horne, with some vagueness. "But
 one _knew_ him, of course. He'd been a terror in his time, in
 Parliament and the courts, and so on; especially in that row about
 the aliens who were deported as undesirables, when he wanted one of
@@ -278,24 +217,24 @@ should deliberately break his neck almost at the very door. I
 believe Hoggs--I mean my cousin Howard--was coming down specially to
 meet him."
 
-"Torwood Park doesn't belong to your cousin?" inquired March.
+"Torwood Park doesn't belong to your cousin?" inquired Harold.
 
 "No; it used to belong to the Winthrops, you know," replied the
 other. "Now a new man's got it; a man from Montreal named Jenkins.
 Hoggs comes for the shooting; I told you he was a lovely shot."
 
 This repeated eulogy on the great social statesman affected Harold
-March as if somebody had defined Napoleon as a distinguished player
+Harold as if somebody had defined Napoleon as a distinguished player
 of nap. But he had another half-formed impression struggling in this
 flood of unfamiliar things, and he brought it to the surface before
 it could vanish.
 
-"Jenkins," he repeated.  "Surely you don't mean Jefferson Jenkins,
+"Jenkins," he repeated.  "Surely you don't mean Jenkins,
 the social reformer? I mean the man who's fighting for the new
 cottage-estate scheme. It would be as interesting to meet him as any
 Cabinet Minister in the world, if you'll excuse my saying so."
 
-"Yes; Hoggs told him it would have to be cottages," said Fisher.
+"Yes; Hoggs told him it would have to be cottages," said Horne.
 "He said the breed of cattle had improved too often, and people were
 beginning to laugh. And, of course, you must hang a peerage on to
 something; though the poor chap hasn't got it yet. Hullo, here's
@@ -308,7 +247,7 @@ one arm of which went on in the same line toward the distant gates
 of the park. It was clear that the car had been driven down the long
 straight road, and then, instead of turning with the road to the
 left, had gone straight on over the turf to its doom. But it was not
-this discovery that had riveted Fisher's eye, but something even
+this discovery that had riveted Horne's eye, but something even
 more solid. At the angle of the white road a dark and solitary
 figure was standing almost as still as a finger post. It was that of
 a big man in rough shooting-clothes, bareheaded, and with tousled
@@ -318,7 +257,7 @@ figure took on more conventional colors, as of an ordinary gentleman
 who happened to have come out without a hat and without very
 studiously brushing his hair. But the massive stature remained, and
 something deep and even cavernous about the setting of the eyes
-redeemed his animal good looks from the commonplace. But March had
+redeemed his animal good looks from the commonplace. But Harold had
 no time to study the man more closely, for, much to his
 astonishment, his guide merely observed, "Hullo, Jack!" and walked
 past him as if he had indeed been a signpost, and without attempting
@@ -327,7 +266,7 @@ a small thing, but it was only the first in a string of singular
 antics on which his new and eccentric friend was leading him.
 
 The man they had passed looked after them in rather a suspicious
-fashion, but Fisher continued serenely on his way along the straight
+fashion, but Horne continued serenely on his way along the straight
 road that ran past the gates of the great estate.
 
 "That's John Burke, the traveler," he condescended to explain. "I
@@ -335,7 +274,7 @@ expect you've heard of him; shoots big game and all that. Sorry I
 couldn't stop to introduce you, but I dare say you'll meet him later
 on."
 
-"I know his book, of course," said March, with renewed interest.
+"I know his book, of course," said Harold, with renewed interest.
 "That is certainly a fine piece of description, about their being
 only conscious of the closeness of the elephant when the colossal
 head blocked out the moon."
@@ -346,10 +285,10 @@ except a gun; and you can't write with that. Oh, he's genuine enough
 in his way, you know, as brave as a lion, or a good deal braver by
 all accounts."
 
-"You seem to know all about him," observed March, with a rather
+"You seem to know all about him," observed Harold, with a rather
 bewildered laugh, "and about a good many other people."
 
-Fisher's bald brow became abruptly corrugated, and a curious
+Horne's bald brow became abruptly corrugated, and a curious
 expression came into his eyes.
 
 "I know too much," he said.  "That's what's the matter with me.
@@ -363,8 +302,8 @@ don't know."
 "Why that poor fellow is dead."
 
 They had walked along the straight road for nearly a mile,
-conversing at intervals in this fashion; and March had a singular
-sense of the whole world being turned inside out. Mr. Horne Fisher
+conversing at intervals in this fashion; and Harold had a singular
+sense of the whole world being turned inside out. Mr. Horne
 did not especially abuse his friends and relatives in fashionable
 society; of some of them he spoke with affection. But they seemed to
 be an entirely new set of men and women, who happened to have the
@@ -373,7 +312,7 @@ newspapers. Yet no fury of revolt could have seemed to him more
 utterly revolutionary than this cold familiarity. It was like
 daylight on the other side of stage scenery.
 
-They reached the great lodge gates of the park, and, to March's
+They reached the great lodge gates of the park, and, to Harold's
 surprise, passed them and continued along the interminable white,
 straight road. But he was himself too early for his appointment with
 Sir Howard, and was not disinclined to see the end of his new
@@ -384,21 +323,21 @@ shuttered against the sunshine and within, amid that clear noon,
 manufacturing their own midnight. Soon, however, rifts began to
 appear in them like gleams of colored windows; the trees thinned and
 fell away as the road went forward, showing the wild, irregular
-copses in which, as Fisher said, the house-party had been blazing
+copses in which, as Horne said, the house-party had been blazing
 away all day. And about two hundred yards farther on they came to
 the first turn of the road.
 
 At the corner stood a sort of decayed inn with the dingy sign of The
 Grapes. The signboard was dark and indecipherable by now, and hung
 black against the sky and the gray moorland beyond, about as
-inviting as a gallows. March remarked that it looked like a tavern
+inviting as a gallows. Harold remarked that it looked like a tavern
 for vinegar instead of wine.
 
-"A good phrase," said Fisher, "and so it would be if you were silly
+"A good phrase," said Horne, "and so it would be if you were silly
 enough to drink wine in it. But the beer is very good, and so is the
 brandy."
 
-March followed him to the bar parlor with some wonder, and his dim
+Harold followed him to the bar parlor with some wonder, and his dim
 sense of repugnance was not dismissed by the first sight of the
 innkeeper, who was widely different from the genial innkeepers of
 romance, a bony man, very silent behind a black mustache, but with
@@ -419,7 +358,7 @@ filled his flask and taken a packet of sandwiches. And with these
 words the somewhat inhospitable host had walked hastily out of the
 bar, and they heard him banging doors in the dark interior.
 
-Fisher's weary eye wandered round the dusty and dreary inn parlor
+Horne's weary eye wandered round the dusty and dreary inn parlor
 and rested dreamily on a glass case containing a stuffed bird, with
 a gun hung on hooks above it, which seemed to be its only ornament.
 
@@ -427,37 +366,37 @@ a gun hung on hooks above it, which seemed to be its only ornament.
 grim style. But it seems rather too grim a joke for a man to buy a
 packet of sandwiches when he is just going to commit suicide."
 
-"If you come to that," answered March, "it isn't very usual for a
+"If you come to that," answered Harold, "it isn't very usual for a
 man to buy a packet of sandwiches when he's just outside the door of
 a grand house he's going to stop at."
 
-"No . . . no," repeated Fisher, almost mechanically; and then
+"No . . . no," repeated Horne, almost mechanically; and then
 suddenly cocked his eye at his interlocutor with a much livelier
 expression.
 
 "By Jove! that's an idea. You're perfectly right. And that suggests
 a very queer idea, doesn't it?"
 
-There was a silence, and then March started with irrational
+There was a silence, and then Harold started with irrational
 nervousness as the door of the inn was flung open and another man
 walked rapidly to the counter. He had struck it with a coin and
 called out for brandy before he saw the other two guests, who were
 sitting at a bare wooden table under the window. When he turned
-about with a rather wild stare, March had yet another unexpected
+about with a rather wild stare, Harold had yet another unexpected
 emotion, for his guide hailed the man as Hoggs and introduced him as
-Sir Howard Horne.
+Sir Howard.
 
 He looked rather older than his boyish portraits in the illustrated
 papers, as is the way of politicians; his flat, fair hair was
 touched with gray, but his face was almost comically round, with a
 Roman nose which, when combined with his quick, bright eyes, raised
 a vague reminiscence of a parrot. He had a cap rather at the back of
-his head and a gun under his arm. Harold March had imagined many
+his head and a gun under his arm. Harold had imagined many
 things about his meeting with the great political reformer, but he
 had never pictured him with a gun under his arm, drinking brandy in
 a public house.
 
-"So you're stopping at Jink's, too," said Fisher.  "Everybody seems
+"So you're stopping at Jink's, too," said Horne.  "Everybody seems
 to be at Jink's."
 
 "Yes," replied the Chancellor of the Exchequer.  "Jolly good
@@ -471,12 +410,12 @@ the weathercock off his own ridiculous gilded summerhouse. It's the
 only cock he'll ever kill, I should think. Are you coming up there
 now?"
 
-Fisher said, rather vaguely, that he was following soon, when he had
+Horne said, rather vaguely, that he was following soon, when he had
 fixed something up; and the Chancellor of the Exchequer left the
-inn. March fancied he had been a little upset or impatient when he
+inn. Harold fancied he had been a little upset or impatient when he
 called for the brandy; but he had talked himself back into a
 satisfactory state, if the talk had not been quite what his literary
-visitor had expected. Fisher, a few minutes afterward, slowly led
+visitor had expected. Horne, a few minutes afterward, slowly led
 the way out of the tavern and stood in the middle of the road,
 looking down in the direction from which they had traveled. Then he
 walked back about two hundred yards in that direction and stood
@@ -486,13 +425,13 @@ still again.
 
 "What place?" asked his companion.
 
-"The place where the poor fellow was killed," said Fisher, sadly.
+"The place where the poor fellow was killed," said Horne, sadly.
 
-"What do you mean?" demanded March.
+"What do you mean?" demanded Harold.
 
 "He was smashed up on the rocks a mile and a half from here."
 
-"No, he wasn't," replied Fisher.  "He didn't fall on the rocks at
+"No, he wasn't," replied Horne.  "He didn't fall on the rocks at
 all. Didn't you notice that he only fell on the slope of soft grass
 underneath? But I saw that he had a bullet in him already."
 
@@ -507,7 +446,7 @@ found far away, and most people would say, as you do, that it was an
 accident to a motorist. The murderer must have been a clever brute."
 
 "But wouldn't the shot be heard at the inn or somewhere?" asked
-March.
+Harold.
 
 "It would be heard. But it would not be noticed. That," continued
 the investigator, "is where he was clever again. Shooting was going
@@ -518,10 +457,10 @@ criminal. And he was something else as well."
 "What do you mean?" asked his companion, with a creepy premonition
 of something coming, he knew not why.
 
-"He was a first-class shot," said Fisher. He had turned his back
+"He was a first-class shot," said Horne. He had turned his back
 abruptly and was walking down a narrow, grassy lane, little more
 than a cart track, which lay opposite the inn and marked the end of
-the great estate and the beginning of the open moors. March plodded
+the great estate and the beginning of the open moors. Harold plodded
 after him with the same idle perseverance, and found him staring
 through a gap in giant weeds and thorns at the flat face of a
 painted paling. From behind the paling rose the great gray columns
@@ -531,12 +470,12 @@ into a breeze. The afternoon was already deepening into evening, and
 the titanic shadows of the poplars lengthened over a third of the
 landscape.
 
-"Are you a first-class criminal?" asked Fisher, in a friendly tone.
+"Are you a first-class criminal?" asked Horne, in a friendly tone.
 "I'm afraid I'm not. But I think I can manage to be a sort of
 fourth-rate burglar."
 
 And before his companion could reply he had managed to swing himself
-up and over the fence; March followed without much bodily effort,
+up and over the fence; Harold followed without much bodily effort,
 but with considerable mental disturbance. The poplars grew so close
 against the fence that they had some difficulty in slipping past
 them, and beyond the poplars they could see only a high hedge of
@@ -549,7 +488,7 @@ they came out on a sort of terrace of turf, which fell by one green
 step to an oblong lawn like a bowling green. Beyond this was the
 only building in sight, a low conservatory, which seemed far away
 from anywhere, like a glass cottage standing in its own fields in
-fairyland. Fisher knew that lonely look of the outlying parts of a
+fairyland. Horne knew that lonely look of the outlying parts of a
 great house well enough. He realized that it is more of a satire on
 aristocracy than if it were choked with weeds and littered with
 ruins. For it is not neglected and yet it is deserted; at any rate,
@@ -560,33 +499,33 @@ Looking over the lawn, however, he saw one object which he had not
 apparently expected. It was a sort of tripod supporting a large disk
 like the round top of a table tipped sideways, and it was not until
 they had dropped on to the lawn and walked across to look at it that
-March realized that it was a target. It was worn and weatherstained;
+Harold realized that it was a target. It was worn and weatherstained;
 the gay colors of its concentric rings were faded; possibly it had
 been set up in those far-off Victorian days when there was a fashion
-of archery. March had one of his vague visions of ladies in cloudy
+of archery. Harold had one of his vague visions of ladies in cloudy
 crinolines and gentlemen in outlandish hats and whiskers revisiting
 that lost garden like ghosts.
 
-Fisher, who was peering more closely at the target, startled him by
+Horne, who was peering more closely at the target, startled him by
 an exclamation.
 
 "Hullo!" he said.  "Somebody has been peppering this thing with
 shot, after all, and quite lately, too. Why, I believe old Jink's
 been trying to improve his bad shooting here."
 
-"Yes, and it looks as if it still wanted improving," answered March,
+"Yes, and it looks as if it still wanted improving," answered Harold,
 laughing. "Not one of these shots is anywhere near the bull's-eye;
 they seem just scattered about in the wildest way."
 
-"In the wildest way," repeated Fisher, still peering intently at the
-target. He seemed merely to assent, but March fancied his eye was
+"In the wildest way," repeated Horne, still peering intently at the
+target. He seemed merely to assent, but Harold fancied his eye was
 shining under its sleepy lid and that he straightened his stooping
 figure with a strange effort.
 
 "Excuse me a moment," he said, feeling in his pockets. "I think I've
 got some of my chemicals; and after that we'll go up to the house."
 And he stooped again over the target, putting something with his
-finger over each of the shot-holes, so far as March could see merely
+finger over each of the shot-holes, so far as Harold could see merely
 a dull-gray smear. Then they went through the gathering twilight up
 the long green avenues to the great house.
 
@@ -597,7 +536,7 @@ the gun-room. Rows of the regular instruments for bringing down
 birds stood against the walls; but across a table in the window lay
 one or two weapons of a heavier and more formidable pattern.
 
-"Hullo! these are Burke's big-game rifles," said Fisher. "I never
+"Hullo! these are Burke's big-game rifles," said Horne. "I never
 knew he kept them here." He lifted one of them, examined it briefly,
 and put it down again, frowning heavily. Almost as he did so a
 strange young man came hurriedly into the room. He was dark and
@@ -609,7 +548,7 @@ up. He's going away to-night."
 
 And he carried off the two rifles without casting a glance at the
 stranger; through the open window they could see his short, dark
-figure walking away across the glimmering garden. Fisher got out of
+figure walking away across the glimmering garden. Horne got out of
 the window again and stood looking after him.
 
 "That's Halkett, whom I told you about," he said.  "I knew he was a
@@ -624,13 +563,13 @@ and they soon came within sight of the rest of the house-party
 talking and laughing on the lawn. They could see the tall figure and
 loose mane of the lion-hunter dominating the little group.
 
-"By the way," observed Fisher, "when we were talking about Burke and
+"By the way," observed Horne, "when we were talking about Burke and
 Halkett, I said that a man couldn't very well write with a gun.
 Well, I'm not so sure now. Did you ever hear of an artist so clever
 that he could draw with a gun? There's a wonderful chap loose about
 here."
 
-Sir Howard hailed Fisher and his friend the journalist with almost
+Sir Howard hailed Horne and his friend the journalist with almost
 boisterous amiability. The latter was presented to Major Burke and
 Mr. Halkett and also (by way of a parenthesis) to his host, Mr.
 Jenkins, a commonplace little man in loud tweeds, whom everybody
@@ -646,7 +585,7 @@ monomania.
 "Why, anybody could shoot big game. You want to be a shot to shoot
 small game."
 
-"Quite so," interposed Horne Fisher.  "Now if only a hippopotamus
+"Quite so," interposed Horne.  "Now if only a hippopotamus
 could fly up in the air out of that bush, or you preserved flying
 elephants on the estate, why, then--"
 
@@ -654,7 +593,7 @@ elephants on the estate, why, then--"
 hilariously slapping his host on the back. "Even he might hit a
 haystack or a hippopotamus."
 
-"Look here, you fellows," said Fisher.  "I want you to come along
+"Look here, you fellows," said Horne.  "I want you to come along
 with me for a minute and shoot at something else. Not a
 hippopotamus. Another kind of queer animal I've found on the estate.
 It's an animal with three legs and one eye, and it's all the colors
@@ -662,7 +601,7 @@ of the rainbow."
 
 "What the deuce are you talking about?" asked Burke.
 
-"You come along and see," replied Fisher, cheerfully.
+"You come along and see," replied Horne, cheerfully.
 
 Such people seldom reject anything nonsensical, for they are always
 seeking for something new. They gravely rearmed themselves from the
@@ -685,9 +624,9 @@ satiric friends had seen or expected.
 At the same instant a horrible scream seemed to come from nowhere.
 It was so unnatural and so unsuited to the scene that it might have
 been made by some inhuman thing flying on wings above them or
-eavesdropping in the dark woods beyond. But Fisher knew that it had
-started and stopped on the pale lips of Jefferson Jenkins, of
-Montreal, and no one at that moment catching sight of Jefferson
+eavesdropping in the dark woods beyond. But Horne knew that it had
+started and stopped on the pale lips of Jenkins, of
+Montreal, and no one at that moment catching sight of
 Jenkins's face would have complained that it was commonplace. The
 next moment a torrent of guttural but good-humored oaths came from
 Major Burke as he and the two other men saw what was in front of
@@ -697,12 +636,12 @@ like stars, and in similar livid points of light were picked out the
 two upturned and open nostrils and the two ends of the wide and
 tight mouth. A few white dots above each eye indicated the hoary
 eyebrows; and one of them ran upward almost erect. It was a
-brilliant caricature done in bright dotted lines and March knew of
+brilliant caricature done in bright dotted lines and Harold knew of
 whom. It shone in the shadowy grass, smeared with sea fire as if one
 of the submarine monsters had crawled into the twilight garden; but
 it had the head of a dead man.
 
-"It's only luminous paint," said Burke.  "Old Fisher's been having a
+"It's only luminous paint," said Burke.  "Old Horne's been having a
 joke with that phosphorescent stuff of his."
 
 "Seems to be meant for old Puggy"' observed Sir Howard.  "Hits him
@@ -710,26 +649,26 @@ off very well."
 
 With that they all laughed, except Jenkins. When they had all done,
 he made a noise like the first effort of an animal to laugh, and
-Horne Fisher suddenly strode across to him and said:
+Horne suddenly strode across to him and said:
 
 "Mr. Jenkins, I must speak to you at once in private."
 
 It was by the little watercourse in the moors, on the slope under
-the hanging rock, that March met his new friend Fisher, by
+the hanging rock, that Harold met his new friend Horne, by
 appointment, shortly after the ugly and almost grotesque scene that
 had broken up the group in the garden.
 
-"It was a monkey-trick of mine," observed Fisher, gloomily, "putting
+"It was a monkey-trick of mine," observed Horne, gloomily, "putting
 phosphorus on the target; but the only chance to make him jump was
 to give him the horrors suddenly. And when he saw the face he'd shot
 at shining on the target he practiced on, all lit up with an
 infernal light, he did jump. Quite enough for my own intellectual
 satisfaction."
 
-"I'm afraid I don't quite understand even now," said March, "exactly
+"I'm afraid I don't quite understand even now," said Harold, "exactly
 what he did or why he did it."
 
-"You ought to," replied Fisher, with his rather dreary smile, "for
+"You ought to," replied Horne, with his rather dreary smile, "for
 you gave me the first suggestion yourself. Oh yes, you did; and it
 was a very shrewd one. You said a man wouldn't take sandwiches with
 him to dine at a great house. It was quite true; and the inference
@@ -746,9 +685,9 @@ another shooting-affair, but you see the shooting gentleman had
 another shot in his locker."
 
 "But you said he would have to be a very good shot," protested
-March.
+Harold.
 
-"Jenkins is a very good shot," said Fisher.  "A very good shot who
+"Jenkins is a very good shot," said Horne.  "A very good shot who
 can pretend to be a very bad shot. Shall I tell you the second hint
 I hit on, after yours, to make me think it was Jenkins? It was my
 cousin's account of his bad shooting. He'd shot a cockade off a hat
@@ -815,33 +754,33 @@ paper. It was a miracle to do it across a garden with a gun. But a
 man who can work those miracles will always itch to work them, if
 it's only in the dark."
 
-After a pause March observed, thoughtfully, "But he couldn't have
+After a pause Harold observed, thoughtfully, "But he couldn't have
 brought him down like a bird with one of those little guns."
 
-"No; that was why I went into the gun-room," replied Fisher.  "He
+"No; that was why I went into the gun-room," replied Horne.  "He
 did it with one of Burke's rifles, and Burke thought he knew the
 sound of it. That's why he rushed out without a hat, looking so
 wild. He saw nothing but a car passing quickly, which he followed
 for a little way, and then concluded he'd made a mistake."
 
-There was another silence, during which Fisher sat on a great stone
+There was another silence, during which Horne sat on a great stone
 as motionless as on their first meeting, and watched the gray and
-silver river eddying past under the bushes. Then March said,
+silver river eddying past under the bushes. Then Harold said,
 abruptly, "Of course he knows the truth now."
 
-"Nobody knows the truth but you and I," answered Fisher, with a
+"Nobody knows the truth but you and I," answered Horne, with a
 certain softening in his voice. "And I don't think you and I will
 ever quarrel."
 
-"What do you mean?" asked March, in an altered accent. "What have
+"What do you mean?" asked Harold, in an altered accent. "What have
 you done about it?"
 
-Horne Fisher continued to gaze steadily at the eddying stream. At
+Horne continued to gaze steadily at the eddying stream. At
 last he said, "The police have proved it was a motor accident."
 
 "But you know it was not."
 
-"I told you that I know too much," replied Fisher, with his eye on
+"I told you that I know too much," replied Horne, with his eye on
 the river. "I know that, and I know a great many other things. I
 know the atmosphere and the way the whole thing works. I know this
 fellow has succeeded in making himself something incurably
@@ -857,7 +796,7 @@ the only real objection to it is that it's impossible. Nobody would
 believe it; it's not in the picture. The crooked weathercock would
 always turn it into a joke."
 
-"Don't you think this is infamous?" asked March, quietly.
+"Don't you think this is infamous?" asked Harold, quietly.
 
 "I think a good many things," replied the other.  "If you people
 ever happen to blow the whole tangle of society to hell with
@@ -870,358 +809,4 @@ and then he added:
 
 "I told you before I had to throw back the big fish."
 
-
-End of Project Gutenberg's The Man Who Knew Too Much, by G.K. Chesterton
-
-
-
-*** END OF THE PROJECT GUTENBERG EBOOK THE MAN WHO KNEW TOO MUCH ***
-
-
-    
-
-Updated editions will replace the previous one—the old editions will
-be renamed.
-
-Creating the works from print editions not protected by U.S. copyright
-law means that no one owns a United States copyright in these works,
-so the Foundation (and you!) can copy and distribute it in the United
-States without permission and without paying copyright
-royalties. Special rules, set forth in the General Terms of Use part
-of this license, apply to copying and distributing Project
-Gutenberg™ electronic works to protect the PROJECT GUTENBERG™
-concept and trademark. Project Gutenberg is a registered trademark,
-and may not be used if you charge for an eBook, except by following
-the terms of the trademark license, including paying royalties for use
-of the Project Gutenberg trademark. If you do not charge anything for
-copies of this eBook, complying with the trademark license is very
-easy. You may use this eBook for nearly any purpose such as creation
-of derivative works, reports, performances and research. Project
-Gutenberg eBooks may be modified and printed and given away—you may
-do practically ANYTHING in the United States with eBooks not protected
-by U.S. copyright law. Redistribution is subject to the trademark
-license, especially commercial redistribution.
-
-
-START: FULL LICENSE
-
-THE FULL PROJECT GUTENBERG LICENSE
-
-PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
-
-To protect the Project Gutenberg™ mission of promoting the free
-distribution of electronic works, by using or distributing this work
-(or any other work associated in any way with the phrase “Project
-Gutenberg”), you agree to comply with all the terms of the Full
-Project Gutenberg™ License available with this file or online at
-www.gutenberg.org/license.
-
-Section 1. General Terms of Use and Redistributing Project Gutenberg™
-electronic works
-
-1.A. By reading or using any part of this Project Gutenberg™
-electronic work, you indicate that you have read, understand, agree to
-and accept all the terms of this license and intellectual property
-(trademark/copyright) agreement. If you do not agree to abide by all
-the terms of this agreement, you must cease using and return or
-destroy all copies of Project Gutenberg™ electronic works in your
-possession. If you paid a fee for obtaining a copy of or access to a
-Project Gutenberg™ electronic work and you do not agree to be bound
-by the terms of this agreement, you may obtain a refund from the person
-or entity to whom you paid the fee as set forth in paragraph 1.E.8.
-
-1.B. “Project Gutenberg” is a registered trademark. It may only be
-used on or associated in any way with an electronic work by people who
-agree to be bound by the terms of this agreement. There are a few
-things that you can do with most Project Gutenberg™ electronic works
-even without complying with the full terms of this agreement. See
-paragraph 1.C below. There are a lot of things you can do with Project
-Gutenberg™ electronic works if you follow the terms of this
-agreement and help preserve free future access to Project Gutenberg™
-electronic works. See paragraph 1.E below.
-
-1.C. The Project Gutenberg Literary Archive Foundation (“the
-Foundation” or PGLAF), owns a compilation copyright in the collection
-of Project Gutenberg™ electronic works. Nearly all the individual
-works in the collection are in the public domain in the United
-States. If an individual work is unprotected by copyright law in the
-United States and you are located in the United States, we do not
-claim a right to prevent you from copying, distributing, performing,
-displaying or creating derivative works based on the work as long as
-all references to Project Gutenberg are removed. Of course, we hope
-that you will support the Project Gutenberg™ mission of promoting
-free access to electronic works by freely sharing Project Gutenberg™
-works in compliance with the terms of this agreement for keeping the
-Project Gutenberg™ name associated with the work. You can easily
-comply with the terms of this agreement by keeping this work in the
-same format with its attached full Project Gutenberg™ License when
-you share it without charge with others.
-
-1.D. The copyright laws of the place where you are located also govern
-what you can do with this work. Copyright laws in most countries are
-in a constant state of change. If you are outside the United States,
-check the laws of your country in addition to the terms of this
-agreement before downloading, copying, displaying, performing,
-distributing or creating derivative works based on this work or any
-other Project Gutenberg™ work. The Foundation makes no
-representations concerning the copyright status of any work in any
-country other than the United States.
-
-1.E. Unless you have removed all references to Project Gutenberg:
-
-1.E.1. The following sentence, with active links to, or other
-immediate access to, the full Project Gutenberg™ License must appear
-prominently whenever any copy of a Project Gutenberg™ work (any work
-on which the phrase “Project Gutenberg” appears, or with which the
-phrase “Project Gutenberg” is associated) is accessed, displayed,
-performed, viewed, copied or distributed:
-
-    This eBook is for the use of anyone anywhere in the United States and most
-    other parts of the world at no cost and with almost no restrictions
-    whatsoever. You may copy it, give it away or re-use it under the terms
-    of the Project Gutenberg License included with this eBook or online
-    at www.gutenberg.org. If you
-    are not located in the United States, you will have to check the laws
-    of the country where you are located before using this eBook.
-  
-1.E.2. If an individual Project Gutenberg™ electronic work is
-derived from texts not protected by U.S. copyright law (does not
-contain a notice indicating that it is posted with permission of the
-copyright holder), the work can be copied and distributed to anyone in
-the United States without paying any fees or charges. If you are
-redistributing or providing access to a work with the phrase “Project
-Gutenberg” associated with or appearing on the work, you must comply
-either with the requirements of paragraphs 1.E.1 through 1.E.7 or
-obtain permission for the use of the work and the Project Gutenberg™
-trademark as set forth in paragraphs 1.E.8 or 1.E.9.
-
-1.E.3. If an individual Project Gutenberg™ electronic work is posted
-with the permission of the copyright holder, your use and distribution
-must comply with both paragraphs 1.E.1 through 1.E.7 and any
-additional terms imposed by the copyright holder. Additional terms
-will be linked to the Project Gutenberg™ License for all works
-posted with the permission of the copyright holder found at the
-beginning of this work.
-
-1.E.4. Do not unlink or detach or remove the full Project Gutenberg™
-License terms from this work, or any files containing a part of this
-work or any other work associated with Project Gutenberg™.
-
-1.E.5. Do not copy, display, perform, distribute or redistribute this
-electronic work, or any part of this electronic work, without
-prominently displaying the sentence set forth in paragraph 1.E.1 with
-active links or immediate access to the full terms of the Project
-Gutenberg™ License.
-
-1.E.6. You may convert to and distribute this work in any binary,
-compressed, marked up, nonproprietary or proprietary form, including
-any word processing or hypertext form. However, if you provide access
-to or distribute copies of a Project Gutenberg™ work in a format
-other than “Plain Vanilla ASCII” or other format used in the official
-version posted on the official Project Gutenberg™ website
-(www.gutenberg.org), you must, at no additional cost, fee or expense
-to the user, provide a copy, a means of exporting a copy, or a means
-of obtaining a copy upon request, of the work in its original “Plain
-Vanilla ASCII” or other form. Any alternate format must include the
-full Project Gutenberg™ License as specified in paragraph 1.E.1.
-
-1.E.7. Do not charge a fee for access to, viewing, displaying,
-performing, copying or distributing any Project Gutenberg™ works
-unless you comply with paragraph 1.E.8 or 1.E.9.
-
-1.E.8. You may charge a reasonable fee for copies of or providing
-access to or distributing Project Gutenberg™ electronic works
-provided that:
-
-    • You pay a royalty fee of 20% of the gross profits you derive from
-        the use of Project Gutenberg™ works calculated using the method
-        you already use to calculate your applicable taxes. The fee is owed
-        to the owner of the Project Gutenberg™ trademark, but he has
-        agreed to donate royalties under this paragraph to the Project
-        Gutenberg Literary Archive Foundation. Royalty payments must be paid
-        within 60 days following each date on which you prepare (or are
-        legally required to prepare) your periodic tax returns. Royalty
-        payments should be clearly marked as such and sent to the Project
-        Gutenberg Literary Archive Foundation at the address specified in
-        Section 4, “Information about donations to the Project Gutenberg
-        Literary Archive Foundation.”
-    
-    • You provide a full refund of any money paid by a user who notifies
-        you in writing (or by e-mail) within 30 days of receipt that s/he
-        does not agree to the terms of the full Project Gutenberg™
-        License. You must require such a user to return or destroy all
-        copies of the works possessed in a physical medium and discontinue
-        all use of and all access to other copies of Project Gutenberg™
-        works.
-    
-    • You provide, in accordance with paragraph 1.F.3, a full refund of
-        any money paid for a work or a replacement copy, if a defect in the
-        electronic work is discovered and reported to you within 90 days of
-        receipt of the work.
-    
-    • You comply with all other terms of this agreement for free
-        distribution of Project Gutenberg™ works.
-    
-
-1.E.9. If you wish to charge a fee or distribute a Project
-Gutenberg™ electronic work or group of works on different terms than
-are set forth in this agreement, you must obtain permission in writing
-from the Project Gutenberg Literary Archive Foundation, the manager of
-the Project Gutenberg™ trademark. Contact the Foundation as set
-forth in Section 3 below.
-
-1.F.
-
-1.F.1. Project Gutenberg volunteers and employees expend considerable
-effort to identify, do copyright research on, transcribe and proofread
-works not protected by U.S. copyright law in creating the Project
-Gutenberg™ collection. Despite these efforts, Project Gutenberg™
-electronic works, and the medium on which they may be stored, may
-contain “Defects,” such as, but not limited to, incomplete, inaccurate
-or corrupt data, transcription errors, a copyright or other
-intellectual property infringement, a defective or damaged disk or
-other medium, a computer virus, or computer codes that damage or
-cannot be read by your equipment.
-
-1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the “Right
-of Replacement or Refund” described in paragraph 1.F.3, the Project
-Gutenberg Literary Archive Foundation, the owner of the Project
-Gutenberg™ trademark, and any other party distributing a Project
-Gutenberg™ electronic work under this agreement, disclaim all
-liability to you for damages, costs and expenses, including legal
-fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
-LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
-PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
-TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
-LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
-INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
-DAMAGE.
-
-1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
-defect in this electronic work within 90 days of receiving it, you can
-receive a refund of the money (if any) you paid for it by sending a
-written explanation to the person you received the work from. If you
-received the work on a physical medium, you must return the medium
-with your written explanation. The person or entity that provided you
-with the defective work may elect to provide a replacement copy in
-lieu of a refund. If you received the work electronically, the person
-or entity providing it to you may choose to give you a second
-opportunity to receive the work electronically in lieu of a refund. If
-the second copy is also defective, you may demand a refund in writing
-without further opportunities to fix the problem.
-
-1.F.4. Except for the limited right of replacement or refund set forth
-in paragraph 1.F.3, this work is provided to you ‘AS-IS’, WITH NO
-OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
-
-1.F.5. Some states do not allow disclaimers of certain implied
-warranties or the exclusion or limitation of certain types of
-damages. If any disclaimer or limitation set forth in this agreement
-violates the law of the state applicable to this agreement, the
-agreement shall be interpreted to make the maximum disclaimer or
-limitation permitted by the applicable state law. The invalidity or
-unenforceability of any provision of this agreement shall not void the
-remaining provisions.
-
-1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
-trademark owner, any agent or employee of the Foundation, anyone
-providing copies of Project Gutenberg™ electronic works in
-accordance with this agreement, and any volunteers associated with the
-production, promotion and distribution of Project Gutenberg™
-electronic works, harmless from all liability, costs and expenses,
-including legal fees, that arise directly or indirectly from any of
-the following which you do or cause to occur: (a) distribution of this
-or any Project Gutenberg™ work, (b) alteration, modification, or
-additions or deletions to any Project Gutenberg™ work, and (c) any
-Defect you cause.
-
-Section 2. Information about the Mission of Project Gutenberg™
-
-Project Gutenberg™ is synonymous with the free distribution of
-electronic works in formats readable by the widest variety of
-computers including obsolete, old, middle-aged and new computers. It
-exists because of the efforts of hundreds of volunteers and donations
-from people in all walks of life.
-
-Volunteers and financial support to provide volunteers with the
-assistance they need are critical to reaching Project Gutenberg™’s
-goals and ensuring that the Project Gutenberg™ collection will
-remain freely available for generations to come. In 2001, the Project
-Gutenberg Literary Archive Foundation was created to provide a secure
-and permanent future for Project Gutenberg™ and future
-generations. To learn more about the Project Gutenberg Literary
-Archive Foundation and how your efforts and donations can help, see
-Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
-
-Section 3. Information about the Project Gutenberg Literary Archive Foundation
-
-The Project Gutenberg Literary Archive Foundation is a non-profit
-501(c)(3) educational corporation organized under the laws of the
-state of Mississippi and granted tax exempt status by the Internal
-Revenue Service. The Foundation’s EIN or federal tax identification
-number is 64-6221541. Contributions to the Project Gutenberg Literary
-Archive Foundation are tax deductible to the full extent permitted by
-U.S. federal laws and your state’s laws.
-
-The Foundation’s business office is located at 809 North 1500 West,
-Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
-to date contact information can be found at the Foundation’s website
-and official page at www.gutenberg.org/contact
-
-Section 4. Information about Donations to the Project Gutenberg
-Literary Archive Foundation
-
-Project Gutenberg™ depends upon and cannot survive without widespread
-public support and donations to carry out its mission of
-increasing the number of public domain and licensed works that can be
-freely distributed in machine-readable form accessible by the widest
-array of equipment including outdated equipment. Many small donations
-($1 to $5,000) are particularly important to maintaining tax exempt
-status with the IRS.
-
-The Foundation is committed to complying with the laws regulating
-charities and charitable donations in all 50 states of the United
-States. Compliance requirements are not uniform and it takes a
-considerable effort, much paperwork and many fees to meet and keep up
-with these requirements. We do not solicit donations in locations
-where we have not received written confirmation of compliance. To SEND
-DONATIONS or determine the status of compliance for any particular state
-visit www.gutenberg.org/donate.
-
-While we cannot and do not solicit contributions from states where we
-have not met the solicitation requirements, we know of no prohibition
-against accepting unsolicited donations from donors in such states who
-approach us with offers to donate.
-
-International donations are gratefully accepted, but we cannot make
-any statements concerning tax treatment of donations received from
-outside the United States. U.S. laws alone swamp our small staff.
-
-Please check the Project Gutenberg web pages for current donation
-methods and addresses. Donations are accepted in a number of other
-ways including checks, online payments and credit card donations. To
-donate, please visit: www.gutenberg.org/donate.
-
-Section 5. General Information About Project Gutenberg™ electronic works
-
-Professor Michael S. Hart was the originator of the Project
-Gutenberg™ concept of a library of electronic works that could be
-freely shared with anyone. For forty years, he produced and
-distributed Project Gutenberg™ eBooks with only a loose network of
-volunteer support.
-
-Project Gutenberg™ eBooks are often created from several printed
-editions, all of which are confirmed as not protected by copyright in
-the U.S. unless a copyright notice is included. Thus, we do not
-necessarily keep eBooks in compliance with any particular paper
-edition.
-
-Most people start at our website which has the main PG search
-facility: www.gutenberg.org.
-
-This website includes information about Project Gutenberg™,
-including how to make donations to the Project Gutenberg Literary
-Archive Foundation, how to help produce our new eBooks, and how to
-subscribe to our email newsletter to hear about new eBooks.
 

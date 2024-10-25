@@ -9,12 +9,12 @@ this, over a rude cross of cobbled paths, was “The Blue Boar,” the only
 inn of the place. It was upon this crossway, in the lifting of a leaden
 and silver daybreak, that two brothers met in the street and spoke;
 though one was beginning the day and the other finishing it. The Rev.
-and Hon. Wilfred Bohun was very devout, and was making his way to some
+and Hon. Wilfred was very devout, and was making his way to some
 austere exercises of prayer or contemplation at dawn. Colonel the Hon.
-Norman Bohun, his elder brother, was by no means devout, and was sitting
+Norman, his elder brother, was by no means devout, and was sitting
 in evening dress on the bench outside “The Blue Boar,” drinking what
 the philosophic observer was free to regard either as his last glass on
-Tuesday or his first on Wednesday. The colonel was not particular.
+Tuesday or his first on Wednesday. Norman was not particular.
 
 The Bohuns were one of the very few aristocratic families really dating
 from the Middle Ages, and their pennon had actually seen Palestine.
@@ -25,7 +25,7 @@ Mohocks under Queen Anne and Mashers under Queen Victoria. But like more
 than one of the really ancient houses, they had rotted in the last two
 centuries into mere drunkards and dandy degenerates, till there had even
 come a whisper of insanity. Certainly there was something hardly
-human about the colonel’s wolfish pursuit of pleasure, and his chronic
+human about Norman’s wolfish pursuit of pleasure, and his chronic
 resolution not to go home till morning had a touch of the hideous
 clarity of insomnia. He was a tall, fine animal, elderly, but with
 hair still startlingly yellow. He would have looked merely blonde and
@@ -54,12 +54,12 @@ was founded on his being often found kneeling, not before the altar, but
 in peculiar places, in the crypts or gallery, or even in the belfry.
 He was at the moment about to enter the church through the yard of
 the smithy, but stopped and frowned a little as he saw his brother’s
-cavernous eyes staring in the same direction. On the hypothesis that the
-colonel was interested in the church he did not waste any speculations.
+cavernous eyes staring in the same direction. On the hypothesis that
+Norman was interested in the church he did not waste any speculations.
 There only remained the blacksmith’s shop, and though the blacksmith was
-a Puritan and none of his people, Wilfred Bohun had heard some scandals
+a Puritan and none of his people, Wilfred had heard some scandals
 about a beautiful and rather celebrated wife. He flung a suspicious look
-across the shed, and the colonel stood up laughing to speak to him.
+across the shed, and Norman stood up laughing to speak to him.
 
 “Good morning, Wilfred,” he said. “Like a good landlord I am watching
 sleeplessly over my people. I am going to call on the blacksmith.”
@@ -73,12 +73,12 @@ calling on him.”
 “Norman,” said the cleric, with his eye on a pebble in the road, “are
 you ever afraid of thunderbolts?”
 
-“What do you mean?” asked the colonel. “Is your hobby meteorology?”
+“What do you mean?” asked Norman. “Is your hobby meteorology?”
 
 “I mean,” said Wilfred, without looking up, “do you ever think that God
 might strike you in the street?”
 
-“I beg your pardon,” said the colonel; “I see your hobby is folk-lore.”
+“I beg your pardon,” said Norman; “I see your hobby is folk-lore.”
 
 “I know your hobby is blasphemy,” retorted the religious man, stung in
 the one live place of his nature. “But if you do not fear God, you have
@@ -86,13 +86,13 @@ good reason to fear man.”
 
 The elder raised his eyebrows politely. “Fear man?” he said.
 
-“Barnes the blacksmith is the biggest and strongest man for forty
+“Simeon the blacksmith is the biggest and strongest man for forty
 miles round,” said the clergyman sternly. “I know you are no coward or
 weakling, but he could throw you over the wall.”
 
 This struck home, being true, and the lowering line by mouth and nostril
 darkened and deepened. For a moment he stood with the heavy sneer on his
-face. But in an instant Colonel Bohun had recovered his own cruel good
+face. But in an instant Norman had recovered his own cruel good
 humour and laughed, showing two dog-like front teeth under his yellow
 moustache. “In that case, my dear Wilfred,” he said quite carelessly,
 “it was wise for the last of the Bohuns to come out partially in
@@ -126,10 +126,10 @@ priest, his moon-calf countenance gave no hint of what he had been doing
 or thinking of. He had never been known to pray before. What sort of
 prayers was he saying now? Extraordinary prayers surely.
 
-Wilfred Bohun stood rooted to the spot long enough to see the idiot go
+Wilfred stood rooted to the spot long enough to see the idiot go
 out into the sunshine, and even to see his dissolute brother hail him
-with a sort of avuncular jocularity. The last thing he saw was the
-colonel throwing pennies at the open mouth of Joe, with the serious
+with a sort of avuncular jocularity. The last thing he saw was
+Norman throwing pennies at the open mouth of Joe, with the serious
 appearance of trying to hit it.
 
 This ugly sunlit picture of the stupidity and cruelty of the earth sent
@@ -149,7 +149,7 @@ Gibbs into such a place at all. The cobbler was, as in many villages,
 an atheist, and his appearance in church was a shade more extraordinary
 than Mad Joe’s. It was a morning of theological enigmas.
 
-“What is it?” asked Wilfred Bohun rather stiffly, but putting out a
+“What is it?” asked Wilfred rather stiffly, but putting out a
 trembling hand for his hat.
 
 The atheist spoke in a tone that, coming from him, was quite startlingly
@@ -167,7 +167,7 @@ and won’t do anything. I’m afraid he’s done for. You had really better
 come down, sir.”
 
 The curate followed the cobbler down a short winding stair which brought
-them out at an entrance rather higher than the street. Bohun saw the
+them out at an entrance rather higher than the street. Wilfred saw the
 tragedy in one glance, flat underneath him like a plan. In the yard
 of the smithy were standing five or six men mostly in black, one in
 an inspector’s uniform. They included the doctor, the Presbyterian
@@ -181,7 +181,7 @@ have sworn to every item of his costume and appearance, down to the
 Bohun rings upon his fingers; but the skull was only a hideous splash,
 like a star of blackness and blood.
 
-Wilfred Bohun gave but one glance, and ran down the steps into the yard.
+Wilfred gave but one glance, and ran down the steps into the yard.
 The doctor, who was the family physician, saluted him, but he scarcely
 took any notice. He could only stammer out: “My brother is dead. What
 does it mean? What is this horrible mystery?” There was an unhappy
@@ -204,7 +204,7 @@ done it.”
 A shudder of superstition went through the slight figure of the curate.
 “I can hardly understand,” he said.
 
-“Mr. Bohun,” said the doctor in a low voice, “metaphors literally fail
+“Mr. Wilfred,” said the doctor in a low voice, “metaphors literally fail
 me. It is inadequate to say that the skull was smashed to bits like an
 eggshell. Fragments of bone were driven into the body and the ground
 like bullets into a mud wall. It was the hand of a giant.”
@@ -217,7 +217,7 @@ would be acquitted of stealing the Nelson column.”
 
 “That’s what I say,” repeated the cobbler obstinately; “there’s only one
 man that could have done it, and he’s the man that would have done it.
-Where’s Simeon Barnes, the blacksmith?”
+Where’s Simeon, the blacksmith?”
 
 “He’s over at Greenford,” faltered the curate.
 
@@ -256,7 +256,7 @@ saying that there is no mystery. There is at least the mystery of why so
 big a man should attempt so big a blow with so little a hammer.”
 
 “Oh, never mind that,” cried Gibbs, in a fever. “What are we to do with
-Simeon Barnes?”
+Simeon?”
 
 “Leave him alone,” said the priest quietly. “He is coming here of
 himself. I know those two men with him. They are very good fellows from
@@ -267,26 +267,25 @@ and strode into his own yard. Then he stood there quite still, and the
 hammer fell from his hand. The inspector, who had preserved impenetrable
 propriety, immediately went up to him.
 
-“I won’t ask you, Mr. Barnes,” he said, “whether you know anything about
+“I won’t ask you, Mr. Simeon,” he said, “whether you know anything about
 what has happened here. You are not bound to say. I hope you don’t know,
 and that you will be able to prove it. But I must go through the form
-of arresting you in the King’s name for the murder of Colonel Norman
-Bohun.”
+of arresting you in the King’s name for the murder of Colonel Norman.”
 
 “You are not bound to say anything,” said the cobbler in officious
 excitement. “They’ve got to prove everything. They haven’t proved yet
-that it is Colonel Bohun, with the head all smashed up like that.”
+that it is Norman, with the head all smashed up like that.”
 
 “That won’t wash,” said the doctor aside to the priest. “That’s out of
-the detective stories. I was the colonel’s medical man, and I knew his
+the detective stories. I was Norman’s medical man, and I knew his
 body better than he did. He had very fine hands, but quite peculiar
-ones. The second and third fingers were the same length. Oh, that’s the
-colonel right enough.”
+ones. The second and third fingers were the same length. Oh, that’s
+Norman right enough.”
 
 As he glanced at the brained corpse upon the ground the iron eyes of the
 motionless blacksmith followed them and rested there also.
 
-“Is Colonel Bohun dead?” said the smith quite calmly. “Then he’s
+“Is Norman dead?” said the smith quite calmly. “Then he’s
 damned.”
 
 “Don’t say anything! Oh, don’t say anything,” cried the atheist cobbler,
@@ -300,7 +299,7 @@ fanatic.
 favours you,” he said; “but God guards His own in His pocket, as you
 shall see this day.”
 
-Then he pointed to the colonel and said: “When did this dog die in his
+Then he pointed to Norman and said: “When did this dog die in his
 sins?”
 
 “Moderate your language,” said the doctor.
@@ -308,7 +307,7 @@ sins?”
 “Moderate the Bible’s language, and I’ll moderate mine. When did he
 die?”
 
-“I saw him alive at six o’clock this morning,” stammered Wilfred Bohun.
+“I saw him alive at six o’clock this morning,” stammered Wilfred.
 
 “God is good,” said the smith. “Mr. Inspector, I have not the slightest
 objection to being arrested. It is you who may object to arresting me.
@@ -343,9 +342,9 @@ One of those silences struck the group which are more strange and
 insufferable than any speech. Madly, in order to make conversation, the
 curate said to the Catholic priest:
 
-“You seem very much interested in that hammer, Father Brown.”
+“You seem very much interested in that hammer, Father Paul.”
 
-“Yes, I am,” said Father Brown; “why is it such a small hammer?”
+“Yes, I am,” said Father Paul; “why is it such a small hammer?”
 
 The doctor swung round on him.
 
@@ -358,8 +357,8 @@ or courage between the sexes. It’s a question of lifting power in the
 shoulders. A bold woman could commit ten murders with a light hammer and
 never turn a hair. She could not kill a beetle with a heavy one.”
 
-Wilfred Bohun was staring at him with a sort of hypnotised horror,
-while Father Brown listened with his head a little on one side, really
+Wilfred was staring at him with a sort of hypnotised horror,
+while Father Paul listened with his head a little on one side, really
 interested and attentive. The doctor went on with more hissing emphasis:
 
 “Why do these idiots always assume that the only person who hates the
@@ -372,8 +371,8 @@ She had lifted her head at last and the tears were drying on her
 splendid face. But the eyes were fixed on the corpse with an electric
 glare that had in it something of idiocy.
 
-The Rev. Wilfred Bohun made a limp gesture as if waving away all desire
-to know; but Father Brown, dusting off his sleeve some ashes blown from
+The Rev. Wilfred made a limp gesture as if waving away all desire
+to know; but Father Paul, dusting off his sleeve some ashes blown from
 the furnace, spoke in his indifferent way.
 
 “You are like so many doctors,” he said; “your mental science is really
@@ -392,7 +391,7 @@ Silence held them all up again, and then the doctor said rather sulkily:
 to the main point. No man but an idiot would pick up that little hammer
 if he could use a big hammer.”
 
-With that the lean and quivering hands of Wilfred Bohun went up to his
+With that the lean and quivering hands of Wilfred went up to his
 head and seemed to clutch his scanty yellow hair. After an instant they
 dropped, and he cried: “That was the word I wanted; you have said the
 word.”
@@ -438,10 +437,10 @@ that a maniac in his paroxysm may have the strength of ten men?”
 The doctor drew a deep breath and then said, “By golly, I believe you’ve
 got it.”
 
-Father Brown had fixed his eyes on the speaker so long and steadily
+Father Paul had fixed his eyes on the speaker so long and steadily
 as to prove that his large grey, ox-like eyes were not quite so
 insignificant as the rest of his face. When silence had fallen he said
-with marked respect: “Mr. Bohun, yours is the only theory yet propounded
+with marked respect: “Mr. Wilfred, yours is the only theory yet propounded
 which holds water every way and is essentially unassailable. I think,
 therefore, that you deserve to be told, on my positive knowledge, that
 it is not the true one.” And with that the old little man walked away
@@ -450,7 +449,7 @@ and stared again at the hammer.
 “That fellow seems to know more than he ought to,” whispered the doctor
 peevishly to Wilfred. “Those popish priests are deucedly sly.”
 
-“No, no,” said Bohun, with a sort of wild fatigue. “It was the lunatic.
+“No, no,” said Wilfred, with a sort of wild fatigue. “It was the lunatic.
 It was the lunatic.”
 
 The group of the two clerics and the doctor had fallen away from
@@ -484,7 +483,7 @@ stifled voice; “mortally speaking, I think the man died alone.”
 Wilfred made a sudden forward movement and peered at him with burning
 eyes.
 
-“Do you mean to say, Barnes,” came the sharp voice of the cobbler, “that
+“Do you mean to say, Simeon,” came the sharp voice of the cobbler, “that
 the hammer jumped up of itself and knocked the man down?”
 
 “Oh, you gentlemen may stare and snigger,” cried Simeon; “you clergymen
@@ -503,20 +502,20 @@ slight smile.
 “You are not outside His,” answered the smith; “see you to it,” and,
 turning his broad back, he went into the house.
 
-The shaken Wilfred was led away by Father Brown, who had an easy and
-friendly way with him. “Let us get out of this horrid place, Mr. Bohun,”
+The shaken Wilfred was led away by Father Paul, who had an easy and
+friendly way with him. “Let us get out of this horrid place, Mr. Wilfred,”
  he said. “May I look inside your church? I hear it’s one of the oldest
 in England. We take some interest, you know,” he added with a comical
 grimace, “in old English churches.”
 
-Wilfred Bohun did not smile, for humour was never his strong point. But
+Wilfred did not smile, for humour was never his strong point. But
 he nodded rather eagerly, being only too ready to explain the
 Gothic splendours to someone more likely to be sympathetic than the
 Presbyterian blacksmith or the atheist cobbler.
 
 “By all means,” he said; “let us go in at this side.” And he led the way
 into the high side entrance at the top of the flight of steps. Father
-Brown was mounting the first step to follow him when he felt a hand on
+Paul was mounting the first step to follow him when he felt a hand on
 his shoulder, and turned to behold the dark, thin figure of the doctor,
 his face darker yet with suspicion.
 
@@ -533,7 +532,7 @@ extreme limit of my custom. I will give you two very large hints.”
 
 “Well, sir?” said the doctor gloomily.
 
-“First,” said Father Brown quietly, “the thing is quite in your
+“First,” said Father Paul quietly, “the thing is quite in your
 own province. It is a matter of physical science. The blacksmith is
 mistaken, not perhaps in saying that the blow was divine, but certainly
 in saying that it came by a miracle. It was no miracle, doctor, except
@@ -552,7 +551,7 @@ across country?”
 
 “Yes,” said the doctor, “I remember that.”
 
-“Well,” added Father Brown, with a broad smile, “that fairy tale was the
+“Well,” added Father Paul, with a broad smile, “that fairy tale was the
 nearest thing to the real truth that has been said today.” And with that
 he turned his back and stumped up the steps after the curate.
 
@@ -564,21 +563,21 @@ with the angel. The little Latin priest explored and admired everything
 exhaustively, talking cheerfully but in a low voice all the time.
 When in the course of his investigation he found the side exit and the
 winding stair down which Wilfred had rushed to find his brother dead,
-Father Brown ran not down but up, with the agility of a monkey, and his
+Father Paul ran not down but up, with the agility of a monkey, and his
 clear voice came from an outer platform above.
 
-“Come up here, Mr. Bohun,” he called. “The air will do you good.”
+“Come up here, Mr. Wilfred,” he called. “The air will do you good.”
 
-Bohun followed him, and came out on a kind of stone gallery or balcony
+Wilfred followed him, and came out on a kind of stone gallery or balcony
 outside the building, from which one could see the illimitable plain
 in which their small hill stood, wooded away to the purple horizon
 and dotted with villages and farms. Clear and square, but quite small
 beneath them, was the blacksmith’s yard, where the inspector still stood
 taking notes and the corpse still lay like a smashed fly.
 
-“Might be the map of the world, mightn’t it?” said Father Brown.
+“Might be the map of the world, mightn’t it?” said Father Paul.
 
-“Yes,” said Bohun very gravely, and nodded his head.
+“Yes,” said Wilfred very gravely, and nodded his head.
 
 Immediately beneath and about them the lines of the Gothic building
 plunged outwards into the void with a sickening swiftness akin to
@@ -602,7 +601,7 @@ whole of that old church, as tall and rich as a cathedral, seemed to sit
 upon the sunlit country like a cloudburst.
 
 “I think there is something rather dangerous about standing on these
-high places even to pray,” said Father Brown. “Heights were made to be
+high places even to pray,” said Father Paul. “Heights were made to be
 looked at, not to be looked from.”
 
 “Do you mean that one may fall over,” asked Wilfred.
@@ -610,16 +609,16 @@ looked at, not to be looked from.”
 “I mean that one’s soul may fall if one’s body doesn’t,” said the other
 priest.
 
-“I scarcely understand you,” remarked Bohun indistinctly.
+“I scarcely understand you,” remarked Wilfred indistinctly.
 
-“Look at that blacksmith, for instance,” went on Father Brown calmly; “a
+“Look at that blacksmith, for instance,” went on Father Paul calmly; “a
 good man, but not a Christian--hard, imperious, unforgiving. Well, his
 Scotch religion was made up by men who prayed on hills and high crags,
 and learnt to look down on the world more than to look up at heaven.
 Humility is the mother of giants. One sees great things from the valley;
 only small things from the peak.”
 
-“But he--he didn’t do it,” said Bohun tremulously.
+“But he--he didn’t do it,” said Wilfred tremulously.
 
 “No,” said the other in an odd voice; “we know he didn’t do it.”
 
@@ -641,7 +640,7 @@ insects. He saw one especially strutting just below him, insolent and
 evident by a bright green hat--a poisonous insect.”
 
 Rooks cawed round the corners of the belfry; but there was no other
-sound till Father Brown went on.
+sound till Father Paul went on.
 
 “This also tempted him, that he had in his hand one of the most awful
 engines of nature; I mean gravitation, that mad and quickening rush by
@@ -651,17 +650,17 @@ toss a pebble over this parapet it would be something like a bullet
 by the time it struck him. If I were to drop a hammer--even a small
 hammer--”
 
-Wilfred Bohun threw one leg over the parapet, and Father Brown had him
+Wilfred threw one leg over the parapet, and Father Paul had him
 in a minute by the collar.
 
 “Not by that door,” he said quite gently; “that door leads to hell.”
 
-Bohun staggered back against the wall, and stared at him with frightful
+Wilfred staggered back against the wall, and stared at him with frightful
 eyes.
 
 “How do you know all this?” he cried. “Are you a devil?”
 
-“I am a man,” answered Father Brown gravely; “and therefore have all
+“I am a man,” answered Father Paul gravely; “and therefore have all
 devils in my heart. Listen to me,” he said after a short pause. “I know
 what you did--at least, I can guess the great part of it. When you left
 your brother you were racked with no unrighteous rage, to the extent
@@ -669,7 +668,7 @@ even that you snatched up a small hammer, half inclined to kill him with
 his foulness on his mouth. Recoiling, you thrust it under your buttoned
 coat instead, and rushed into the church. You pray wildly in many
 places, under the angel window, upon the platform above, and a higher
-platform still, from which you could see the colonel’s Eastern hat like
+platform still, from which you could see Norman’s Eastern hat like
 the back of a green beetle crawling about. Then something snapped in
 your soul, and you let God’s thunderbolt fall.”
 
@@ -689,6 +688,6 @@ to find in assassins. And now come down into the village, and go your
 own way as free as the wind; for I have said my last word.”
 
 They went down the winding stairs in utter silence, and came out into
-the sunlight by the smithy. Wilfred Bohun carefully unlatched the wooden
+the sunlight by the smithy. Wilfred carefully unlatched the wooden
 gate of the yard, and going up to the inspector, said: “I wish to give
 myself up; I have killed my brother.”

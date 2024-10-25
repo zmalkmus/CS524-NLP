@@ -52,13 +52,13 @@ The archaeologist and the architect were left on the great stone
 steps smiling at each other; but whatever their common interests,
 they presented a considerable personal contrast, and the fanciful
 might even have found some contradiction in each considered
-individually. The former, a Mr. James Haddow, came from a drowsy den
+individually. The former, a Mr. Haddow, came from a drowsy den
 in the Inns of Court, full of leather and parchment, for the law was
 his profession and history only his hobby; he was indeed, among
 other things, the solicitor and agent of the Prior's Park estate.
 But he himself was far from drowsy and seemed remarkably wide awake,
 with shrewd and prominent blue eyes, and red hair brushed as neatly
-as his very neat costume. The latter, whose name was Leonard Crane,
+as his very neat costume. The latter, whose name was Leonard,
 came straight from a crude and almost cockney office of builders and
 house agents in the neighboring suburb, sunning itself at the end of
 a new row of jerry-built houses with plans in very bright colors and
@@ -82,7 +82,7 @@ things."
 "Yes," replied Haddow, grimly.  "An archaeologist is a man who
 studies old things and finds they are new."
 
-Crane looked at him steadily for a moment and then smiled again.
+Leonard looked at him steadily for a moment and then smiled again.
 
 "Dare one suggest," he said, "that some of the things we have been
 talking about are among the old things that turn out not to be old?"
@@ -112,10 +112,10 @@ hole in the wall,' and probably referred to some quite trivial
 accident. That's what I mean when I say that we don't so much find
 old things as we find new ones."
 
-Crane seemed to have grown somewhat inattentive to the little
+Leonard seemed to have grown somewhat inattentive to the little
 lecture on antiquities and novelties, and the cause of his
 restlessness was soon apparent, and indeed approaching. Lord
-Bulmer's sister, Juliet Bray, was coming slowly across the lawn,
+Bulmer's sister, Juliet, was coming slowly across the lawn,
 accompanied by one gentleman and followed by two others. The young
 architect was in the illogical condition of mind in which he
 preferred three to one.
@@ -137,11 +137,11 @@ bulk, and he wore a red flower in his buttonhole. Of the two men
 walking behind one was also bald, but in a more partial and also a
 more premature fashion, for his drooping mustache was still yellow,
 and if his eyes were somewhat heavy it was with languor and not with
-age. It was Horne Fisher, and he was talking as easily and idly
+age. It was Horne, and he was talking as easily and idly
 about everything as he always did. His companion was a more
 striking, and even more sinister, figure, and he had the added
 importance of being Lord Bulmer's oldest and most intimate friend. He
-was generally known with a severe simplicity as Mr. Brain; but it was
+was generally known with a severe simplicity as Mr. Brian; but it was
 understood that he had been a judge and police official in India, and
 that he had enemies, who had represented his measures against crime as
 themselves almost criminal. He was a brown skeleton of a man with dark,
@@ -156,13 +156,13 @@ says they don't go with it; but we don't care about that. It's
 freezing already, and we don't often get such a chance in England."
 
 "Even in India we don't exactly skate all the year round," observed
-Mr. Brain.
+Mr. Brian.
 
 "And even Italy is not primarily associated with ice," said the
 Italian.
 
-"Italy is primarily associated with ices," remarked Mr. Horne
-Fisher. "I mean with ice cream men. Most people in this country
+"Italy is primarily associated with ices," remarked Mr. Horne.
+"I mean with ice cream men. Most people in this country
 imagine that Italy is entirely populated with ice cream men and
 organ grinders. There certainly are a lot of them; perhaps they're
 an invading army in disguise."
@@ -172,12 +172,12 @@ diplomacy?" asked the prince, with a slightly scornful smile. "An
 army of organ grinders might pick up hints, and their monkeys might
 pick up all sort of things."
 
-"The organs are organized in fact," said the flippant Mr. Fisher.
+"The organs are organized in fact," said the flippant Mr. Horne.
 "Well, I've known it pretty cold before now in Italy and even in
 India, up on the Himalayan slopes. The ice on our own little round
 pond will be quite cozy by comparison."
 
-Juliet Bray was an attractive lady with dark hair and eyebrows and
+Juliet was an attractive lady with dark hair and eyebrows and
 dancing eyes, and there was a geniality and even generosity in her
 rather imperious ways. In most matters she could command her
 brother, though that nobleman, like many other men of vague ideas,
@@ -223,9 +223,9 @@ was the only modern figure among them.
 "Aren't you going to dress up?" asked Juliet, indignantly shaking at
 him a horned and towering blue headdress of the fourteenth century
 which framed her face very becomingly, fantastic as it was.
-"Everybody here has to be in the Middle Ages. Even Mr. Brain has put
+"Everybody here has to be in the Middle Ages. Even Mr. Brian has put
 on a sort of brown dressing gown and says he's a monk; and Mr.
-Fisher got hold of some old potato sacks in the kitchen and sewed
+Horne got hold of some old potato sacks in the kitchen and sewed
 them together; he's supposed to be a monk, too. As to the prince,
 he's perfectly glorious, in great crimson robes as a cardinal. He
 looks as if he could poison everybody. You simply must be
@@ -255,7 +255,7 @@ the spirit that is called fey. At the time it merely crossed a few
 people's minds that he might possibly be drunk.
 
 As he strode toward his sister the first figure he passed was that
-of Leonard Crane, clad in Lincoln green, with the horn and baldrick
+of Leonard, clad in Lincoln green, with the horn and baldrick
 and sword appropriate to Robin Hood; for he was standing nearest to
 the lady, where, indeed, he might have been found during a
 disproportionate part of the time. He had displayed one of his
@@ -266,7 +266,7 @@ forward with the lunge in the proper fencing fashion, and making a
 somewhat too familiar Shakespearean quotation about a rodent and a
 Venetian coin.
 
-Probably in Crane also there was a subdued excitement just then;
+Probably in Leonard also there was a subdued excitement just then;
 anyhow, in one flash he had drawn his own sword and parried; and
 then suddenly, to the surprise of everyone, Bulmer's weapon seemed
 to spring out of his hand into the air and rolled away on the
@@ -285,7 +285,7 @@ all the skating as it is, and I doubt if the ice will hold till
 to-morrow night. I think I shall get up early and have a spin by
 myself."
 
-"You won't be disturbed with my company," said Horne Fisher, in his
+"You won't be disturbed with my company," said Horne, in his
 weary fashion. "If I have to begin the day with ice, in the American
 fashion, I prefer it in smaller quantities. But no early hours for
 me in December. The early bird catches the cold."
@@ -303,7 +303,7 @@ went back to their own houses in motors or on foot; the legal and
 archeological gentleman had returned to the Inns of Court by a late
 train, to get a paper called for during his consultation with his
 client; and most of the other guests were drifting and lingering at
-various stages on their way up to bed. Horne Fisher, as if to
+various stages on their way up to bed. Horne, as if to
 deprive himself of any excuse for his refusal of early rising, had
 been the first to retire to his room; but, sleepy as he looked, he
 could not sleep. He had picked up from a table the book of
@@ -374,7 +374,7 @@ window, a figure was walking slowly and softly, but with great
 composure--a stately figure in robes of a splendid scarlet; it was
 the Italian prince, still in his cardinal's costume. Most of the
 company had indeed lived in their costumes for the last day or two,
-and Fisher himself had assumed his frock of sacking as a convenient
+and Horne himself had assumed his frock of sacking as a convenient
 dressing gown; but there seemed, nevertheless, something unusually
 finished and formal, in the way of an early bird, about this
 magnificent red cockatoo. It was as if the early bird had been up
@@ -386,28 +386,28 @@ brass.
 
 "We had better discuss it downstairs," said Prince Borodino.
 
-Fisher ran downstairs, and encountered the great, red-robed figure
+Horne ran downstairs, and encountered the great, red-robed figure
 entering the doorway and blocking the entrance with his bulk.
 
-"Did you hear that cry?" demanded Fisher.
+"Did you hear that cry?" demanded Horne.
 
 "I heard a noise and I came out," answered the diplomatist, and his
 face was too dark in the shadow for its expression to be read.
 
-"It was Bulmer's voice," insisted Fisher.  "I'll swear it was
+"It was Bulmer's voice," insisted Horne.  "I'll swear it was
 Bulmer's voice."
 
 "Did you know him well?" asked the other.
 
 The question seemed irrelevant, though it was not illogical, and
-Fisher could only answer in a random fashion that he knew Lord
+Horne could only answer in a random fashion that he knew Lord
 Bulmer only slightly.
 
 "Nobody seems to have known him well," continued the Italian, in
-level tones. "Nobody except that man Brain. Brain is rather older
+level tones. "Nobody except that man Brian. Brian is rather older
 than Bulmer, but I fancy they shared a good many secrets."
 
-Fisher moved abruptly, as if waking from a momentary trance, and
+Horne moved abruptly, as if waking from a momentary trance, and
 said, in a new and more vigorous voice, "But look here, hadn't we
 better get outside and see if anything has happened."
 
@@ -423,7 +423,7 @@ yesterday brought back the mystery of to-day.
 skating quite early on purpose. Did he call out because he landed in
 the water, do you think?"
 
-Fisher looked puzzled.  "Bulmer was the last man to bellow like that
+Horne looked puzzled.  "Bulmer was the last man to bellow like that
 because he got his boots wet. And that's all he could do here; the
 water would hardly come up to the calf of a man of his size. You can
 see the flat weeds on the floor of the lake, as if it were through a
@@ -436,7 +436,7 @@ this path, and calling for clean boots."
 diplomatist. "In that case the voice must have come out of the
 wood."
 
-"I'll swear it didn't come out of the house," said Fisher; and the
+"I'll swear it didn't come out of the house," said Horne; and the
 two disappeared together into the twilight of wintry trees.
 
 The plantation stood dark against the fiery colors of sunrise, a
@@ -452,7 +452,7 @@ that his bed had been slept in and his skates and his fancy costume
 were gone, as if he had risen early for the purpose he had himself
 avowed. But from the top of the house to the bottom, from the walls
 round the park to the pond in the center, there was no trace of Lord
-Bulmer, dead or alive. Horne Fisher realized that a chilling
+Bulmer, dead or alive. Horne realized that a chilling
 premonition had already prevented him from expecting to find the man
 alive. But his bald brow was wrinkled over an entirely new and
 unnatural problem, in not finding the man at all.
@@ -463,7 +463,7 @@ dismissed it. It was inconsistent with the unmistakable voice heard
 at daybreak, and with many other practical obstacles. There was only
 one gateway in the ancient and lofty wall round the small park; the
 lodge keeper kept it locked till late in the morning, and the lodge
-keeper had seen no one pass. Fisher was fairly sure that he had
+keeper had seen no one pass. Horne was fairly sure that he had
 before him a mathematical problem in an inclosed space. His instinct
 had been from the first so attuned to the tragedy that it would have
 been almost a relief to him to find the corpse. He would have been
@@ -476,10 +476,10 @@ individual and isolated experiments. He often found a figure
 following him like his shadow, in silent and almost secret clearings
 in the plantation or outlying nooks and corners of the old wall. The
 dark-mustached mouth was as mute as the deep eyes were mobile,
-darting incessantly hither and thither, but it was clear that Brain
+darting incessantly hither and thither, but it was clear that Brian
 of the Indian police had taken up the trail like an old hunter after
 a tiger. Seeing that he was the only personal friend of the vanished
-man, this seemed natural enough, and Fisher resolved to deal frankly
+man, this seemed natural enough, and Horne resolved to deal frankly
 with him.
 
 "This silence is rather a social strain," he said.  "May I break the
@@ -487,10 +487,10 @@ ice by talking about the weather?--which, by the way, has already
 broken the ice. I know that breaking the ice might be a rather
 melancholy metaphor in this case."
 
-"I don't think so," replied Brain, shortly.  "I don't fancy the ice
+"I don't think so," replied Brian, shortly.  "I don't fancy the ice
 had much to do with it. I don't see how it could."
 
-"What would you propose doing?" asked Fisher.
+"What would you propose doing?" asked Horne.
 
 "Well, we've sent for the authorities, of course, but I hope to find
 something out before they come," replied the Anglo-Indian. "I can't
@@ -510,20 +510,20 @@ find, before we go after a fellow with an alibi in the Inner Temple.
 What's become of that fellow in green--the architect dressed up as
 a forester? I haven't seem him about."
 
-Mr. Brain managed to secure his assembly of all the distracted
+Mr. Brian managed to secure his assembly of all the distracted
 company before the arrival of the police. But when he first began
 to comment once more on the young architect's delay in putting in
 an appearance, he found himself in the presence of a minor mystery,
 and a psychological development of an entirely unexpected kind.
 
-Juliet Bray had confronted the catastrophe of her brother's
+Juliet had confronted the catastrophe of her brother's
 disappearance with a somber stoicism in which there was, perhaps,
 more paralysis than pain; but when the other question came to the
 surface she was both agitated and angry.
 
-"We don't want to jump to any conclusions about anybody," Brain was
+"We don't want to jump to any conclusions about anybody," Brian was
 saying in his staccato style. "But we should like to know a little
-more about Mr. Crane. Nobody seems to know much about him, or where
+more about Mr. Leonard. Nobody seems to know much about him, or where
 he comes from. And it seems a sort of coincidence that yesterday he
 actually crossed swords with poor Bulmer, and could have stuck him,
 too, since he showed himself the better swordsman. Of course, that
@@ -533,7 +533,7 @@ anybody. Till the police come we are only a pack of very amateur
 sleuthhounds."
 
 "And I think you're a pack of snobs," said Juliet.  "Because Mr.
-Crane is a genius who's made his own way, you try to suggest he's a
+Leonard is a genius who's made his own way, you try to suggest he's a
 murderer without daring to say so. Because he wore a toy sword and
 happened to know how to use it, you want us to believe he used it
 like a bloodthirsty maniac for no reason in the world. And because
@@ -547,12 +547,12 @@ detached itself from the gray background of the trees, and came
 toward them as she spoke.
 
 He approached the group slowly, but with composure; but he was
-decidedly pale, and the eyes of Brain and Fisher had already taken
+decidedly pale, and the eyes of Brian and Horne had already taken
 in one detail of the green-clad figure more clearly than all the
 rest. The horn still swung from his baldrick, but the sword was
 gone.
 
-Rather to the surprise of the company, Brain did not follow up the
+Rather to the surprise of the company, Brian did not follow up the
 question thus suggested; but, while retaining an air of leading the
 inquiry, had also an appearance of changing the subject.
 
@@ -560,21 +560,21 @@ inquiry, had also an appearance of changing the subject.
 question I want to ask to begin with. Did anybody here actually see
 Lord Bulmer this morning?"
 
-Leonard Crane turned his pale face round the circle of faces till he
+Leonard turned his pale face round the circle of faces till he
 came to Juliet's; then he compressed his lips a little and said:
 
 "Yes, I saw him."
 
-"Was he alive and well?" asked Brain, quickly.  "How was he
+"Was he alive and well?" asked Brian, quickly.  "How was he
 dressed?"
 
-"He appeared exceedingly well," replied Crane, with a curious
+"He appeared exceedingly well," replied Leonard, with a curious
 intonation. "He was dressed as he was yesterday, in that purple
 costume copied from the portrait of his ancestor in the sixteenth
 century. He had his skates in his hand."
 
 "And his sword at his side, I suppose," added the questioner. "Where
-is your own sword, Mr. Crane?"
+is your own sword, Mr. Leonard?"
 
 "I threw it away."
 
@@ -594,35 +594,35 @@ something of a drama; and it was a strange and sinister thought that
 in the gray daybreak the same figures in the same posture might have
 been repeated as a tragedy.
 
-"Did you quarrel with him?" asked Brain, suddenly.
+"Did you quarrel with him?" asked Brian, suddenly.
 
 "Yes," replied the immovable man in green.  "Or he quarreled with
 me."
 
 "Why did he quarrel with you?" asked the investigator; and Leonard
-Crane made no reply.
+made no reply.
 
-Horne Fisher, curiously enough, had only given half his attention to
+Horne, curiously enough, had only given half his attention to
 this crucial cross-examination. His heavy-lidded eyes had languidly
 followed the figure of Prince Borodino, who at this stage had
 strolled away toward the fringe of the wood; and, after a pause, as
 of meditation, had disappeared into the darkness of the trees.
 
-He was recalled from his irrelevance by the voice of Juliet Bray,
+He was recalled from his irrelevance by the voice of Juliet,
 which rang out with an altogether new note of decision:
 
 "If that is the difficulty, it had best be cleared up. I am engaged
-to Mr. Crane, and when we told my brother he did not approve of it;
+to Mr. Leonard, and when we told my brother he did not approve of it;
 that is all."
 
-Neither Brain nor Fisher exhibited any surprise, but the former
+Neither Brian nor Horne exhibited any surprise, but the former
 added, quietly:
 
 "Except, I suppose, that he and your brother went off into the wood
-to discuss it, where Mr. Crane mislaid his sword, not to mention his
+to discuss it, where Mr. Leonard mislaid his sword, not to mention his
 companion."
 
-"And may I ask," inquired Crane, with a certain flicker of mockery
+"And may I ask," inquired Leonard, with a certain flicker of mockery
 passing over his pallid features, "what I am supposed to have done
 with either of them? Let us adopt the cheerful thesis that I am a
 murderer; it has yet to be shown that I am a magician. If I ran your
@@ -634,11 +634,11 @@ a trifling matter of turning it into a milk-white hind?"
 abrupt authority. "It doesn't make it look better for you that you
 can joke about the loss."
 
-Fisher's dreamy, and even dreary, eye was still on the edge of the
+Horne's dreamy, and even dreary, eye was still on the edge of the
 wood behind, and he became conscious of masses of dark red, like a
 stormy sunset cloud, glowing through the gray network of the thin
 trees, and the prince in his cardinal's robes reemerged on to the
-pathway. Brain had had half a notion that the prince might have gone
+pathway. Brian had had half a notion that the prince might have gone
 to look for the lost rapier. But when he reappeared he was carrying
 in his hand, not a sword, but an ax.
 
@@ -651,9 +651,9 @@ clothes that were more funereal or at least more formal. But somehow
 at the moment this seemed like a second masquerade, more artificial
 and frivolous than the first. And as they reconciled themselves to
 their ridiculous trappings, a curious sensation had come over some
-of them, notably over the more sensitive, like Crane and Fisher and
+of them, notably over the more sensitive, like Leonard and Horne and
 Juliet, but in some degree over everybody except the practical Mr.
-Brain. It was almost as if they were the ghosts of their own
+Brian. It was almost as if they were the ghosts of their own
 ancestors haunting that dark wood and dismal lake, and playing some
 old part that they only half remembered. The movements of those
 colored figures seemed to mean something that had been settled long
@@ -668,15 +668,15 @@ not have named a reason, but the two swords seemed indeed to have
 become toy swords and the whole tale of them broken and tossed away
 like a toy. Borodino looked like the Old World headsman, clad in
 terrible red, and carrying the ax for the execution of the criminal.
-And the criminal was not Crane.
+And the criminal was not Leonard.
 
-Mr. Brain of the Indian police was glaring at the new object, and it
+Mr. Brian of the Indian police was glaring at the new object, and it
 was a moment or two before he spoke, harshly and almost hoarsely.
 
 "What are you doing with that?" he asked.  "Seems to be a woodman's
 chopper."
 
-"A natural association of ideas," observed Horne Fisher.  "If you
+"A natural association of ideas," observed Horne.  "If you
 meet a cat in a wood you think it's a wildcat, though it may have
 just strolled from the drawing-room sofa. As a matter of fact, I
 happen to know that is not the woodman's chopper. It's the kitchen
@@ -686,30 +686,30 @@ getting the potato sacks with which I reconstructed a mediaeval
 hermit."
 
 "All the same, it is not without interest," remarked the prince,
-holding out the instrument to Fisher, who took it and examined it
+holding out the instrument to Horne, who took it and examined it
 carefully. "A butcher's cleaver that has done butcher's work."
 
-"It was certainly the instrument of the crime," assented Fisher, in
+"It was certainly the instrument of the crime," assented Horne, in
 a low voice.
 
-Brain was staring at the dull blue gleam of the ax head with fierce
+Brian was staring at the dull blue gleam of the ax head with fierce
 and fascinated eyes. "I don't understand you," he said. "There is
 no--there are no marks on it."
 
-"It has shed no blood," answered Fisher, "but for all that it has
+"It has shed no blood," answered Horne, "but for all that it has
 committed a crime. This is as near as the criminal came to the crime
 when he committed it."
 
 "What do you mean?"
 
-"He was not there when he did it," explained Fisher.  "It's a poor
+"He was not there when he did it," explained Horne.  "It's a poor
 sort of murderer who can't murder people when he isn't there."
 
 "You seem to be talking merely for the sake of mystification," said
-Brain. "If you have any practical advice to give you might as well
+Brian. "If you have any practical advice to give you might as well
 make it intelligible."
 
-"The only practical advice I can suggest," said Fisher,
+"The only practical advice I can suggest," said Horne,
 thoughtfully, "is a little research into local topography and
 nomenclature. They say there used to be a Mr. Prior, who had a farm
 in this neighborhood. I think some details about the domestic life
@@ -717,23 +717,23 @@ of the late Mr. Prior would throw a light on this terrible
 business."
 
 "And you have nothing more immediate than your topography to offer,"
-said Brain, with a sneer, "to help me avenge my friend?"
+said Brian, with a sneer, "to help me avenge my friend?"
 
-"Well," said Fisher, "I should find out the truth about the Hole in
+"Well," said Horne, "I should find out the truth about the Hole in
 the Wall."
 
         *       *       *
 
 
 That night, at the close of a stormy twilight and under a strong
-west wind that followed the breaking of the frost, Leonard Crane was
+west wind that followed the breaking of the frost, Leonard was
 wending his way in a wild rotatory walk round and round the high,
 continuous wall that inclosed the little wood. He was driven by a
 desperate idea of solving for himself the riddle that had clouded
 his reputation and already even threatened his liberty. The police
 authorities, now in charge of the inquiry, had not arrested him, but
 he knew well enough that if he tried to move far afield he would be
-instantly arrested. Horne Fisher's fragmentary hints, though he had
+instantly arrested. Horne's fragmentary hints, though he had
 refused to expand them as yet, had stirred the artistic temperament
 of the architect to a sort of wild analysis, and he was resolved to
 read the hieroglyph upside down and every way until it made sense.
@@ -773,16 +773,16 @@ the house pale in the moon, and the same silver touching the very
 pagan and naked marble nymph in the middle of the pond. Rather to
 his surprise, he found another figure there beside the statue,
 sitting almost equally motionless; and the same silver pencil traced
-the wrinkled brow and patient face of Horne Fisher, still dressed as
+the wrinkled brow and patient face of Horne, still dressed as
 a hermit and apparently practicing something of the solitude of a
-hermit. Nevertheless, he looked up at Leonard Crane and smiled,
+hermit. Nevertheless, he looked up at Leonard and smiled,
 almost as if he had expected him.
 
-"Look here," said Crane, planting himself in front of him, "can you
+"Look here," said Leonard, planting himself in front of him, "can you
 tell me anything about this business?"
 
 "I shall soon have to tell everybody everything about it," replied
-Fisher, "but I've no objection to telling you something first. But,
+Horne, "but I've no objection to telling you something first. But,
 to begin with, will you tell me something? What really happened when
 you met Bulmer this morning? You did throw away your sword, but you
 didn't kill him."
@@ -802,10 +802,10 @@ the truth is painfully simple. There is such a thing as the
 coarseness of a gentleman. And it is the most horrible thing in
 humanity."
 
-"I know," said Fisher.  "The Renaissance nobles of the Tudor time
+"I know," said Horne.  "The Renaissance nobles of the Tudor time
 were like that."
 
-"It is odd that you should say that," Crane went on. "For while we
+"It is odd that you should say that," Leonard went on. "For while we
 were talking there came on me a curious feeling that we were
 repeating some scene of the past, and that I was really some outlaw,
 found in the woods like Robin Hood, and that he had really stepped
@@ -815,7 +815,7 @@ neither feared God nor regarded man. I defied him, of course, and
 walked away. I might really have killed him if I had not walked
 away."
 
-"Yes," said Fisher, nodding, "his ancestor was in possession and he
+"Yes," said Horne, nodding, "his ancestor was in possession and he
 was in possession, and this is the end of the story. It all fits
 in."
 
@@ -823,7 +823,7 @@ in."
 can't make head or tail of it. You tell me to look for the secret in
 the hole in the wall, but I can't find any hole in the wall."
 
-"There isn't any," said Fisher.  "That's the secret." After
+"There isn't any," said Horne.  "That's the secret." After
 reflecting a moment, he added: "Unless you call it a hole in the
 wall of the world. Look here; I'll tell you if you like, but I'm
 afraid it involves an introduction. You've got to understand one of
@@ -858,10 +858,10 @@ smile, to the fact that it was pronounced Holiwell by the most
 ignorant and old-fashioned of the poor. But it is spelled wrong and
 pronounced right."
 
-"Do you mean to say," asked Crane, quickly, "that there really was a
+"Do you mean to say," asked Leonard, quickly, "that there really was a
 well?"
 
-"There is a well," said Fisher, "and the truth lies at the bottom of
+"There is a well," said Horne, "and the truth lies at the bottom of
 it."
 
 As he spoke he stretched out his hand and pointed toward the sheet
@@ -879,11 +879,11 @@ a fury, stabbed him and flung his body into the well, whither, after
 four hundred years, it has been followed by an heir of the usurper,
 clad in the same purple and walking the world with the same pride."
 
-"But how did it happen," demanded Crane, "that for the first time
+"But how did it happen," demanded Leonard, "that for the first time
 Bulmer fell in at that particular spot?"
 
 "Because the ice was only loosened at that particular spot, by the
-only man who knew it," answered Horne Fisher. "It was cracked
+only man who knew it," answered Horne. "It was cracked
 deliberately, with the kitchen chopper, at that special place; and I
 myself heard the hammering and did not understand it. The place had
 been covered with an artificial lake, if only because the whole
@@ -897,7 +897,7 @@ And this man was determined to trace it."
 "What man?" asked the other, with a shadow of the answer in his
 mind.
 
-"The only man who has an alibi," replied Fisher.  "James Haddow, the
+"The only man who has an alibi," replied Horne.  "Haddow, the
 antiquarian lawyer, left the night before the fatality, but he left
 that black star of death on the ice. He left abruptly, having
 previously proposed to stay; probably, I think, after an ugly scene
@@ -917,7 +917,7 @@ reward."
 "And how did you get on the track of all this hidden history?" asked
 the young architect.
 
-A cloud came across the brow of Horne Fisher.  "I knew only too much
+A cloud came across the brow of Horne.  "I knew only too much
 about it already," he said, "and, after all, it's shameful for me to
 be speaking lightly of poor Bulmer, who has paid his penalty; but
 the rest of us haven't. I dare say every cigar I smoke and every

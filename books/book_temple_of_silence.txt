@@ -1,14 +1,14 @@
 VII. THE TEMPLE OF SILENCE
 
-Harold March and the few who cultivated the friendship of Horne
-Fisher, especially if they saw something of him in his own social
+Harold and the few who cultivated the friendship of Horne, 
+especially if they saw something of him in his own social
 setting, were conscious of a certain solitude in his very
 sociability. They seemed to be always meeting his relations and
 never meeting his family. Perhaps it would be truer to say that they
 saw much of his family and nothing of his home. His cousins and
 connections ramified like a labyrinth all over the governing class
 of Great Britain, and he seemed to be on good, or at least on
-good-humored, terms with most of them. For Horne Fisher was
+good-humored, terms with most of them. For Horne was
 remarkable for a curious impersonal information and interest
 touching all sorts of topics, so that one could sometimes fancy that
 his culture, like his colorless, fair mustache and pale, drooping
@@ -24,24 +24,24 @@ title) about the pantomime boys of the last four decades. And as the
 first was his first cousin, the second his second cousin, the third
 his brother-in-law, and the fourth his uncle by marriage, this
 conversational versatility certainly served in one sense to create a
-happy family. But March never seemed to get a glimpse of that
+happy family. But Harold never seemed to get a glimpse of that
 domestic interior to which men of the middle classes are accustomed
 in their friendships, and which is indeed the foundation of
 friendship and love and everything else in any sane and stable
-society. He wondered whether Horne Fisher was both an orphan and an
+society. He wondered whether Horne was both an orphan and an
 only child.
 
 It was, therefore, with something like a start that he found that
-Fisher had a brother, much more prosperous and powerful than
-himself, though hardly, March thought, so entertaining. Sir Henry
-Harland Fisher, with half the alphabet after his name, was something
+Horne had a brother, much more prosperous and powerful than
+himself, though hardly, Harold thought, so entertaining. Sir Henry,
+with half the alphabet after his name, was something
 at the Foreign Office far more tremendous than the Foreign
 Secretary. Apparently, it ran in the family, after all; for it
-seemed there was another brother, Ashton Fisher, in India, rather
-more tremendous than the Viceroy. Sir Henry Fisher was a heavier,
+seemed there was another brother, Ashton, in India, rather
+more tremendous than the Viceroy. Sir Henry was a heavier,
 but handsomer edition of his brother, with a brow equally bald, but
 much more smooth. He was very courteous, but a shade patronizing,
-not only to March, but even, as March fancied, to Horne Fisher as
+not only to Harold, but even, as Harold fancied, to Horne as
 well. The latter gentleman, who had many intuitions about the
 half-formed thoughts of others, glanced at the topic himself as they
 came away from the great house in Berkeley Square.
@@ -49,9 +49,9 @@ came away from the great house in Berkeley Square.
 "Why, don't you know," he observed quietly, "that I am the fool of
 the family?"
 
-"It must be a clever family," said Harold March, with a smile.
+"It must be a clever family," said Harold, with a smile.
 
-"Very gracefully expressed," replied Fisher; "that is the best of
+"Very gracefully expressed," replied Horne; "that is the best of
 having a literary training. Well, perhaps it is an exaggeration to
 say I am the fool of the family. It's enough to say I am the failure
 of the family."
@@ -65,9 +65,9 @@ cheers and chairing round the town. Since then, of course, I've been
 rather under a cloud."
 
 "I'm afraid I don't quite understand the 'of course,'" answered
-March, laughing.
+Harold, laughing.
 
-"That part of it isn't worth understanding," said Fisher.  "But as a
+"That part of it isn't worth understanding," said Horne.  "But as a
 matter of fact, old chap, the other part of it was rather odd and
 interesting. Quite a detective story in its way, as well as the
 first lesson I had in what modern politics are made of. If you like,
@@ -75,7 +75,7 @@ I'll tell you all about it." And the following, recast in a less
 allusive and conversational manner, is the story that he told.
 
 
-Nobody privileged of late years to meet Sir Henry Harland Fisher
+Nobody privileged of late years to meet Sir Henry
 would believe that he had ever been called Harry. But, indeed, he
 had been boyish enough when a boy, and that serenity which shone on
 him through life, and which now took the form of gravity, had once
@@ -83,8 +83,8 @@ taken the form of gayety. His friends would have said that he was
 all the more ripe in his maturity for having been young in his
 youth. His enemies would have said that he was still light minded,
 but no longer light hearted. But in any case, the whole of the story
-Horne Fisher had to tell arose out of the accident which had made
-young Harry Fisher private secretary to Lord Saltoun. Hence his
+Horne had to tell arose out of the accident which had made
+young Harry private secretary to Lord Saltoun. Hence his
 later connection with the Foreign Office, which had, indeed, come to
 him as a sort of legacy from his lordship when that great man was
 the power behind the throne. This is not the place to say much about
@@ -112,14 +112,14 @@ dinner, but left immediately after to be in time for an appointment.
 All his actions had something at once ambitious and conscientious;
 he drank no wine, but was slightly intoxicated with words. And his
 face and phrases were on the front page of all the newspapers just
-then, because he was contesting the safe seat of Sir Francis Verner
+then, because he was contesting the safe seat of Sir Verner
 in the great by-election in the west. Everybody was talking about
 the powerful speech against squirarchy which he had just delivered;
-even in the Fisher circle everybody talked about it except Horne
-Fisher himself who sat in a corner, lowering over the fire.
+even in the Fisher circle everybody talked about it except Horne 
+himself who sat in a corner, lowering over the fire.
 
 "We jolly well have to thank him for putting some new life into the
-old party," Ashton Fisher was saying. "This campaign against the old
+old party," Ashton was saying. "This campaign against the old
 squires just hits the degree of democracy there is in this county.
 This act for extending county council control is practically his
 bill; so you may say he's in the government even before he's in the
@@ -132,14 +132,14 @@ reactionary. Damning aristocrats won't alter it."
 
 "He damns them rather well," observed Ashton.  "We never had a
 better meeting than the one in Barkington, which generally goes
-Constitutional. And when he said, 'Sir Francis may boast of blue
+Constitutional. And when he said, 'Sir Verner may boast of blue
 blood; let us show we have red blood,' and went on to talk about
 manhood and liberty, the room simply rose at him."
 
 "Speaks very well," said Lord Saltoun, gruffly, making his only
 contribution to the conversation so far.
 
-Then the almost equally silent Horne Fisher suddenly spoke, without
+Then the almost equally silent Horne suddenly spoke, without
 taking his brooding eyes off the fire.
 
 "What I can't understand," he said, "is why nobody is ever slanged
@@ -147,7 +147,7 @@ for the real reason."
 
 "Hullo!" remarked Harry, humorously, "you beginning to take notice?"
 
-"Well, take Verner," continued Horne Fisher.  "If we want to attack
+"Well, take Verner," continued Horne.  "If we want to attack
 Verner, why not attack him? Why compliment him on being a romantic
 reactionary aristocrat? Who is Verner? Where does he come from? His
 name sounds old, but I never heard of it before, as the man said of
@@ -163,7 +163,7 @@ Army contracts?"
 "First thing I ever knew you didn't know," cried the exuberant
 Harry.
 
-"And there's more, besides," went on Horne Fisher, who seemed to
+"And there's more, besides," went on Horne, who seemed to
 have suddenly found his tongue. "If we want country people to vote
 for us, why don't we get somebody with some notion about the
 country? We don't talk to people in Threadneedle Street about
@@ -191,7 +191,7 @@ Somerset all in Lincoln green instead of Lincoln and Bennet hats?"
 "No," answered Old Saltoun, "I don't think it would be a joke. I
 think it would be an exceedingly serious and sensible idea."
 
-"Well, I'm jiggered!" cried Harry Fisher, staring at him. "I said
+"Well, I'm jiggered!" cried Harry, staring at him. "I said
 just now it was the first fact you didn't know, and I should say
 this is the first joke you didn't see."
 
@@ -206,31 +206,31 @@ they're simply crowding us out. If a man like your brother likes to
 go into Parliament as a yeoman or a gentleman or a Jacobite or an
 Ancient Briton, I should say it would be a jolly good thing."
 
-In the rather startled silence that followed Horne Fisher sprang to
+In the rather startled silence that followed Horne sprang to
 his feet and all his dreary manner dropped off him.
 
 "I'm ready to do it to-morrow," he cried.  "I suppose none of you
 fellows would back me up."
 
-Then Harry Fisher showed the finer side of his impetuosity. He made
+Then Harry showed the finer side of his impetuosity. He made
 a sudden movement as if to shake hands.
 
 "You're a sport," he said, "and I'll back you up, if nobody else
 will. But we can all back you up, can't we? I see what Lord Saltoun
 means, and, of course, he's right. He's always right."
 
-"So I will go down to Somerset," said Horne Fisher.
+"So I will go down to Somerset," said Horne.
 
 "Yes, it is on the way to Westminster," said Lord Saltoun, with a
 smile.
 
-And so it happened that Horne Fisher arrived some days later at the
+And so it happened that Horne arrived some days later at the
 little station of a rather remote market town in the west,
 accompanied by a light suitcase and a lively brother. It must not be
 supposed, however, that the brother's cheerful tone consisted
 entirely of chaff. He supported the new candidate with hope as well
 as hilarity; and at the back of his boisterous partnership there was
-an increasing sympathy and encouragement. Harry Fisher had always
+an increasing sympathy and encouragement. Harry had always
 had an affection for his more quiet and eccentric brother, and was
 now coming more and more to have a respect for him. As the campaign
 proceeded the respect increased to ardent admiration. For Harry was
@@ -240,7 +240,7 @@ cricket.
 
 Nor was the admiration undeserved. As the new three-cornered
 contest developed it became apparent to others besides his devoted
-kinsman that there was more in Horne Fisher than had ever met the
+kinsman that there was more in Horne than had ever met the
 eye. It was clear that his outbreak by the family fireside had been
 but the culmination of a long course of brooding and studying on the
 question. The talent he retained through life for studying his
@@ -266,8 +266,8 @@ things in a new light, and knew not even whether it was the sunset
 or the dawn.
 
 Practical grievances were there to make the movement formidable. As
-Fisher went to and fro among the cottages and country inns, it was
-borne in on him without difficulty that Sir Francis Verner was a
+Horne went to and fro among the cottages and country inns, it was
+borne in on him without difficulty that Sir Verner was a
 very bad landlord. Nor was the story of his acquisition of the land
 any more ancient and dignified than he had supposed; the story was
 well known in the county and in most respects was obvious enough.
@@ -277,7 +277,7 @@ said, of neglect), and had then married a flashy South American
 Jewess with a fortune. But he must have worked his way through this
 fortune also with marvelous rapidity, for he had been compelled to
 sell the estate to Verner and had gone to live in South America,
-possibly on his wife's estates. But Fisher noticed that the laxity
+possibly on his wife's estates. But Horne noticed that the laxity
 of the old squire was far less hated than the efficiency of the new
 squire. Verner's history seemed to be full of smart bargains and
 financial flutters that left other people short of money and temper.
@@ -286,7 +286,7 @@ that continually eluded him; something that nobody knew, that even
 Saltoun had not known. He could not find out how Verner had
 originally made his money.
 
-"He must have kept it specially dark," said Horne Fisher to himself.
+"He must have kept it specially dark," said Horne to himself.
 "It must be something he's really ashamed of. Hang it all! what _is_
 a man ashamed of nowadays?"
 
@@ -312,7 +312,7 @@ back as the motor car drove away, and walked briskly up the sunlit
 high street of the little town, whistling, with political papers
 sticking out of his pocket.
 
-Fisher looked pensively after the resolute figure for a moment, and
+Horne looked pensively after the resolute figure for a moment, and
 then, as if by an impulse, began to follow it. Through the busy
 market place, amid the baskets and barrows of market day, under the
 painted wooden sign of the Green Dragon, up a dark side entry, under
@@ -323,13 +323,13 @@ At length they came to a brown brick house with a brass plate, on
 which was Mr. Gryce's name, and that individual turned and beheld
 his pursuer with a stare.
 
-"Could I have a word with you, sir?" asked Horne Fisher, politely.
+"Could I have a word with you, sir?" asked Horne, politely.
 The agent stared still more, but assented civilly, and led the other
 into an office littered with leaflets and hung all round with highly
 colored posters which linked the name of Hughes with all the higher
 interests of humanity.
 
-"Mr. Horne Fisher, I believe," said Mr. Gryce.  "Much honored by the
+"Mr. Horne, I believe," said Mr. Gryce.  "Much honored by the
 call, of course. Can't pretend to congratulate you on entering the
 contest, I'm afraid; you won't expect that. Here we've been keeping
 the old flag flying for freedom and reform, and you come in and
@@ -341,7 +341,7 @@ man with a pugnacious cock of the eyebrow. He had been pickled in
 the politics of that countryside from boyhood, he knew everybody's
 secrets, and electioneering was the romance of his life.
 
-"I suppose you think I'm devoured with ambition," said Horne Fisher,
+"I suppose you think I'm devoured with ambition," said Horne,
 in his rather listless voice, "aiming at a dictatorship and all
 that. Well, I think I can clear myself of the charge of mere selfish
 ambition. I only want certain things done. I don't want to do them.
@@ -350,7 +350,7 @@ I'm quite willing to retire from the contest if you can convince me
 that we really want to do the same thing."
 
 The agent of the Reform party looked at him with an odd and slightly
-puzzled expression, and before he could reply, Fisher went on in the
+puzzled expression, and before he could reply, Horne went on in the
 same level tones:
 
 "You'd hardly believe it, but I keep a conscience concealed about
@@ -376,13 +376,13 @@ the poacher, till all the magistrates were ashamed of him.
 genially, "and turn out a swindling tyrant like that, I'm sure
 you'll never regret it."
 
-"And if that is the truth," said Horne Fisher, "are you going to
+"And if that is the truth," said Horne, "are you going to
 tell it?"
 
 "What do you mean?  Tell the truth?" demanded Gryce.
 
 "I mean you are going to tell the truth as you have just told it,"
-replied Fisher. "You are going to placard this town with the
+replied Horne. "You are going to placard this town with the
 wickedness done to old Wilkins. You are going to fill the newspapers
 with the infamous story of Mrs. Biddle. You are going to denounce
 Verner from a public platform, naming him for what he did and naming
@@ -400,7 +400,7 @@ do. People understand slanging squires in a general way, but those
 personalities aren't considered fair play. Looks like hitting below
 the belt."
 
-"Old Wilkins hasn't got a belt, I suppose," replied Horne Fisher.
+"Old Wilkins hasn't got a belt, I suppose," replied Horne.
 "Verner can hit him anyhow, and nobody must say a word. It's
 evidently very important to have a belt. But apparently you have to
 be rather high up in society to have one. Possibly," he added,
@@ -411,7 +411,7 @@ earl,' the meaning of which has always escaped me."
 the table.
 
 "And Mother Biddle and Long Adam, the poacher, are not
-personalities," said Fisher, "and suppose we mustn't ask how Verner
+personalities," said Horne, "and suppose we mustn't ask how Verner
 made all the money that enabled him to become--a personality."
 
 Gryce was still looking at him under lowering brows, but the
@@ -430,19 +430,19 @@ the ruin of the old squire, and all the rest of it. Well, I'll give
 you a hint about that, a hint about something precious few people
 know."
 
-"I am very grateful," said Fisher, gravely.  "What is it?"
+"I am very grateful," said Horne, gravely.  "What is it?"
 
 "It's in two words," said the other.  "The new squire was quite poor
 when he bought. The old squire was quite rich when he sold."
 
-Horne Fisher looked at him thoughtfully as he turned away abruptly
-and busied himself with the papers on his desk. Then Fisher uttered
+Horne looked at him thoughtfully as he turned away abruptly
+and busied himself with the papers on his desk. Then Horne uttered
 a short phrase of thanks and farewell, and went out into the street,
 still very thoughtful.
 
 His reflection seemed to end in resolution, and, falling into a more
 rapid stride, he passed out of the little town along a road leading
-toward the gate of the great park, the country seat of Sir Francis
+toward the gate of the great park, the country seat of Sir Verner
 Verner. A glitter of sunlight made the early winter more like a late
 autumn, and the dark woods were touched here and there with red and
 golden leaves, like the last rays of a lost sunset. From a higher
@@ -458,7 +458,7 @@ a second glance the twilight of the twinkling trees. There was
 something fascinating about that unexpected gate, like the opening
 of a fairy tale.
 
-Horne Fisher had in him something of the aristocrat, which is very
+Horne had in him something of the aristocrat, which is very
 near to the anarchist. It was characteristic of him that he turned
 into this dark and irregular entry as casually as into his own front
 door, merely thinking that it would be a short cut to the house. He
@@ -482,7 +482,7 @@ blank wall between its Doric pillars. We may say it only seemed like
 an island, because a second glance revealed a low causeway of flat
 stones running up to it from the shore and turning it into a
 peninsula. And certainly it only seemed like a temple, for nobody
-knew better than Horne Fisher that no god had ever dwelt in that
+knew better than Horne that no god had ever dwelt in that
 shrine.
 
 "That's what makes all this classical landscape gardening so
@@ -511,14 +511,14 @@ sworn he saw a stir as of something moving among the leaves. The
 next moment his suspicion was confirmed, for a rather ragged figure
 came from under the shadow of the temple and began to move along the
 causeway that led to the bank. Even at that distance the figure was
-conspicuous by its great height and Fisher could see that the man
+conspicuous by its great height and Horne could see that the man
 carried a gun under his arm. There came back into his memory at once
 the name Long Adam, the poacher.
 
-With a rapid sense of strategy he sometimes showed, Fisher sprang
+With a rapid sense of strategy he sometimes showed, Horne sprang
 from the bank and raced round the lake to the head of the little
 pier of stones. If once a man reached the mainland he could easily
-vanish into the woods. But when Fisher began to advance along the
+vanish into the woods. But when Horne began to advance along the
 stones toward the island, the man was cornered in a blind alley and
 could only back toward the temple. Putting his broad shoulders
 against it, he stood as if at bay; he was a comparatively young man,
@@ -526,7 +526,7 @@ with fine lines in his lean face and figure and a mop of ragged red
 hair. The look in his eyes might well have been disquieting to
 anyone left alone with him on an island in the middle of a lake.
 
-"Good morning," said Horne Fisher, pleasantly.  "I thought at first
+"Good morning," said Horne, pleasantly.  "I thought at first
 you were a murderer. But it seems unlikely, somehow, that the
 partridge rushed between us and died for love of me, like the
 heroines in the romances; so I suppose you are a poacher."
@@ -539,7 +539,7 @@ I have a perfect right to shoot game in this place. But I am well
 aware that people of your sort take me for a thief, and I suppose
 you will try to land me in jail."
 
-"There are preliminary difficulties," replied Fisher.  "To begin
+"There are preliminary difficulties," replied Horne.  "To begin
 with, the mistake is flattering, but I am not a gamekeeper. Still
 less am I three gamekeepers, who would be, I imagine, about your
 fighting weight. But I confess I have another reason for not wanting
@@ -547,7 +547,7 @@ to jail you."
 
 "And what is that?" asked the other.
 
-"Only that I quite agree with you," answered Fisher.  "I don't
+"Only that I quite agree with you," answered Horne.  "I don't
 exactly say you have a right to poach, but I never could see that it
 was as wrong as being a thief. It seems to me against the whole
 normal notion of property that a man should own something because it
@@ -560,7 +560,7 @@ you some if I can."
 "Going to give me some land!" repeated Long Adam.
 
 "I apologize for addressing you as if you were a public meeting,"
-said Fisher, "but I am an entirely new kind of public man who says
+said Horne, "but I am an entirely new kind of public man who says
 the same thing in public and in private. I've said this to a hundred
 huge meetings throughout the country, and I say it to you on this
 queer little island in this dismal pond. I would cut up a big estate
@@ -589,7 +589,7 @@ and if you or any meddlesome mountebank comes here and talks of
 cutting it up like a cake, if I ever hear a word more of you and
 your leveling lies--"
 
-"You seem to be a rather turbulent public," observed Horne Fisher,
+"You seem to be a rather turbulent public," observed Horne,
 "but do go on. What will happen if I try to divide this estate
 decently among decent people?"
 
@@ -598,7 +598,7 @@ will be no partridge to rush in between."
 
 With that he turned his back, evidently resolved to say no more, and
 walked past the temple to the extreme end of the islet, where he
-stood staring into the water. Fisher followed him, but, when his
+stood staring into the water. Horne followed him, but, when his
 repeated questions evoked no answer, turned back toward the shore.
 In doing so he took a second and closer look at the artificial
 temple, and noted some curious things about it. Most of these
@@ -607,7 +607,7 @@ expected the classic shrine to be a shallow thing, a mere shell or
 mask. But there was some substantial bulk of it behind, buried in
 the trees, which had a gray, labyrinthian look, like serpents of
 stone, and lifted a load of leafy towers to the sky. But what
-arrested Fisher's eye was that in this bulk of gray-white stone
+arrested Horne's eye was that in this bulk of gray-white stone
 behind there was a single door with great, rusty bolts outside; the
 bolts, however, were not shot across so as to secure it. Then he
 walked round the small building, and found no other opening except
@@ -635,7 +635,7 @@ He first found himself in the presence of the butler, who really
 looked much older than the building, for the architecture was dated
 as Georgian; but the man's face, under a highly unnatural brown wig,
 was wrinkled with what might have been centuries. Only his prominent
-eyes were alive and alert, as if with protest. Fisher glanced at
+eyes were alive and alert, as if with protest. Horne glanced at
 him, and then stopped and said:
 
 "Excuse me. Weren't you with the late squire, Mr. Hawker?"
@@ -643,19 +643,19 @@ him, and then stopped and said:
 "Yes, sir," said the man, gravely.  "Usher is my name. What can I do
 for you?"
 
-"Only take me into Sir Francis Verner," replied the visitor.
+"Only take me into Sir Verner," replied the visitor.
 
-Sir Francis Verner was sitting in an easy chair beside a small table
+Sir Verner was sitting in an easy chair beside a small table
 in a large room hung with tapestries. On the table were a small
 flask and glass, with the green glimmer of a liqueur and a cup of
 black coffee. He was clad in a quiet gray suit with a moderately
-harmonious purple tie; but Fisher saw something about the turn of
+harmonious purple tie; but Horne saw something about the turn of
 his fair mustache and the lie of his flat hair--it suddenly revealed
 that his name was Franz Werner.
 
-"You are Mr. Horne Fisher," he said.  "Won't you sit down?"
+"You are Mr. Horne," he said.  "Won't you sit down?"
 
-"No, thank you," replied Fisher.  "I fear this is not a friendly
+"No, thank you," replied Horne.  "I fear this is not a friendly
 occasion, and I shall remain standing. Possibly you know that I am
 already standing--standing for Parliament, in fact--"
 
@@ -663,7 +663,7 @@ already standing--standing for Parliament, in fact--"
 eyebrows. "But I think it would be better if we fought in a sporting
 spirit; in a spirit of English fair play."
 
-"Much better," assented Fisher.  "It would be much better if you
+"Much better," assented Horne.  "It would be much better if you
 were English and very much better if you had ever played fair. But
 what I've come to say can be said very shortly. I don't quite know
 how we stand with the law about that old Hawker story, but my chief
@@ -673,7 +673,7 @@ retire from the election at once."
 
 "You are evidently a lunatic," said Verner.
 
-"My psychology may be a little abnormal," replied Horne Fisher, in a
+"My psychology may be a little abnormal," replied Horne, in a
 rather hazy manner. "I am subject to dreams, especially day-dreams.
 Sometimes what is happening to me grows vivid in a curious double
 way, as if it had happened before. Have you ever had that mystical
@@ -681,7 +681,7 @@ feeling that things have happened before?"
 
 "I hope you are a harmless lunatic," said Verner.
 
-But Fisher was still staring in an absent fashion at the golden
+But Horne was still staring in an absent fashion at the golden
 gigantic figures and traceries of brown and red in the tapestries on
 the walls; then he looked again at Verner and resumed: "I have a
 feeling that this interview has happened before, here in this
@@ -690,9 +690,9 @@ But it was Squire Hawker who sat where you sit and it was you who
 stood where I stand." He paused a moment and then added, with
 simplicity, "I suppose I am a blackmailer, too."
 
-"If you are," said Sir Francis, "I promise you you shall go to
+"If you are," said Sir Verner, "I promise you you shall go to
 jail." But his face had a shade on it that looked like the
-reflection of the green wine gleaming on the table. Horne Fisher
+reflection of the green wine gleaming on the table. Horne
 regarded him steadily and answered, quietly enough:
 
 "Blackmailers do not always go to jail. Sometimes they go to
@@ -701,16 +701,16 @@ shall not go there if I can help it. I am not so criminal as you
 were in bargaining with crime. You made a squire give up his country
 seat. I only ask you to give up your Parliamentary seat."
 
-Sir Francis Verner sprang to his feet and looked about for one of
+Sir Verner sprang to his feet and looked about for one of
 the bell ropes of the old-fashioned, curtained room.
 
 "Where is Usher?" he cried, with a livid face.
 
-"And who is Usher?" said Fisher, softly.  "I wonder how much Usher
+"And who is Usher?" said Horne, softly.  "I wonder how much Usher
 knows of the truth."
 
 Verner's hand fell from the bell rope and, after standing for a
-moment with rolling eyes, he strode abruptly from the room. Fisher
+moment with rolling eyes, he strode abruptly from the room. Horne
 went but by the other door, by which he had entered, and, seeing no
 sign of Usher, let himself out and betook himself again toward the
 town.
@@ -762,7 +762,7 @@ so furiously in the face that the man stumbled and rolled over on
 the slimy grass; but the torch was broken and extinguished, leaving
 everything in a denser obscurity. He flung another man flat against
 the temple wall, so that he slid to the ground; but a third and
-fourth carried Fisher off his feet and began to bear him,
+fourth carried Horne off his feet and began to bear him,
 struggling, toward the doorway. Even in the bewilderment of the
 battle he was conscious that the door was standing open. Somebody
 was summoning the roughs from inside.
@@ -778,7 +778,7 @@ flying fancy that regular criminals would hardly be in such a panic.
 The next moment the great door crashed to and he could hear the
 bolts shriek as they shot into their place, and the feet of the
 retreating men scampering and stumbling along the causeway. But
-rapidly as it happened, it did not happen before Fisher had done
+rapidly as it happened, it did not happen before Horne had done
 something that he wanted to do. Unable to rise from his sprawling
 attitude in that flash of time, he had shot out one of his long legs
 and hooked it round the ankle of the last man disappearing through
@@ -788,7 +788,7 @@ they were in too much haste to realize that they had left one of
 their company behind.
 
 The man sprang to his feet again and hammered and kicked furiously
-at the door. Fisher's sense of humor began to recover from the
+at the door. Horne's sense of humor began to recover from the
 struggle and he sat up on his sofa with something of his native
 nonchalance. But as he listened to the captive captor beating on the
 door of the prison, a new and curious reflection came to him.
@@ -810,9 +810,9 @@ should not see the sun.
 Then he had a flash of sanity and also of insight. The explanation
 was very simple, but rather interesting. Obviously the man did not
 use his voice because he did not wish his voice to be recognized. He
-hoped to escape from that dark place before Fisher found out who he
+hoped to escape from that dark place before Horne found out who he
 was. And who was he? One thing at least was clear. He was one or
-other of the four or five men with whom Fisher had already talked in
+other of the four or five men with whom Horne had already talked in
 these parts, and in the development of that strange story.
 
 "Now I wonder who you are," he said, aloud, with all his old lazy
@@ -823,7 +823,7 @@ my torch, so I can only speculate. Who could you be, now? Let us
 think."
 
 The man thus genially addressed had desisted from drumming on the
-door and retreated sullenly into a corner as Fisher continued to
+door and retreated sullenly into a corner as Horne continued to
 address him in a flowing monologue.
 
 "Probably you are the poacher who says he isn't a poacher. He says
@@ -837,7 +837,7 @@ And, now I think of it, perhaps you are somebody else."
 
 There was a silence broken by breathing from the corner and the
 murmur of the rising storm, that came in through the small grating
-above the man's head. Horne Fisher continued:
+above the man's head. Horne continued:
 
 "Are you only a servant, perhaps, that rather sinister old servant
 who was butler to Hawker and Verner? If so, you are certainly the
@@ -873,13 +873,13 @@ may hold a candle to show me your infernal face."
 Then next moment came a crash of thunder; but before the thunder a
 white light had filled the whole room for a single split second.
 
-Fisher had seen two things in front of him. One was the
+Horne had seen two things in front of him. One was the
 black-and-white pattern of the iron grating against the sky; the
 other was the face in the corner. It was the face of his brother.
 
-Nothing came from Horne Fisher's lips except a Christian name, which
+Nothing came from Horne's lips except a Christian name, which
 was followed by a silence more dreadful than the dark. At last the
-other figure stirred and sprang up, and the voice of Harry Fisher
+other figure stirred and sprang up, and the voice of Harry
 was heard for the first time in that horrible room.
 
 "You've seen me, I suppose," he said, "and we may as well have a
@@ -902,7 +902,7 @@ the momentary oblivion of bigger matters.
 
 "Yes," replied the other, "and I think you know why."
 
-"I think I do," said Horne Fisher, "and before I go on to more
+"I think I do," said Horne, "and before I go on to more
 extraordinary things I will, say what I think. Squire Hawker played
 both the bigamist and the bandit. His first wife was not dead when
 he married the Jewess; she was imprisoned on this island. She bore
@@ -913,12 +913,12 @@ That's all quite clear and very easy. And now let me go on to
 something more difficult. And that is for you to explain what the
 devil you are doing kidnaping your born brother."
 
-After a pause Henry Fisher answered:
+After a pause Henry answered:
 
 "I suppose you didn't expect to see me," he said.  "But, after all,
 what could you expect?"'
 
-"I'm afraid I don't follow," said Horne Fisher.
+"I'm afraid I don't follow," said Horne.
 
 "I mean what else could you expect, after making such a muck of it?"
 said his brother, sulkily. "We all thought you were so clever. How
@@ -944,7 +944,7 @@ Egyptian loan and Lord knows what else. We only wanted you to split
 the Reform vote because accidents might happen after Hughes had made
 a score at Barkington."
 
-"I see," said Fisher, "and you, I think, are a pillar and ornament
+"I see," said Horne, "and you, I think, are a pillar and ornament
 of the Reform party. As you say, I am not clever."
 
 The appeal to party loyalty fell on deaf ears; for the pillar of
@@ -959,7 +959,7 @@ in his voice as he added, "I got those cigars because I knew you
 liked them."
 
 Emotions are queer things, and the idiocy of this concession
-suddenly softened Horne Fisher like an unfathomable pathos.
+suddenly softened Horne like an unfathomable pathos.
 
 "Never mind, old chap," he said; "we'll say no more about it. I'll
 admit that you're really as kind-hearted and affectionate a
@@ -967,13 +967,13 @@ scoundrel and hypocrite as ever sold himself to ruin his country.
 There, I can't say handsomer than that. Thank you for the cigars,
 old man. I'll have one if you don't mind."
 
-By the time that Horne Fisher had ended his telling of this story to
-Harold March they had come out into one of the public parks and
+By the time that Horne had ended his telling of this story to
+Harold they had come out into one of the public parks and
 taken a seat on a rise of ground overlooking wide green spaces under
 a blue and empty sky; and there was something incongruous in the
 words with which the narration ended.
 
-"I have been in that room ever since," said Horne Fisher.  "I am in
+"I have been in that room ever since," said Horne.  "I am in
 it now. I won the election, but I never went to the House. My life
 has been a life in that little room on that lonely island. Plenty of
 books and cigars and luxuries, plenty of knowledge and interest and
