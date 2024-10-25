@@ -1,64 +1,56 @@
 import sys
 import re
-from bs4 import BeautifulSoup
-
-from unidecode import unidecode
-
-import spacy
-import string 
+from collections import defaultdict, Counter
 
 import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
-from nltk.tag import pos_tag
-from nltk.chunk import ne_chunk
-from nltk.corpus import stopwords, names 
-from nltk.stem import WordNetLemmatizer
-
-# Make sure to download the required resources
-nltk.download('punkt')
-nltk.download('maxent_ne_chunker')
-nltk.download('words')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('wordnet')
-nltk.download('stopwords')
-nltk.download('names')
-nltk.download('vader_lexicon')
-
+from nltk.corpus import stopwords, names
 from nltk.sentiment import SentimentIntensityAnalyzer
-from collections import defaultdict, Counter
+
+import spacy
+from unidecode import unidecode
+
+nltk.download('punkt', quiet=True)
+nltk.download('maxent_ne_chunker', quiet=True)
+nltk.download('words', quiet=True)
+nltk.download('averaged_perceptron_tagger', quiet=True)
+nltk.download('wordnet', quiet=True)
+nltk.download('stopwords', quiet=True)
+nltk.download('names', quiet=True)
+nltk.download('vader_lexicon', quiet=True)
 
 class Book:
 
     def __init__(self, file_path: str):
         """
-            file_path: Path to the book text file to process
+        file_path: Path to the book text file to process
         """
         print(f"[__init__]: Initializing book from file: {file_path}")
         self.file_path = file_path
         self.raw_text = None
         self.normalized_text = None
         
-        self.chapters = list()  # Holds a string for each of the chapters
-        self.paragraphs = list()  # Holds lists of strings for each paragraph in each chapter
-        self.sentences = list()
-        self.pre_process_string = str()
+        self.chapters = []  # Holds a string for each of the chapters
+        self.paragraphs = []  # Holds lists of strings for each paragraph in each chapter
+        self.sentences = []
+        self.pre_process_string = ""
         
-        self.names = list()
-        self.name_variations = dict()
-        self.names_tokenized = list()
-        self.special_characters = list()
+        self.names = []
+        self.name_variations = {}
+        self.names_tokenized = []
+        self.special_characters = []
 
         # These should be the final tokenized / cleaned text
-        self.sentences_tokenized = list()
-        self.text_tokenized = list()
-        self.chapters_normalized = list()
+        self.sentences_tokenized = []
+        self.text_tokenized = []
+        self.chapters_normalized = []
 
         # Features
         self.word_count = 0
         self.sentence_count = 0
-        self.character_mentions_all = dict()
-        self.character_proximity = dict()
-        self.character_mentions_first = dict()
+        self.character_mentions_all = {}
+        self.character_proximity = {}
+        self.character_mentions_first = {}
         self.chapter_count = 0
 
         self.stop_words = set(stopwords.words('english'))
@@ -66,7 +58,7 @@ class Book:
         self.all_names = set(names.words())
 
         # New features
-        self.character_sentiments = dict()
+        self.character_sentiments = {}
         self.crime_keywords = [
             'murder', 'kill', 'dead', 'body', 'weapon', 'crime', 'blood', 'knife', 
             'gun', 'death', 'victim', 'suspect'
@@ -80,10 +72,10 @@ class Book:
 
     def __get_book(self):
         """
-            Reads the book text from the file specified in self.file_path.
+        Reads the book text from the file specified in self.file_path.
 
-            Returns:
-                int: 0 for success, 1 for failure
+        Returns:
+            int: 0 for success, 1 for failure
         """
         try:
             with open(self.file_path, 'r', encoding='utf-8') as f:
@@ -94,60 +86,99 @@ class Book:
             print(f"get_book(): Failed to open file '{self.file_path}'. Error: {e}", file=sys.stderr)
             return 1
 
+    def normalize(self):
+        """
+        Normalizes the raw text by:
+        - Stripping headers and footers
+        - Removing special characters
+        - Replacing non-ASCII characters
+        - Stripping punctuation
+        - Assigning the normalized text to self.normalized_text
+        """
+        # Strip Project Gutenberg header and footer if present
+        # Header
+        pattern_header = r"\*\*\* START OF (?:THIS |THE )?PROJECT GUTENBERG EBOOK.*?\*\*\*\n"
+        search_result = re.search(pattern_header, self.raw_text, flags=re.DOTALL | re.IGNORECASE)
+        if search_result:
+            self.raw_text = self.raw_text[search_result.end():]
+        else:
+            print("Warning: Start of Project Gutenberg header not found.", file=sys.stderr)
+        
+        # Footer
+        pattern_footer = r"\*\*\* END OF (?:THIS |THE )?PROJECT GUTENBERG EBOOK.*?\*\*\*\n"
+        search_result = re.search(pattern_footer, self.raw_text, flags=re.DOTALL | re.IGNORECASE)
+        if search_result:
+            self.raw_text = self.raw_text[:search_result.start()]
+        else:
+            print("Warning: End of Project Gutenberg footer not found.", file=sys.stderr)
+        
+        # Remove carriage returns
+        text = self.raw_text.replace('\r', '')
+
+        # Remove special characters, collect them
+        text = unidecode(text)
+        self.special_characters = [char for char in set(text) if not char.isascii()]
+        
+        # Strip certain punctuation
+        punctuation_to_remove = [";", "-", "—", ",", "(", ")", "`", "'", '"']
+        for p in punctuation_to_remove:
+            text = text.replace(p, " ")
+
+        self.normalized_text = text
+
     def tokenize(self):
         """
-            Tokenizes the entire text string, as well as the sentences
-            
-            We also strip any remaining punctuation, and get rid of stop words
+        Tokenizes the entire text string and sentences.
+        Converts tokens to lowercase and removes stop words and non-alphabetic tokens.
         """
-        stop_words = set(stopwords.words('english'))
-        self.text_tokenized = word_tokenize(self.pre_process_string)
- 
-        # Full text string
+        tokens = word_tokenize(self.pre_process_string)
+        
         self.text_tokenized = [
-            word.strip("\n") for word in self.text_tokenized 
-            if word.isalpha() and word not in stop_words
+            word.lower() for word in tokens 
+            if word.isalpha() and word.lower() not in self.stop_words
         ]
-        # Sentences:
+
         for sentence in self.sentences:
+            tokens = word_tokenize(sentence)
             tokenized_sentence = [
-                word.strip("\n") for word in word_tokenize(sentence) 
-                if word.isalpha() and word not in stop_words
+                word.lower() for word in tokens 
+                if word.isalpha() and word.lower() not in self.stop_words
             ]
-            sentence = ' '.join(tokenized_sentence)
-            if sentence:
-                self.sentences_tokenized.append(sentence)
+            sentence_str = ' '.join(tokenized_sentence)
+            if sentence_str:
+                self.sentences_tokenized.append(sentence_str)
                             
     def __extract_chapters(self):
-        print("Extracting chapters from the book.")
         """
-            Separates out chapters in the book using common chapter indicators.
+        Separates out chapters in the book using common chapter indicators.
 
-            Returns:
-                int: 0 on success, 1 on error
+        Returns:
+            int: 0 on success, 1 on error
         """
+        print("Extracting chapters from the book.")
         # Common patterns for chapters
         chapter_patterns = [
-            r"^chapter\s+\d+",       # Matches 'Chapter 1', 'Chapter 2', etc.
-            r"^chapter\s+[ivx]+",    # Matches 'Chapter I', 'Chapter II', etc.
-            r"^\d+\.\s+",            # Matches '1. ', '2. ', etc.
-            r"^the\s+.+",            # Matches 'The Beginning', 'The Journey', etc.
+            r"^chapter\s+\d+",          # Matches 'Chapter 1', 'Chapter 2', etc.
+            r"^chapter\s+[ivxlcdm]+",   # Matches 'Chapter I', 'Chapter II', etc.
+            r"^\d+\.\s+",               # Matches '1. ', '2. ', etc.
+            r"^[ivxlcdm]+\.\s+",        # Matches 'I. ', 'II. ', etc.
+            r"^the\s+.+",               # Matches 'The Beginning', 'The Journey', etc.
         ]
 
         # Normalize the text for consistent chapter detection
-        lines = self.raw_text.split('\n')
+        lines = self.normalized_text.split('\n')
         chapter_indices = []
         for idx, line in enumerate(lines):
-            normalized_line = line.strip().lower()
+            normalized_line = line.strip()
             for pattern in chapter_patterns:
-                if re.match(pattern, normalized_line):
+                if re.match(pattern, normalized_line, re.IGNORECASE):
                     chapter_indices.append(idx)
                     break
 
         # If no chapters are found, treat the entire text as one chapter
         if not chapter_indices:
-            self.chapters.append(self.raw_text)
-            self.chapters_normalized.append(self.raw_text)
+            self.chapters.append(self.normalized_text)
+            self.chapters_normalized.append(self.normalized_text)
             return 0
 
         # Extract chapters based on identified indices
@@ -158,10 +189,9 @@ class Book:
             self.chapters.append(chapter)
 
             # Normalize chapter text
-            stop_words = set(stopwords.words('english'))
             chapter_normalized = ' '.join([
                 word.strip("\n") for word in word_tokenize(chapter)
-                if word.isalpha() and word not in stop_words
+                if word.isalpha() and word.lower() not in self.stop_words
             ])
             self.chapters_normalized.append(chapter_normalized)
 
@@ -169,9 +199,9 @@ class Book:
 
     def __extract_paragraphs(self):
         """
-            Splits chapters into paragraphs using double newline delimiters.
+        Splits chapters into paragraphs using double newline delimiters.
 
-            self.paragraphs is a list of lists: [chapter][paragraph]
+        self.paragraphs is a list of lists: [chapter][paragraph]
         """
         for chapter in self.chapters:
             paragraphs = chapter.split("\n\n")
@@ -180,7 +210,9 @@ class Book:
             self.paragraphs.append(paragraphs)
         
     def __extract_sentences(self):
-        # Get full list of sentences
+        """
+        Tokenizes paragraphs into sentences and cleans up extra spaces.
+        """
         for chapter in self.paragraphs:
             for paragraph in chapter:
                 self.sentences.extend(sent_tokenize(paragraph))
@@ -188,49 +220,10 @@ class Book:
         # Strip any extra spaces.
         self.sentences = [' '.join(sentence.split()) for sentence in self.sentences]
             
-    def __clean_raw_string(self):
-        """
-            Cleans the raw text by:
-            - Removing carriage returns
-            - Replacing non-ASCII characters
-            - Stripping certain punctuation
-        """
-        # Do not lowercase before NER, as capitalization is important
-        self.raw_text = self.raw_text.replace("\r", "")
-        
-        # Remove special characters, collect them for now.
-        for character in self.raw_text:
-            if not character.isascii():
-                self.special_characters.append(character)
-                
-        self.special_characters = list(set(self.special_characters))
-        
-        self.raw_text = unidecode(self.raw_text)
-        
-        # Strip certain punctuation
-        punctuation_to_remove = [";", "-", "—", ",", "(", ")", "`"]
-        for p in punctuation_to_remove:
-            self.raw_text = self.raw_text.replace(p, " ")
-            
-    def __strip_header_footer(self):
-        # Strip Project Gutenberg header and footer if present
-        # Header
-        pattern = r"\*\*\* START OF THIS PROJECT GUTENBERG EBOOK.*?\*\*\*\n"
-        search_result = re.search(pattern, self.raw_text, flags=re.DOTALL | re.IGNORECASE)
-        if search_result:
-            self.raw_text = self.raw_text[search_result.end():]
-        else:
-            print("Warning: Start of Project Gutenberg header not found.", file=sys.stderr)
-        
-        # Footer
-        pattern = r"\*\*\* END OF THIS PROJECT GUTENBERG EBOOK.*?\*\*\*\n"
-        search_result = re.search(pattern, self.raw_text, flags=re.DOTALL | re.IGNORECASE)
-        if search_result:
-            self.raw_text = self.raw_text[:search_result.start()]
-        else:
-            print("Warning: End of Project Gutenberg footer not found.", file=sys.stderr)
-            
     def __combine_cleaned_sentences(self):
+        """
+        Combines cleaned sentences into a single string for further processing.
+        """
         self.pre_process_string = ' '.join(self.sentences)
             
     def extract_names(self):
@@ -254,12 +247,11 @@ class Book:
         name_freq = nltk.FreqDist(all_names)
 
         # Exclude names that are common words or too short
-        common_words = set(stopwords.words('english')) | set(nltk.corpus.words.words())
         titles = set(['Mr', 'Mrs', 'Miss', 'Sir', 'Lady', 'Dr', 'Master', 'Captain', 'Uncle', 'Aunt'])
         filtered_names = []
         for name in all_names:
             parts = name.split()
-            if any(part.lower() in common_words or part in titles or len(part) <= 2 for part in parts):
+            if any(part.lower() in self.common_words or part in titles or len(part) <= 2 for part in parts):
                 continue
             filtered_names.append(name)
 
@@ -271,7 +263,7 @@ class Book:
             parts = name.split()
             canonical_name = name  # Assume the full name is canonical
             for part in parts:
-                if part not in common_words and len(part) > 2:
+                if part not in self.common_words and len(part) > 2:
                     name_variations[part] = canonical_name
             name_variations[name] = canonical_name
             canonical_names[canonical_name] = canonical_names.get(canonical_name, 0) + name_freq[name]
@@ -299,24 +291,36 @@ class Book:
 
     def __extract_first_mentions(self):
         """
-            Find the first mention of each name in the book by chapter
+        Find the first mention of each name in the book by word index.
         """
+        # Ensure that both text tokens and name tokens are in lowercase
         for name in self.names:
-            if name in self.text_tokenized:
-                self.character_mentions_first[name] = self.text_tokenized.index(name)
-            else:
+            name_tokens = [token.lower() for token in name.split()]
+            name_length = len(name_tokens)
+            found = False
+            for idx in range(len(self.text_tokenized) - name_length + 1):
+                if self.text_tokenized[idx:idx + name_length] == name_tokens:
+                    self.character_mentions_first[name] = idx
+                    found = True
+                    break
+            if not found:
                 self.character_mentions_first[name] = -1
 
     def __extract_all_mentions(self):
         """
-            Extract the total number of mentions of each name in the book.
+        Extract the total number of mentions of each name in the book.
         """
         for name in self.names:
-            self.character_mentions_all[name] = self.text_tokenized.count(name)
+            name_tokens = [token.lower() for token in name.split()]
+            count = 0
+            for idx in range(len(self.text_tokenized) - len(name_tokens) + 1):
+                if self.text_tokenized[idx:idx+len(name_tokens)] == name_tokens:
+                    count += 1
+            self.character_mentions_all[name] = count
 
     def __extract_character_proximity(self):
         """
-            Extracts the proximity of characters based on surrounding sentences.
+        Extracts the proximity of characters based on surrounding sentences.
         """
         nlp = spacy.load("en_core_web_sm")
 
@@ -325,7 +329,8 @@ class Book:
         for sentence in self.sentences:
             doc = nlp(sentence)
             # Get the set of names in the sentence
-            names_in_sentence.append(set([ent.text for ent in doc.ents if ent.label_ == "PERSON"]))
+            sentence_names = set([ent.text for ent in doc.ents if ent.label_ == "PERSON"])
+            names_in_sentence.append(sentence_names)
 
         # Surrounding Sentences Proximity
         for i in range(len(names_in_sentence)):
@@ -384,7 +389,7 @@ class Book:
                 if keyword in tokens:
                     self.crime_keyword_frequency[keyword] += 1
 
-    def __crime_first_introduction(self):
+    def __find_crime_first_introduction(self):
         """
         Determines the position in the text where crime is first introduced.
         """
@@ -399,16 +404,16 @@ class Book:
     # ========================= Event Features =========================
 
     def pre_process(self):
-        self.__get_book()
-        self.__strip_header_footer()
-        self.__clean_raw_string()
-        self.normalized_text = self.raw_text
-        self.__extract_chapters()
-        self.__extract_paragraphs()
-        self.__extract_sentences()
-        self.__combine_cleaned_sentences()
-        self.extract_names()
-        self.tokenize()
+        if self.__get_book() == 0:
+            self.normalize()
+            self.__extract_chapters()
+            self.__extract_paragraphs()
+            self.__extract_sentences()
+            self.__combine_cleaned_sentences()
+            self.extract_names()
+            self.tokenize()
+        else:
+            print("Error: Could not get the book text.", file=sys.stderr)
 
     def feature_extraction(self):
         self.__extract_first_mentions()
@@ -419,5 +424,4 @@ class Book:
         self.__get_word_count()
         self.__character_sentiment_analysis()
         self.__analyze_crime_keywords()
-        self.__crime_first_introduction()
-
+        self.__find_crime_first_introduction()
