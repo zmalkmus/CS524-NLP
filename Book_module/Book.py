@@ -362,7 +362,8 @@ class Book:
         else:
             self.crime_first_introduction = -1  # Indicates not found
 
-    # ========================= Event Features =========================
+    
+    # ========================= Plot Features =========================
 
     def __get_subjects(self, token):
         subjects = []
@@ -442,6 +443,120 @@ class Book:
 
                     self.events.append(event)
 
+    def __identify_plot_structure(self):
+        """
+        Identifies the plot structure of the narrative based on sentiment analysis
+        and event density.
+
+        The plot is divided into the following components:
+        - Exposition
+        - Rising Action
+        - Climax
+        - Falling Action
+        - Resolution
+        """
+
+        import numpy as np
+        import matplotlib.pyplot as plt
+
+        # Initialize sentiment analyzer
+        sia = SentimentIntensityAnalyzer()
+
+        # Lists to hold data
+        sentiment_scores = []
+        event_counts = []
+        sentence_indices = []
+
+        # Preprocess events to get sentence indices of key events
+        crime_event_indices = [event['sentence_idx'] for event in self.events if event['event_type'] == 'crime']
+        investigation_event_indices = [event['sentence_idx'] for event in self.events if event['event_type'] == 'investigation']
+        neutral_event_indices = [event['sentence_idx'] for event in self.events if event['event_type'] == 'neutral']
+
+        total_sentences = len(self.sentences)
+
+        # Analyze each sentence
+        for idx, sentence in enumerate(self.sentences):
+            # Sentiment score
+            sentiment = sia.polarity_scores(sentence)['compound']
+            sentiment_scores.append(sentiment)
+            sentence_indices.append(idx)
+
+            # Event count (simple count of events occurring in this sentence)
+            event_count = 0
+            if idx in crime_event_indices:
+                event_count += 1
+            if idx in investigation_event_indices:
+                event_count += 1
+            if idx in neutral_event_indices:
+                event_count += 1
+            event_counts.append(event_count)
+
+        # Smooth the sentiment scores and event counts for better analysis
+        window_size = max(1, int(total_sentences * 0.05))  # 5% of total sentences
+        sentiment_scores_smoothed = np.convolve(sentiment_scores, np.ones(window_size)/window_size, mode='valid')
+        event_counts_smoothed = np.convolve(event_counts, np.ones(window_size)/window_size, mode='valid')
+        indices_smoothed = np.arange(len(sentiment_scores_smoothed))
+
+        # Normalize the data
+        sentiment_scores_normalized = (sentiment_scores_smoothed - np.min(sentiment_scores_smoothed)) / (np.max(sentiment_scores_smoothed) - np.min(sentiment_scores_smoothed))
+        event_counts_normalized = (event_counts_smoothed - np.min(event_counts_smoothed)) / (np.max(event_counts_smoothed) - np.min(event_counts_smoothed))
+
+        # Compute a combined score (adjust weights as needed)
+        combined_scores = (sentiment_scores_normalized * 0.5) + (event_counts_normalized * 0.5)
+
+        # Identify plot structure based on combined scores
+        # Exposition: Beginning portion until the first significant rise in combined score
+        # Rising Action: From end of exposition to peak combined score
+        # Climax: Around the peak combined score
+        # Falling Action: From peak to a point where combined score stabilizes
+        # Resolution: Final portion where combined score is stable
+
+        # Find indices for plot points
+        peak_idx = np.argmax(combined_scores)
+        peak_value = combined_scores[peak_idx]
+
+        # Exposition ends when combined score starts to rise significantly
+        exposition_end = next((i for i, score in enumerate(combined_scores[:peak_idx]) if score > np.mean(combined_scores[:peak_idx])), int(0.1 * len(combined_scores)))
+
+        # Falling action starts when combined score drops significantly after the peak
+        falling_action_start = peak_idx + next((i for i, score in enumerate(combined_scores[peak_idx:]) if score < np.mean(combined_scores[peak_idx:])), int(0.1 * len(combined_scores)))
+
+        # Resolution starts near the end
+        resolution_start = int(0.9 * len(combined_scores))
+
+        # Map indices back to sentence indices
+        total_smoothed_sentences = len(sentiment_scores_smoothed)
+        plot_structure = {
+            'Exposition': (0, exposition_end),
+            'Rising Action': (exposition_end, peak_idx),
+            'Climax': (peak_idx, peak_idx + 1),
+            'Falling Action': (peak_idx + 1, resolution_start),
+            'Resolution': (resolution_start, total_smoothed_sentences - 1)
+        }
+
+        # Print plot structure summary
+        print("Plot Structure Identification:")
+        for phase, (start_idx, end_idx) in plot_structure.items():
+            start_sentence = self.sentences[start_idx]
+            end_sentence = self.sentences[end_idx]
+            print(f"\n{phase} (Sentences {start_idx} to {end_idx}):")
+            print(f"Start: {start_sentence[:75]}...")
+            print(f"End: {end_sentence[:75]}...")
+
+        # Optional: Plot the combined scores with plot structure demarcations
+        plt.figure(figsize=(12, 6))
+        plt.plot(indices_smoothed, combined_scores, label='Combined Sentiment and Event Score')
+        plt.axvline(x=exposition_end, color='green', linestyle='--', label='Exposition End')
+        plt.axvline(x=peak_idx, color='red', linestyle='--', label='Climax')
+        plt.axvline(x=falling_action_start, color='orange', linestyle='--', label='Falling Action Start')
+        plt.axvline(x=resolution_start, color='purple', linestyle='--', label='Resolution Start')
+        plt.xlabel('Smoothed Sentence Index')
+        plt.ylabel('Combined Score')
+        plt.title('Plot Structure Identification')
+        plt.legend()
+        plt.show()
+
+
     def pre_process(self):
         if self.__get_book() == 0:
             self.__normalize()
@@ -461,6 +576,8 @@ class Book:
         self.__analyze_crime_keywords()
         self.__find_crime_first_introduction()
         self.__extract_events()
+        self.__identify_plot_structure()
+
 
 def get_event_map():
     return {
