@@ -21,7 +21,7 @@ however, were due to dexterity and not to violence. On a cloudless
 summer morning he had come down a country road white with dust, and,
 pausing outside a farmhouse, had told the farmer's daughter, with
 elegant indifference, that the local police were in pursuit of him.
-The girl's name was Bridget Royce, a somber and even sullen type of
+The girl's name was Bridget, a somber and even sullen type of
 beauty, and she looked at him darkly, as if in doubt, and said, "Do
 you want me to hide you?" Upon which he only laughed, leaped lightly
 over the stone wall, and strode toward the farm, merely throwing
@@ -52,7 +52,7 @@ light as if in a microscope. The girl described the scene later,
 with all the passionate realism of her race, and, whether or no the
 policemen had a similar eye for the picturesque, they had at least
 an eye for the facts of the case, and were compelled to give up the
-chase and retire from the scene. Bridget Royce remained as if in a
+chase and retire from the scene. Bridget remained as if in a
 trance, staring at the sunlit garden in which a man had just
 vanished like a fairy. She was still in a sinister mood, and the
 miracle took in her mind a character of unfriendliness and fear, as
@@ -171,7 +171,7 @@ with a big handsome man in a fur coat, who brought into the dingy
 little station the indescribable glow of the great cities and the
 luxuries of the great world.
 
-For this was Sir Walter Carey, an official of such eminence in
+For this was Sir Walter, an official of such eminence in
 Dublin Castle that nothing short of the case of Prince Michael would
 have brought him on such a journey in the middle of the night. But
 the case of Prince Michael, as it happened, was complicated by
@@ -187,7 +187,7 @@ soon became apparent that Sir Walter's large leonine head was for
 use as well as ornament, and he considered the matter soberly and
 sanely enough. Five chairs were set round the plain deal table, for
 who should Sir Walter bring with him but his young relative and
-secretary, Horne Fisher. Sir Walter listened with grave attention,
+secretary, Horne. Sir Walter listened with grave attention,
 and his secretary with polite boredom, to the string of episodes by
 which the police had traced the flying rebel from the steps of the
 hotel to the solitary tower beside the sea. There at least he was
@@ -200,7 +200,7 @@ castle; and those who knew him thought him capable of imitating the
 primitive Irish chieftains who fell fighting against the sea.
 
 "I saw some queer-looking people leaving as I came in," said Sir
-Walter Carey. "I suppose they were your witnesses. But why do they
+Walter. "I suppose they were your witnesses. But why do they
 turn up here at this time of night?"
 
 Morton smiled grimly.  "They come here by night because they would
@@ -293,7 +293,7 @@ hour ago, and I sent that banshee up to the tower and told her to
 sing out like that if she could get a glimpse of our friend writing
 his proclamation."
 
-"Do you mean that girl Bridget Royce?" asked Morton, drawing his
+"Do you mean that girl Bridget?" asked Morton, drawing his
 frosty brows together. "Has she turned king's evidence to that
 extent?"
 
@@ -365,7 +365,7 @@ entrances at once, so to speak. One of us should go to the door and
 one to each window; Macbride here has a ladder for the upper
 window."
 
-Mr. Horne Fisher languidly turned to his distinguished relative and
+Mr. Horne languidly turned to his distinguished relative and
 spoke for the first time.
 
 "I am rather a convert to the cockney school of psychology," he said
@@ -376,13 +376,13 @@ the group began to break up in the manner indicated. Morton moved
 toward the window immediately in front of them, where the hidden
 outlaw had just snuffed the candle; Nolan, a little farther westward
 to the next window; while Wilson, followed by Macbride with the
-ladder, went round to the two windows at the back. Sir Walter Carey
+ladder, went round to the two windows at the back. Sir Walter
 himself, followed by his secretary, began to walk round toward the
 only door, to demand admittance in a more regular fashion.
 
 "He will be armed, of course," remarked Sir Walter, casually.
 
-"By all accounts," replied Horne Fisher, "he can do more with a
+"By all accounts," replied Horne, "he can do more with a
 candlestick than most men with a pistol. But he is pretty sure to
 have the pistol, too."
 
@@ -398,7 +398,7 @@ was dead.
 
 Sir Walter straightened himself and called out something that was
 lost in another noise of firing; it was possible that the police
-were already avenging their comrade from the other side. Fisher had
+were already avenging their comrade from the other side. Horne had
 already raced round to the next window, and a new cry of
 astonishment from him brought his patron to the same spot. Nolan,
 the Irish policeman, had also fallen, sprawling all his great length
@@ -443,7 +443,7 @@ silently pointed with his lean forefinger at the open page of the
 large notebook. The writer had suddenly stopped writing, even in the
 middle of a word.
 
-"I said it was like an explosion," said Sir Walter Carey at last.
+"I said it was like an explosion," said Sir Walter at last.
 "And really the man himself seems to have suddenly exploded. But he
 has blown himself up somehow without touching the tower. He's burst
 more like a bubble than a bomb."
@@ -480,7 +480,7 @@ round here, when they're all sodden up with Irish whisky, may
 believe in such things. I think they want a little education in this
 country."
 
-Horne Fisher's heavy eyelids fluttered in a faint attempt to rise,
+Horne's heavy eyelids fluttered in a faint attempt to rise,
 as if he were tempted to a lazy protest against the contemptuous
 tone of the investigator.
 
@@ -501,7 +501,7 @@ a long time in this rotten old dustbin. Probably it was part of the
 original furniture, an heirloom in this magnificent palace of the
 Irish kings."
 
-Again Fisher looked at him under his eyelids, but seemed too sleepy
+Again Horne looked at him under his eyelids, but seemed too sleepy
 to speak, and Wilson went on with his argument.
 
 "Now it's quite clear that something very odd has just happened in
@@ -526,7 +526,7 @@ up there."
 
 He got briskly off the table on which he was sitting (for the only
 chair was allotted to Sir Walter) and ran rapidly up the ladder to
-the platform above. He was soon followed by the others, Mr. Fisher
+the platform above. He was soon followed by the others, Mr. Horne
 going last, however, with an appearance of considerable nonchalance.
 
 At this stage, however, they were destined to disappointment; Wilson
@@ -537,7 +537,7 @@ seemed more and more threatened with inappropriate slumber, and,
 having been the last to climb up the ladder, seemed now to lack the
 energy even to climb down again.
 
-"Come along, Fisher," called out Sir Walter from below, when the
+"Come along, Horne," called out Sir Walter from below, when the
 others had regained the floor. "We must consider whether we'll pull
 the whole place to pieces to see what it's made of."
 
@@ -553,7 +553,7 @@ it quite plain now."
 "What is it?" asked Wilson, sharply, from the table on which he sat
 kicking his heels restlessly.
 
-"Well, it's a man," said Horne Fisher.
+"Well, it's a man," said Horne.
 
 Wilson bounded off the table as if he had been kicked off it. "What
 do you mean?" he cried. "How can you possibly see a man?"
@@ -568,7 +568,7 @@ leisurely manner the secretary came down the ladder.
 "Who it seems to be!" repeated Sir Walter in astonishment.
 
 "Well, I think it's the man you call Prince Michael," observed Mr.
-Fisher, airily. "In fact, I'm sure it is. I've seen the police
+Horne, airily. "In fact, I'm sure it is. I've seen the police
 portraits of him."
 
 There was a dead silence, and Sir Walter's usually steady brain
@@ -582,16 +582,16 @@ The murderer does not generally revisit the scene of his crime so
 rapidly as all that."
 
 "He doesn't know yet that it is the scene of his crime," answered
-Horne Fisher.
+Horne.
 
 "What on earth do you mean?  You credit him with rather singular
 absence of mind."
 
-"Well, the truth is, it isn't the scene of his crime," said Fisher,
+"Well, the truth is, it isn't the scene of his crime," said Horne,
 and went and looked out of the window.
 
 There was another silence, and then Sir Walter said, quietly:  "What
-sort of notion have you really got in your head, Fisher? Have you
+sort of notion have you really got in your head, Horne? Have you
 developed a new theory about how this fellow escaped out of the ring
 round him?"
 
@@ -615,7 +615,7 @@ of curse at his own blindness. For the candle in the candlestick had
 obviously burned itself away to nothing and left him, mentally, at
 least, very completely in the dark.
 
-"Then there is a sort of mathematical question," went on Fisher,
+"Then there is a sort of mathematical question," went on Horne,
 leaning back in his limp way and looking up at the bare walls, as if
 tracing imaginary diagrams there. "It's not so easy for a man in the
 third angle to face the other two at the same moment, especially if
@@ -625,17 +625,17 @@ lecture on geometry, but--"
 "I'm afraid we have no time for it," said Wilson, coldly. "If this
 man is really coming back, I must give my orders at once."
 
-"I think I'll go on with it, though," observed Fisher, staring at
+"I think I'll go on with it, though," observed Horne, staring at
 the roof with insolent serenity.
 
-"I must ask you, Mr. Fisher, to let me conduct my inquiry on my own
+"I must ask you, Mr. Horne, to let me conduct my inquiry on my own
 lines," said Wilson, firmly. "I am the officer in charge now."
 
-"Yes," remarked Horne Fisher, softly, but with an accent that
+"Yes," remarked Horne, softly, but with an accent that
 somehow chilled the hearer. "Yes. But why?"
 
 Sir Walter was staring, for he had never seen his rather
-lackadaisical young friend look like that before. Fisher was looking
+lackadaisical young friend look like that before. Horne was looking
 at Wilson with lifted lids, and the eyes under them seemed to have
 shed or shifted a film, as do the eyes of an eagle.
 
@@ -669,14 +669,14 @@ newcomer.
 "Michael O'Neill, I arrest you in the king's name for the murder of
 Francis Morton and James Nolan. It is my duty to warn you--"
 
-"No, no, Mr. Wilson," cried Fisher, suddenly.  "You shall not commit
+"No, no, Mr. Wilson," cried Horne, suddenly.  "You shall not commit
 a third murder."
 
-Sir Walter Carey rose from his chair, which fell over with a crash
+Sir Walter rose from his chair, which fell over with a crash
 behind him. "What does all this mean?" he called out in an
 authoritative manner.
 
-"It means," said Fisher, "that this man, Hooker Wilson, as soon as
+"It means," said Horne, "that this man, Wilson, as soon as
 he had put his head in at that window, killed his two comrades who
 had put their heads in at the other windows, by firing across the
 empty room. That is what it means. And if you want to know, count
@@ -704,7 +704,7 @@ in agony, for Michael shot him through the body where he sat, so
 that he tumbled off the table like lumber.
 
 The police rushed to lift him; Sir Walter stood speechless; and
-then, with a strange and weary gesture, Horne Fisher spoke.
+then, with a strange and weary gesture, Horne spoke.
 
 "You are indeed a type of the Irish tragedy," he said. "You were
 entirely in the right, and you have put yourself in the wrong."
@@ -716,7 +716,7 @@ flung the smoking pistol on the ground.
 "I am indeed in the wrong," he said.  "I have committed a crime that
 may justly bring a curse on me and my children."
 
-Horne Fisher did not seem entirely satisfied with this very sudden
+Horne did not seem entirely satisfied with this very sudden
 repentance; he kept his eyes on the man and only said, in a low
 voice, "What crime do you mean?"
 
@@ -727,13 +727,13 @@ For that truly I deserve to be hanged."
 And he turned to the police with a gesture that did not so much
 surrender to them, but rather command them to arrest him.
 
-This was the story that Horne Fisher told to Harold March, the
+This was the story that Horne told to Harold, the
 journalist, many years after, in a little, but luxurious, restaurant
-near Piccadilly. He had invited March to dinner some time after the
+near Piccadilly. He had invited Harold to dinner some time after the
 affair he called "The Face in the Target," and the conversation had
 naturally turned on that mystery and afterward on earlier memories
-of Fisher's life and the way in which he was led to study such
-problems as those of Prince Michael. Horne Fisher was fifteen years
+of Horne's life and the way in which he was led to study such
+problems as those of Prince Michael. Horne was fifteen years
 older; his thin hair had faded to frontal baldness, and his long,
 thin hands dropped less with affectation and more with fatigue. And
 he told the story of the Irish adventure of his youth, because it
@@ -741,8 +741,8 @@ recorded the first occasion on which he had ever come in contact
 with crime, or discovered how darkly and how terribly crime can be
 entangled with law.
 
-"Hooker Wilson was the first criminal I ever knew, and he was a
-policeman," explained Fisher, twirling his wine glass. "And all my
+"Wilson was the first criminal I ever knew, and he was a
+policeman," explained Horne, twirling his wine glass. "And all my
 life has been a mixed-up business of the sort. He was a man of very
 real talent, and perhaps genius, and well worth studying, both as a
 detective and a criminal. His white face and red hair were typical
@@ -779,10 +779,10 @@ there was something, for all that, in his notion that the newcomer
 sees most, and that the man on the spot may know too much to know
 anything. He was right about some things. He was right about me."
 
-"About you?" asked Harold March in some wonder.
+"About you?" asked Harold in some wonder.
 
 "I am the man who knows too much to know anything, or, at any rate,
-to do anything," said Horne Fisher. "I don't mean especially about
+to do anything," said Horne. "I don't mean especially about
 Ireland. I mean about England. I mean about the whole way we are
 governed, and perhaps the only way we can be governed. You asked me
 just now what became of the survivors of that tragedy. Well, Wilson
@@ -792,7 +792,7 @@ ever fought for England. I managed to save Michael from the worst,
 but we had to send that perfectly innocent man to penal servitude
 for a crime we know he never committed, and it was only afterward
 that we could connive in a sneakish way at his escape. And Sir
-Walter Carey is Prime Minister of this country, which he would
+Walter is Prime Minister of this country, which he would
 probably never have been if the truth had been told of such a
 horrible scandal in his department. It might have done for us
 altogether in Ireland; it would certainly have done for him. And he
