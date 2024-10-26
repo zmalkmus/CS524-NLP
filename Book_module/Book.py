@@ -4,8 +4,9 @@ from collections import Counter
 
 import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
-from nltk.corpus import stopwords, names
+from nltk.corpus import stopwords, names, wordnet
 from nltk.sentiment import SentimentIntensityAnalyzer
+from nltk.stem import WordNetLemmatizer
 
 import spacy
 from unidecode import unidecode
@@ -50,7 +51,7 @@ class Book:
         self.common_words = set(stopwords.words('english')) | set(nltk.corpus.words.words())
         self.all_names = set(names.words())
         self.crime_keywords = [
-            'murder', 'kill', 'dead', 'body', 'weapon', 'crime', 'blood', 'knife', 
+            'murder', 'kill', 'dead', 'body', 'weapon', 'crime', 'blood', 'knife',
             'gun', 'death', 'victim', 'suspect'
         ]
 
@@ -86,7 +87,7 @@ class Book:
             text = text[search_result.end():]
         else:
             print("Warning: Start of Project Gutenberg header not found.", file=sys.stderr)
-        
+
         # Footer
         pattern_footer = r"\*\*\* END OF (?:THIS |THE )?PROJECT GUTENBERG EBOOK.*?\*\*\*\n"
         search_result = re.search(pattern_footer, text, flags=re.DOTALL | re.IGNORECASE)
@@ -94,38 +95,96 @@ class Book:
             text = text[:search_result.start()]
         else:
             print("Warning: End of Project Gutenberg footer not found.", file=sys.stderr)
-        
+
         text = text.replace('\r', '')
         text = text.replace('\n', ' ')
         text = text.replace('“', '"')
         text = text.replace('”', '"')
-        
+
         text = unidecode(text)
         self.special_characters = [char for char in set(text) if not char.isascii()]
         for char in self.special_characters:
             text = text.replace(char, '')
 
-        punctuation_to_remove = [";", "-", "—", ",", "(", ")", "`", '"', "'s","'"]
+        punctuation_to_remove = [";", "-", "—", ",", "(", ")", "`", '"', "'s", "'"]
         for p in punctuation_to_remove:
             text = text.replace(p, "")
-        
+
+        # Assign the cleaned text to normalized_text
         self.normalized_text = text
 
     def __tokenize(self):
         """
         Tokenizes the cleaned text into words and sentences.
+        Performs lemmatization on both the sentences and word tokens, excluding names.
         """
-        self.normalized_text = self.normalized_text.lower()
-        # Tokenize into sentences
+        # Tokenize into sentences (original sentences for NER)
         self.sentences = sent_tokenize(self.normalized_text)
-        # Clean up extra spaces in sentences
-        self.sentences = [' '.join(sentence.split()) for sentence in self.sentences]
-        # Tokenize into words
-        tokens = word_tokenize(self.normalized_text)
-        self.text_tokenized = [
-            word.lower() for word in tokens 
-            if word.isalpha() and word.lower() not in self.stop_words
-        ]
+        # Initialize the lemmatizer
+        lemmatizer = WordNetLemmatizer()
+
+        # Function to get part of speech tag for lemmatization
+        def get_pos(tag):
+            if tag.startswith('J'):
+                return wordnet.ADJ
+            elif tag.startswith('V'):
+                return wordnet.VERB
+            elif tag.startswith('N'):
+                return wordnet.NOUN
+            elif tag.startswith('R'):
+                return wordnet.ADV
+            else:
+                return wordnet.NOUN
+
+        # Process each sentence for lemmatization
+        lemmatized_sentences = []
+        for sentence in self.sentences:
+            # Tokenize sentence into words
+            tokens = word_tokenize(sentence)
+            
+            # Perform POS tagging on the tokens
+            pos_tags = nltk.pos_tag(tokens)
+
+            # Lemmatize tokens with POS tags, skipping proper nouns
+            lemmatized_sentence = []
+            for token, tag in pos_tags:
+                if tag in ('NNP', 'NNPS'):  # Skip proper nouns
+                    lemmatized_sentence.append(token)
+                else:
+                    lemmatized_token = lemmatizer.lemmatize(token, get_pos(tag))
+                    lemmatized_sentence.append(lemmatized_token)
+
+            # Join lemmatized tokens to form the sentence and add to list
+            lemmatized_sentences.append(' '.join(lemmatized_sentence))
+
+        # Update sentences with lemmatized versions
+        self.sentences = lemmatized_sentences
+
+        # Tokenize into words from the lemmatized text for further processing
+        tokens = word_tokenize(' '.join(self.sentences))
+        pos_tags = nltk.pos_tag(tokens)
+
+        # Lemmatize tokens with POS tags, skipping proper nouns
+        lemmatized_tokens = []
+        for token, tag in pos_tags:
+            if tag in ('NNP', 'NNPS'):
+                lemmatized_tokens.append((token, tag))
+            else:
+                lemmatized_token = lemmatizer.lemmatize(token, get_pos(tag))
+                lemmatized_tokens.append((lemmatized_token, tag))
+
+        # Filter tokens: remove stop words and non-alphabetic tokens
+        self.text_tokenized = []
+        for word, tag in lemmatized_tokens:
+            if word.isalpha():
+                if tag not in ('NNP', 'NNPS'):
+                    word_lower = word.lower()
+                    if word_lower not in self.stop_words:
+                        self.text_tokenized.append(word_lower)
+                else:
+                    # Do not lowercase proper nouns (names)
+                    self.text_tokenized.append(word)
+
 
     def __extract_names(self):
         """
@@ -183,13 +242,13 @@ class Book:
     def __get_sentence_count(self):
         """Get the sentence count for the book"""
         self.sentence_count = len(self.sentences)
-    
+
     def __get_chapter_count(self):
         """Get the chapter count for the book"""
         # Assuming chapters are defined by "Chapter" headings
         chapter_pattern = re.compile(r'^Chapter', re.IGNORECASE | re.MULTILINE)
         self.chapter_count = len(chapter_pattern.findall(self.normalized_text))
-    
+
     # ========================= Character Features =========================
 
     def __extract_first_mentions(self):
@@ -197,7 +256,7 @@ class Book:
         Find the first mention of each name in the book by word index.
         """
         for name in self.names:
-            name_tokens = [token.lower() for token in name.split()]
+            name_tokens = [token for token in name.split()]
             name_length = len(name_tokens)
             found = False
             for idx in range(len(self.text_tokenized) - name_length + 1):
@@ -213,7 +272,7 @@ class Book:
         Extract the total number of mentions of each name in the book.
         """
         for name in self.names:
-            name_tokens = [token.lower() for token in name.split()]
+            name_tokens = [token for token in name.split()]
             count = 0
             for idx in range(len(self.text_tokenized) - len(name_tokens) + 1):
                 if self.text_tokenized[idx:idx+len(name_tokens)] == name_tokens:
@@ -238,18 +297,18 @@ class Book:
         for i in range(len(names_in_sentence)):
             # Initialize a set to hold names in the surrounding window
             names_in_window = set()
-            
+
             # Include names from the previous sentence if it exists
             if i > 0:
                 names_in_window.update(names_in_sentence[i - 1])
-            
+
             # Include names from the current sentence
             names_in_window.update(names_in_sentence[i])
-            
+
             # Include names from the next sentence if it exists
             if i < len(names_in_sentence) - 1:
                 names_in_window.update(names_in_sentence[i + 1])
-            
+
             # Generate all unique pairs of names in the window
             names_in_window = list(names_in_window)
             for idx1 in range(len(names_in_window)):
@@ -328,107 +387,16 @@ class Book:
         self.events = []
 
         # Define relevant verbs and event types
-        event_verbs = {
-            # Crime Occurrence
-            'murder': 'crime_occurrence',
-            'kill': 'crime_occurrence',
-            'poison': 'crime_occurrence',
-            'assassinate': 'crime_occurrence',
-            'slay': 'crime_occurrence',
-            'shoot': 'crime_occurrence',
-            'stab': 'crime_occurrence',
-            'strangle': 'crime_occurrence',
+        event_verbs = get_event_map()
 
-            # Discovery and Investigation
-            'discover': 'discovery',
-            'find': 'discovery',
-            'uncover': 'discovery',
-            'investigate': 'investigation',
-            'search': 'investigation',
-            'probe': 'investigation',
-            'examine': 'investigation',
-            'inspect': 'investigation',
-            'interrogate': 'investigation',
-
-            # Legal Actions
-            'arrest': 'legal_action',
-            'charge': 'legal_action',
-            'trial': 'legal_action',
-            'testify': 'legal_action',
-            'convict': 'legal_action',
-            'sentence': 'legal_action',
-
-            # Confession and Revelation
-            'confess': 'confession',
-            'admit': 'confession',
-            'reveal': 'revelation',
-            'expose': 'revelation',
-            'disclose': 'revelation',
-
-            # Suspicion and Accusation
-            'suspect': 'suspicion',
-            'accuse': 'accusation',
-            'blame': 'accusation',
-            'denounce': 'accusation',
-
-            # Confrontation and Conflict
-            'confront': 'confrontation',
-            'fight': 'conflict',
-            'argue': 'conflict',
-            'challenge': 'confrontation',
-            'threaten': 'conflict',
-            'attack': 'conflict',
-
-            # Deception and Betrayal
-            'betray': 'betrayal',
-            'deceive': 'deception',
-            'lie': 'deception',
-            'disguise': 'deception',
-            'manipulate': 'deception',
-            'sabotage': 'betrayal',
-
-            # Escape and Evasion
-            'escape': 'evasion',
-            'flee': 'evasion',
-            'run': 'evasion',
-            'hide': 'evasion',
-
-            # Rescue and Protection
-            'rescue': 'rescue',
-            'save': 'rescue',
-            'protect': 'protection',
-            'guard': 'protection',
-            'defend': 'protection',
-
-            # Planning and Strategy
-            'plan': 'planning',
-            'plot': 'planning',
-            'scheme': 'planning',
-            'organize': 'planning',
-
-            # Surveillance and Observation
-            'observe': 'surveillance',
-            'watch': 'surveillance',
-            'monitor': 'surveillance',
-            'spy': 'surveillance',
-
-            # Emotional and Psychological Actions
-            'warn': 'warning',
-            'threaten': 'threat',
-            'confide': 'trust',
-            'fear': 'emotion',
-
-            # Miscellaneous Relevant Actions
-            'ambush': 'attack',
-            'trap': 'entrapment',
-            'pursue': 'pursuit',
-            'follow': 'pursuit',
-            'question': 'interrogation',
-            'gather': 'meeting',
-            'assemble': 'meeting',
-            'proclaim': 'announcement',
-            'announce': 'announcement',
-        }
+        # Process sentences to find names from self.names
+        names_in_sentence = []
+        for sentence in self.sentences:
+            sentence_names = set()
+            for name in self.names:
+                if name in sentence:
+                    sentence_names.add(name)
+            names_in_sentence.append(sentence_names)
 
         for idx, sentence in enumerate(self.sentences):
             doc = nlp(sentence)
@@ -436,7 +404,7 @@ class Book:
                 if token.lemma_ in event_verbs and token.pos_ == 'VERB':
                     event = {
                         'sentence_idx': idx,
-                        'sentence': sentence,
+                        'sentence': sentence.lower(),
                         'verb': token.lemma_,
                         'event_type': event_verbs[token.lemma_],
                         'subject': None,
@@ -444,7 +412,7 @@ class Book:
                         'characters': [],
                     }
 
-                    # Extract subjects and objects using helper functions
+                    # Extract subjects and objects
                     subjects = self.__get_subjects(token)
                     objects = self.__get_objects(token)
 
@@ -454,17 +422,30 @@ class Book:
                         event['object'] = ', '.join(objects)
 
                     # Identify characters involved
-                    characters_in_sentence = [
-                        name for name in self.names if name in sentence
-                    ]
-                    event['characters'] = characters_in_sentence
+                    characters_in_event = set()
+
+                    # Include characters from current sentence
+                    characters_in_event.update(names_in_sentence[idx])
+
+                    # Include previous two sentences
+                    if idx > 0:
+                        characters_in_event.update(names_in_sentence[idx - 1])
+                    if idx > 1:
+                        characters_in_event.update(names_in_sentence[idx - 2])
+                    # Include next two sentences
+                    if idx < len(names_in_sentence) - 1:
+                        characters_in_event.update(names_in_sentence[idx + 1])
+                    if idx < len(names_in_sentence) - 2:
+                        characters_in_event.update(names_in_sentence[idx + 2])
+
+                    event['characters'] = list(characters_in_event)
 
                     self.events.append(event)
 
     def pre_process(self):
         if self.__get_book() == 0:
             self.__normalize()
-            self.__extract_names() # !!! Extract names here before we make lowercase !!!
+            self.__extract_names()  # !!! Extract names after normalization !!!
             self.__tokenize()
         else:
             print("Error: Could not get the book text.", file=sys.stderr)
@@ -480,3 +461,155 @@ class Book:
         self.__analyze_crime_keywords()
         self.__find_crime_first_introduction()
         self.__extract_events()
+
+def get_event_map():
+    return {
+        # Crime Occurrence
+        'murder': 'crime',
+        'kill': 'crime',
+        'poison': 'crime',
+        'assassinate': 'crime',
+        'slay': 'crime',
+        'shoot': 'crime',
+        'stab': 'crime',
+        'strangle': 'crime',
+        'steal': 'crime',
+        'thief': 'crime',
+        'rob': 'crime',
+        'robbery': 'crime',
+        'burgle': 'crime',
+        'burglary': 'crime',
+        'theft': 'crime',
+        'loot': 'crime',
+        'pilfer': 'crime',
+        'shoplift': 'crime',
+        'pickpocket': 'crime',
+        'snatch': 'crime',
+        'swindle': 'crime',
+        'embezzle': 'crime',
+        'defraud': 'crime',
+        'plunder': 'crime',
+        'smuggle': 'crime',
+        'extort': 'crime',
+        'blackmail': 'crime',
+        'heist': 'crime',
+        'kidnap': 'crime',
+        'abduct': 'crime',
+        'arson': 'crime',
+        'vandalize': 'crime',
+        'fraud': 'crime',
+        'counterfeit': 'crime',
+        'forge': 'crime',
+        'dead': 'crime',
+        'ambush': 'crime',
+        'betray': 'crime',
+        'deceive': 'crime',
+        'lie': 'crime',
+        'disguise': 'crime',
+        'manipulate': 'crime',
+        'sabotage': 'crime',
+        'conspire': 'crime',
+        'plot': 'crime',
+        'scheme': 'crime',
+        'threaten': 'crime',
+        'attack': 'crime',
+        'assault': 'crime',
+        'brawl': 'crime',
+        'fear': 'crime',
+        'argue': 'crime',
+
+        # Discovery and Investigation
+        'discover': 'investigation',
+        'find': 'investigation',
+        'uncover': 'investigation',
+        'investigate': 'investigation',
+        'search': 'investigation',
+        'probe': 'investigation',
+        'examine': 'investigation',
+        'inspect': 'investigation',
+        'observe': 'investigation',
+        'watch': 'investigation',
+        'monitor': 'investigation',
+        'spy': 'investigation',
+        'eavesdrop': 'investigation',
+        'surveil': 'investigation',
+        'interrogate': 'investigation',
+        'detect': 'investigation',
+        'pursue': 'investigation',
+        'track': 'investigation',
+        'trace': 'investigation',
+        'question': 'investigation',
+        'report': 'investigation',
+        'witness': 'investigation',
+        'follow': 'investigation',
+
+        # Suspicion and Accusation
+        'suspect': 'investigation',
+        'accuse': 'investigation',
+        'blame': 'investigation',
+        'denounce': 'investigation',
+        'allege': 'investigation',
+        'condemn': 'investigation',
+
+        # Legal Actions
+        'arrest': 'investigation',
+        'charge': 'investigation',
+        'trial': 'investigation',
+        'testify': 'investigation',
+        'convict': 'investigation',
+        'sentence': 'investigation',
+        'indict': 'investigation',
+        'prosecute': 'investigation',
+        'acquit': 'investigation',
+
+        # Confession and Revelation
+        'confess': 'crime',
+        'admit': 'crime',
+        'reveal': 'crime',
+        'expose': 'investigation',
+        'disclose': 'investigation',
+        'divulge': 'investigation',
+
+        # Confrontation and Conflict
+        'confront': 'investigation',
+        'fight': 'crime',
+        'challenge': 'investigation',
+
+        # Escape and Evasion
+        'escape': 'crime',
+        'flee': 'crime',
+        'run': 'crime',
+        'hide': 'crime',
+        'evade': 'crime',
+        'elude': 'crime',
+
+        # Planning and Strategy
+        'plan': 'investigation',
+        'organize': 'investigation',
+        'prepare': 'investigation',
+        'devise': 'investigation',
+
+        # Surveillance and Observation
+        'inspect': 'investigation',
+        'observe': 'investigation',
+        'examine': 'investigation',
+        'watch': 'investigation',
+        'monitor': 'investigation',
+        'spy': 'investigation',
+        'eavesdrop': 'investigation',
+        'surveil': 'investigation',
+
+        # Emotional and Psychological Actions
+        'warn': 'neutral',
+        'fear': 'neutral',
+        'worry': 'neutral',
+        'panic': 'neutral',
+        'regret': 'neutral',
+        'admire': 'neutral',
+
+        # Miscellaneous Relevant Actions
+        'gather': 'neutral',
+        'assemble': 'neutral',
+        'proclaim': 'neutral',
+        'announce': 'neutral',
+    }
