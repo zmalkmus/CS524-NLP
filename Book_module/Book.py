@@ -95,16 +95,20 @@ class Book:
         else:
             print("Warning: End of Project Gutenberg footer not found.", file=sys.stderr)
         
-        # Remove carriage returns
         text = text.replace('\r', '')
-        # Remove special characters, collect them
+        text = text.replace('\n', ' ')
+        text = text.replace('“', '"')
+        text = text.replace('”', '"')
+        
         text = unidecode(text)
         self.special_characters = [char for char in set(text) if not char.isascii()]
-        # Strip certain punctuation
-        punctuation_to_remove = [";", "-", "—", ",", "(", ")", "`", "'", '"']
+        for char in self.special_characters:
+            text = text.replace(char, '')
+
+        punctuation_to_remove = [";", "-", "—", ",", "(", ")", "`", '"', "'s","'"]
         for p in punctuation_to_remove:
-            text = text.replace(p, " ")
-        # Save the cleaned text
+            text = text.replace(p, "")
+        
         self.normalized_text = text
 
     def __tokenize(self):
