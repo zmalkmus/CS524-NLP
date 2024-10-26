@@ -403,6 +403,164 @@ class Book:
 
     # ========================= Event Features =========================
 
+    def __get_subjects(self, token):
+        subjects = []
+        for child in token.children:
+            if child.dep_ in ('nsubj', 'nsubjpass'):
+                subjects.append(child.text)
+            elif child.dep_ in ('ccomp', 'xcomp'):
+                subjects.extend(self.__get_subjects(child))
+        return subjects
+
+    def __get_objects(self,token):
+        objects = []
+        for child in token.children:
+            if child.dep_ in ('dobj', 'pobj', 'obj', 'dative', 'attr', 'oprd'):
+                objects.append(child.text)
+            elif child.dep_ in ('ccomp', 'xcomp'):
+                objects.extend(self.__get_objects(child))
+        return objects
+
+
+    def __extract_events(self):
+        nlp = spacy.load('en_core_web_sm')
+        self.events = []
+
+        # Define relevant verbs and event types
+        event_verbs = {
+            # Crime Occurrence
+            'murder': 'crime_occurrence',
+            'kill': 'crime_occurrence',
+            'poison': 'crime_occurrence',
+            'assassinate': 'crime_occurrence',
+            'slay': 'crime_occurrence',
+            'shoot': 'crime_occurrence',
+            'stab': 'crime_occurrence',
+            'strangle': 'crime_occurrence',
+
+            # Discovery and Investigation
+            'discover': 'discovery',
+            'find': 'discovery',
+            'uncover': 'discovery',
+            'investigate': 'investigation',
+            'search': 'investigation',
+            'probe': 'investigation',
+            'examine': 'investigation',
+            'inspect': 'investigation',
+            'interrogate': 'investigation',
+
+            # Legal Actions
+            'arrest': 'legal_action',
+            'charge': 'legal_action',
+            'trial': 'legal_action',
+            'testify': 'legal_action',
+            'convict': 'legal_action',
+            'sentence': 'legal_action',
+
+            # Confession and Revelation
+            'confess': 'confession',
+            'admit': 'confession',
+            'reveal': 'revelation',
+            'expose': 'revelation',
+            'disclose': 'revelation',
+
+            # Suspicion and Accusation
+            'suspect': 'suspicion',
+            'accuse': 'accusation',
+            'blame': 'accusation',
+            'denounce': 'accusation',
+
+            # Confrontation and Conflict
+            'confront': 'confrontation',
+            'fight': 'conflict',
+            'argue': 'conflict',
+            'challenge': 'confrontation',
+            'threaten': 'conflict',
+            'attack': 'conflict',
+
+            # Deception and Betrayal
+            'betray': 'betrayal',
+            'deceive': 'deception',
+            'lie': 'deception',
+            'disguise': 'deception',
+            'manipulate': 'deception',
+            'sabotage': 'betrayal',
+
+            # Escape and Evasion
+            'escape': 'evasion',
+            'flee': 'evasion',
+            'run': 'evasion',
+            'hide': 'evasion',
+
+            # Rescue and Protection
+            'rescue': 'rescue',
+            'save': 'rescue',
+            'protect': 'protection',
+            'guard': 'protection',
+            'defend': 'protection',
+
+            # Planning and Strategy
+            'plan': 'planning',
+            'plot': 'planning',
+            'scheme': 'planning',
+            'organize': 'planning',
+
+            # Surveillance and Observation
+            'observe': 'surveillance',
+            'watch': 'surveillance',
+            'monitor': 'surveillance',
+            'spy': 'surveillance',
+
+            # Emotional and Psychological Actions
+            'warn': 'warning',
+            'threaten': 'threat',
+            'confide': 'trust',
+            'suspect': 'suspicion',
+            'fear': 'emotion',
+
+            # Miscellaneous Relevant Actions
+            'ambush': 'attack',
+            'trap': 'entrapment',
+            'pursue': 'pursuit',
+            'follow': 'pursuit',
+            'question': 'interrogation',
+            'gather': 'meeting',
+            'assemble': 'meeting',
+            'proclaim': 'announcement',
+            'announce': 'announcement',
+        }
+
+        for idx, sentence in enumerate(self.sentences_tokenized):
+            doc = nlp(sentence)
+            for token in doc:
+                if token.lemma_ in event_verbs and token.pos_ == 'VERB':
+                    event = {
+                        'sentence_idx': idx,
+                        'sentence': sentence,
+                        'verb': token.lemma_,
+                        'event_type': event_verbs[token.lemma_],
+                        'subject': None,
+                        'object': None,
+                        'characters': [],
+                    }
+
+                    # Extract subjects and objects using helper functions
+                    subjects = self.__get_subjects(token)
+                    objects = self.__get_objects(token)
+
+                    if subjects:
+                        event['subject'] = ', '.join(subjects)
+                    if objects:
+                        event['object'] = ', '.join(objects)
+
+                    # Identify characters involved
+                    characters_in_sentence = [
+                        name for name in self.names if name in sentence
+                    ]
+                    event['characters'] = characters_in_sentence
+
+                    self.events.append(event)
+
     def pre_process(self):
         if self.__get_book() == 0:
             self.__normalize()
@@ -425,3 +583,4 @@ class Book:
         self.__character_sentiment_analysis()
         self.__analyze_crime_keywords()
         self.__find_crime_first_introduction()
+        self.__extract_events()
