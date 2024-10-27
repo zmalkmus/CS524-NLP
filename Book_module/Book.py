@@ -536,13 +536,13 @@ class Book:
         }
 
         # Print plot structure summary
-        print("Plot Structure Identification:")
-        for phase, (start_idx, end_idx) in plot_structure.items():
-            start_sentence = self.sentences[start_idx]
-            end_sentence = self.sentences[end_idx]
-            print(f"\n{phase} (Sentences {start_idx} to {end_idx}):")
-            print(f"Start: {start_sentence[:75]}...")
-            print(f"End: {end_sentence[:75]}...")
+        #print("Plot Structure Identification:")
+        #for phase, (start_idx, end_idx) in plot_structure.items():
+        #    start_sentence = self.sentences[start_idx]
+        #    end_sentence = self.sentences[end_idx]
+        #    print(f"\n{phase} (Sentences {start_idx} to {end_idx}):")
+        #    print(f"Start: {start_sentence[:75]}...")
+        #    print(f"End: {end_sentence[:75]}...")
 
         # Optional: Plot the combined scores with plot structure demarcations
         #plt.figure(figsize=(12, 6))

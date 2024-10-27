@@ -3,3 +3,9 @@ spacy
 thinc
 nltk
 unidecode
+pandas
+sklearn
+matplotlib
+seaborn
+numpy
+tensorflow
