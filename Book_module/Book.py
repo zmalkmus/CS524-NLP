@@ -481,18 +481,18 @@ class Book:
         #   print(f"End: {end_sentence[:75]}...")
 
         # Plot the combined scores with plot structure demarcations
-        plt.figure(figsize=(12, 6))
-        plt.plot(indices_smoothed, combined_scores, label='Combined Sentiment and Event Score')
-        plt.axvline(x=exposition_end, color='green', linestyle='--', label='Exposition End')
-        plt.axvline(x=peak_idx, color='red', linestyle='--', label='Climax')
-        plt.axvline(x=falling_action_start, color='orange', linestyle='--', label='Falling Action Start')
-        plt.axvline(x=resolution_start, color='purple', linestyle='--', label='Resolution Start')
-        plt.xlabel('Smoothed Sentence Index')
-        plt.ylabel('Combined Score')
-        plt.title('Plot Structure Identification')
-        plt.legend()
-        plt.show()
-        self.plot_structure = plot_structure
+        #plt.figure(figsize=(12, 6))
+        #plt.plot(indices_smoothed, combined_scores, label='Combined Sentiment and Event Score')
+        #plt.axvline(x=exposition_end, color='green', linestyle='--', label='Exposition End')
+        #plt.axvline(x=peak_idx, color='red', linestyle='--', label='Climax')
+        #plt.axvline(x=falling_action_start, color='orange', linestyle='--', label='Falling Action Start')
+        #plt.axvline(x=resolution_start, color='purple', linestyle='--', label='Resolution Start')
+        #plt.xlabel('Smoothed Sentence Index')
+        #plt.ylabel('Combined Score')
+        #plt.title('Plot Structure Identification')
+        #plt.legend()
+        #plt.show()
+        #self.plot_structure = plot_structure
 
 
     def pre_process(self):
