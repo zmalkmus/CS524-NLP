@@ -26,7 +26,7 @@ class Book:
         """
         file_path: Path to the book text file to process
         """
-        print(f"[__init__]: Initializing book from file: {file_path}")
+        #print(f"[__init__]: Initializing book from file: {file_path}")
         self.file_path = file_path
         self.raw_text = ""
         self.normalized_text = ""
@@ -65,7 +65,7 @@ class Book:
         try:
             with open(self.file_path, 'r', encoding='utf-8') as f:
                 self.raw_text = f.read()
-                print(f"get_book(): Text obtained from file '{self.file_path}'.")
+                #print(f"get_book(): Text obtained from file '{self.file_path}'.")
                 return 0
         except Exception as e:
             print(f"get_book(): Failed to open file '{self.file_path}'. Error: {e}", file=sys.stderr)
@@ -86,16 +86,16 @@ class Book:
         search_result = re.search(pattern_header, text, flags=re.DOTALL | re.IGNORECASE)
         if search_result:
             text = text[search_result.end():]
-        else:
-            print("Warning: Start of Project Gutenberg header not found.", file=sys.stderr)
+        #else:
+            #print("Warning: Start of Project Gutenberg header not found.", file=sys.stderr)
 
         # Footer
         pattern_footer = r"\*\*\* END OF (?:THIS |THE )?PROJECT GUTENBERG EBOOK.*?\*\*\*\n"
         search_result = re.search(pattern_footer, text, flags=re.DOTALL | re.IGNORECASE)
         if search_result:
             text = text[:search_result.start()]
-        else:
-            print("Warning: End of Project Gutenberg footer not found.", file=sys.stderr)
+        #else:
+            #print("Warning: End of Project Gutenberg footer not found.", file=sys.stderr)
 
         text = text.replace('\r', '')
         text = text.replace('\n', ' ')
@@ -472,13 +472,13 @@ class Book:
         }
 
         # Print plot structure summary
-        print("Plot Structure Identification:")
-        for phase, (start_idx, end_idx) in plot_structure.items():
-           start_sentence = self.sentences[start_idx]
-           end_sentence = self.sentences[end_idx]
-           print(f"\n{phase} (Sentences {start_idx} to {end_idx}):")
-           print(f"Start: {start_sentence[:75]}...")
-           print(f"End: {end_sentence[:75]}...")
+        #print("Plot Structure Identification:")
+        #for phase, (start_idx, end_idx) in plot_structure.items():
+        #   start_sentence = self.sentences[start_idx]
+        #   end_sentence = self.sentences[end_idx]
+        #   print(f"\n{phase} (Sentences {start_idx} to {end_idx}):")
+        #   print(f"Start: {start_sentence[:75]}...")
+        #   print(f"End: {end_sentence[:75]}...")
 
         # Plot the combined scores with plot structure demarcations
         plt.figure(figsize=(12, 6))
