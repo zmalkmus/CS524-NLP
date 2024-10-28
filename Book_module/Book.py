@@ -43,11 +43,11 @@ class Book:
         self.crime_first_introduction = -1
         self.events = []
         self.plot_structure = {}
-        # Counts
+        
         self.word_count = 0
         self.sentence_count = 0
         self.chapter_count = 0
-        # Resources
+        
         self.stop_words = set(stopwords.words('english'))
         self.common_words = set(stopwords.words('english')) | set(nltk.corpus.words.words())
         self.all_names = set(names.words())
@@ -111,7 +111,6 @@ class Book:
         for p in punctuation_to_remove:
             text = text.replace(p, "")
 
-        # Assign the cleaned text to normalized_text
         self.normalized_text = text
 
     def __tokenize(self):
@@ -119,12 +118,9 @@ class Book:
         Tokenizes the cleaned text into words and sentences.
         Performs lemmatization on both the sentences and word tokens, excluding names.
         """
-        # Tokenize into sentences (original sentences for NER)
         self.sentences = sent_tokenize(self.normalized_text)
-        # Initialize the lemmatizer
         lemmatizer = WordNetLemmatizer()
 
-        # Function to get part of speech tag for lemmatization
         def get_pos(tag):
             if tag.startswith('J'):
                 return wordnet.ADJ
@@ -137,16 +133,12 @@ class Book:
             else:
                 return wordnet.NOUN
 
-        # Process each sentence for lemmatization
         lemmatized_sentences = []
         for sentence in self.sentences:
-            # Tokenize sentence into words
             tokens = word_tokenize(sentence)
             
-            # Perform POS tagging on the tokens
             pos_tags = nltk.pos_tag(tokens)
 
-            # Lemmatize tokens with POS tags, skipping proper nouns
             lemmatized_sentence = []
             for token, tag in pos_tags:
                 if tag in ('NNP', 'NNPS'):  # Skip proper nouns
@@ -155,17 +147,13 @@ class Book:
                     lemmatized_token = lemmatizer.lemmatize(token, get_pos(tag))
                     lemmatized_sentence.append(lemmatized_token)
 
-            # Join lemmatized tokens to form the sentence and add to list
             lemmatized_sentences.append(' '.join(lemmatized_sentence))
 
-        # Update sentences with lemmatized versions
         self.sentences = lemmatized_sentences
 
-        # Tokenize into words from the lemmatized text for further processing
         tokens = word_tokenize(' '.join(self.sentences))
         pos_tags = nltk.pos_tag(tokens)
 
-        # Lemmatize tokens with POS tags, skipping proper nouns
         lemmatized_tokens = []
         for token, tag in pos_tags:
             if tag in ('NNP', 'NNPS'):
@@ -174,7 +162,6 @@ class Book:
                 lemmatized_token = lemmatizer.lemmatize(token, get_pos(tag))
                 lemmatized_tokens.append((lemmatized_token, tag))
 
-        # Filter tokens: remove stop words and non-alphabetic tokens
         self.text_tokenized = []
         for word, tag in lemmatized_tokens:
             if word.isalpha():
@@ -183,7 +170,6 @@ class Book:
                     if word_lower not in self.stop_words:
                         self.text_tokenized.append(word_lower)
                 else:
-                    # Do not lowercase proper nouns (names)
                     self.text_tokenized.append(word)
 
 
@@ -196,18 +182,14 @@ class Book:
         doc = nlp(self.normalized_text)
         all_names = []
 
-        # Extract PERSON entities
         for ent in doc.ents:
             if ent.label_ == 'PERSON':
                 all_names.append(ent.text)
 
-        # Remove any extra whitespace
         all_names = [name.strip() for name in all_names if name.strip()]
 
-        # Build a frequency distribution
         name_freq = nltk.FreqDist(all_names)
 
-        # Exclude names that are common words or too short
         titles = set(['Mr', 'Mrs', 'Miss', 'Sir', 'Lady', 'Dr', 'Master', 'Captain', 'Uncle', 'Aunt'])
         filtered_names = []
         for name in all_names:
@@ -216,21 +198,19 @@ class Book:
                 continue
             filtered_names.append(name)
 
-        # Map name variations to canonical names
         name_variations = {}
         canonical_names = {}
 
         for name in filtered_names:
             parts = name.split()
-            canonical_name = name  # Assume the full name is canonical
+            canonical_name = name
             for part in parts:
                 if part not in self.common_words and len(part) > 2:
                     name_variations[part] = canonical_name
             name_variations[name] = canonical_name
             canonical_names[canonical_name] = canonical_names.get(canonical_name, 0) + name_freq[name]
 
-        # Keep only the most frequent canonical names
-        min_freq = 2  # Adjust this threshold as needed
+        min_freq = 2
         self.names = [name for name, freq in canonical_names.items() if freq >= min_freq]
         self.name_variations = name_variations
 
@@ -246,7 +226,6 @@ class Book:
 
     def __get_chapter_count(self):
         """Get the chapter count for the book"""
-        # Assuming chapters are defined by "Chapter" headings
         chapter_pattern = re.compile(r'^Chapter', re.IGNORECASE | re.MULTILINE)
         self.chapter_count = len(chapter_pattern.findall(self.normalized_text))
 
@@ -286,27 +265,20 @@ class Book:
         """
         nlp = spacy.load("en_core_web_sm")
 
-        # Process sentences to extract names in each sentence
         names_in_sentence = []
         for sentence in self.sentences:
             doc = nlp(sentence)
-            # Get the set of names in the sentence
             sentence_names = set([ent.text for ent in doc.ents if ent.label_ == "PERSON"])
             names_in_sentence.append(sentence_names)
 
-        # Surrounding Sentences Proximity
         for i in range(len(names_in_sentence)):
-            # Initialize a set to hold names in the surrounding window
             names_in_window = set()
 
-            # Include names from the previous sentence if it exists
             if i > 0:
                 names_in_window.update(names_in_sentence[i - 1])
 
-            # Include names from the current sentence
             names_in_window.update(names_in_sentence[i])
 
-            # Include names from the next sentence if it exists
             if i < len(names_in_sentence) - 1:
                 names_in_window.update(names_in_sentence[i + 1])
 
@@ -316,10 +288,8 @@ class Book:
                 for idx2 in range(idx1 + 1, len(names_in_window)):
                     name1 = names_in_window[idx1]
                     name2 = names_in_window[idx2]
-                    # Create a sorted tuple to avoid duplicate pairs
                     key = tuple(sorted((name1, name2)))
 
-                    # Increment the count for this pair
                     self.character_proximity[key] = self.character_proximity.get(key, 0) + 1
 
     # ========================= New Feature Extraction Methods =========================
@@ -361,7 +331,7 @@ class Book:
                 self.crime_first_introduction = idx
                 break
         else:
-            self.crime_first_introduction = -1  # Indicates not found
+            self.crime_first_introduction = -1
 
     
     # ========================= Plot Features =========================
@@ -387,11 +357,8 @@ class Book:
     def __extract_events(self):
         nlp = spacy.load('en_core_web_sm')
         self.events = []
-
-        # Define relevant verbs and event types
         event_verbs = get_event_map()
 
-        # Process sentences to find names from self.names
         names_in_sentence = []
         for sentence in self.sentences:
             sentence_names = set()
@@ -414,7 +381,6 @@ class Book:
                         'characters': [],
                     }
 
-                    # Extract subjects and objects
                     subjects = self.__get_subjects(token)
                     objects = self.__get_objects(token)
 
@@ -423,18 +389,14 @@ class Book:
                     if objects:
                         event['object'] = ', '.join(objects)
 
-                    # Identify characters involved
                     characters_in_event = set()
 
-                    # Include characters from current sentence
                     characters_in_event.update(names_in_sentence[idx])
 
-                    # Include previous two sentences
                     if idx > 0:
                         characters_in_event.update(names_in_sentence[idx - 1])
                     if idx > 1:
                         characters_in_event.update(names_in_sentence[idx - 2])
-                    # Include next two sentences
                     if idx < len(names_in_sentence) - 1:
                         characters_in_event.update(names_in_sentence[idx + 1])
                     if idx < len(names_in_sentence) - 2:
@@ -460,29 +422,24 @@ class Book:
         import numpy as np
         import matplotlib.pyplot as plt
 
-        # Initialize sentiment analyzer
         sia = SentimentIntensityAnalyzer()
 
-        # Lists to hold data
         sentiment_scores = []
         event_counts = []
         sentence_indices = []
 
-        # Preprocess events to get sentence indices of key events
         crime_event_indices = [event['sentence_idx'] for event in self.events if event['event_type'] == 'crime']
         investigation_event_indices = [event['sentence_idx'] for event in self.events if event['event_type'] == 'investigation']
         neutral_event_indices = [event['sentence_idx'] for event in self.events if event['event_type'] == 'neutral']
 
         total_sentences = len(self.sentences)
 
-        # Analyze each sentence
         for idx, sentence in enumerate(self.sentences):
             # Sentiment score
             sentiment = sia.polarity_scores(sentence)['compound']
             sentiment_scores.append(sentiment)
             sentence_indices.append(idx)
 
-            # Event count (simple count of events occurring in this sentence)
             event_count = 0
             if idx in crime_event_indices:
                 event_count += 1
@@ -492,40 +449,19 @@ class Book:
                 event_count += 1
             event_counts.append(event_count)
 
-        # Smooth the sentiment scores and event counts for better analysis
-        window_size = max(1, int(total_sentences * 0.05))  # 5% of total sentences
+        window_size = max(1, int(total_sentences * 0.05))
         sentiment_scores_smoothed = np.convolve(sentiment_scores, np.ones(window_size)/window_size, mode='valid')
         event_counts_smoothed = np.convolve(event_counts, np.ones(window_size)/window_size, mode='valid')
         indices_smoothed = np.arange(len(sentiment_scores_smoothed))
-
-        # Normalize the data
         sentiment_scores_normalized = (sentiment_scores_smoothed - np.min(sentiment_scores_smoothed)) / (np.max(sentiment_scores_smoothed) - np.min(sentiment_scores_smoothed))
         event_counts_normalized = (event_counts_smoothed - np.min(event_counts_smoothed)) / (np.max(event_counts_smoothed) - np.min(event_counts_smoothed))
-
-        # Compute a combined score (adjust weights as needed)
         combined_scores = (sentiment_scores_normalized * 0.5) + (event_counts_normalized * 0.5)
-
-        # Identify plot structure based on combined scores
-        # Exposition: Beginning portion until the first significant rise in combined score
-        # Rising Action: From end of exposition to peak combined score
-        # Climax: Around the peak combined score
-        # Falling Action: From peak to a point where combined score stabilizes
-        # Resolution: Final portion where combined score is stable
-
-        # Find indices for plot points
         peak_idx = np.argmax(combined_scores)
         peak_value = combined_scores[peak_idx]
-
-        # Exposition ends when combined score starts to rise significantly
         exposition_end = next((i for i, score in enumerate(combined_scores[:peak_idx]) if score > np.mean(combined_scores[:peak_idx])), int(0.1 * len(combined_scores)))
-
-        # Falling action starts when combined score drops significantly after the peak
         falling_action_start = peak_idx + next((i for i, score in enumerate(combined_scores[peak_idx:]) if score < np.mean(combined_scores[peak_idx:])), int(0.1 * len(combined_scores)))
-
-        # Resolution starts near the end
         resolution_start = int(0.9 * len(combined_scores))
 
-        # Map indices back to sentence indices
         total_smoothed_sentences = len(sentiment_scores_smoothed)
         plot_structure = {
             'Exposition': (0, exposition_end),
@@ -536,33 +472,33 @@ class Book:
         }
 
         # Print plot structure summary
-        #print("Plot Structure Identification:")
-        #for phase, (start_idx, end_idx) in plot_structure.items():
-        #    start_sentence = self.sentences[start_idx]
-        #    end_sentence = self.sentences[end_idx]
-        #    print(f"\n{phase} (Sentences {start_idx} to {end_idx}):")
-        #    print(f"Start: {start_sentence[:75]}...")
-        #    print(f"End: {end_sentence[:75]}...")
+        print("Plot Structure Identification:")
+        for phase, (start_idx, end_idx) in plot_structure.items():
+           start_sentence = self.sentences[start_idx]
+           end_sentence = self.sentences[end_idx]
+           print(f"\n{phase} (Sentences {start_idx} to {end_idx}):")
+           print(f"Start: {start_sentence[:75]}...")
+           print(f"End: {end_sentence[:75]}...")
 
-        # Optional: Plot the combined scores with plot structure demarcations
-        #plt.figure(figsize=(12, 6))
-        #plt.plot(indices_smoothed, combined_scores, label='Combined Sentiment and Event Score')
-        #plt.axvline(x=exposition_end, color='green', linestyle='--', label='Exposition End')
-        #plt.axvline(x=peak_idx, color='red', linestyle='--', label='Climax')
-        #plt.axvline(x=falling_action_start, color='orange', linestyle='--', label='Falling Action Start')
-        #plt.axvline(x=resolution_start, color='purple', linestyle='--', label='Resolution Start')
-        #plt.xlabel('Smoothed Sentence Index')
-        #plt.ylabel('Combined Score')
-        #plt.title('Plot Structure Identification')
-        #plt.legend()
-        #plt.show()
+        # Plot the combined scores with plot structure demarcations
+        plt.figure(figsize=(12, 6))
+        plt.plot(indices_smoothed, combined_scores, label='Combined Sentiment and Event Score')
+        plt.axvline(x=exposition_end, color='green', linestyle='--', label='Exposition End')
+        plt.axvline(x=peak_idx, color='red', linestyle='--', label='Climax')
+        plt.axvline(x=falling_action_start, color='orange', linestyle='--', label='Falling Action Start')
+        plt.axvline(x=resolution_start, color='purple', linestyle='--', label='Resolution Start')
+        plt.xlabel('Smoothed Sentence Index')
+        plt.ylabel('Combined Score')
+        plt.title('Plot Structure Identification')
+        plt.legend()
+        plt.show()
         self.plot_structure = plot_structure
 
 
     def pre_process(self):
         if self.__get_book() == 0:
             self.__normalize()
-            self.__extract_names()  # !!! Extract names after normalization !!!
+            self.__extract_names()
             self.__tokenize()
         else:
             print("Error: Could not get the book text.", file=sys.stderr)
