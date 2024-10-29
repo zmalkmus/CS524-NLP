@@ -13,10 +13,7 @@
 1. Requires a modern Python environment (3.12 is what was used but it should work with similar versions)
 2. Run build.sh to install all python requirements in requirements.txt and install spacy en_core_web_sm 
 
-If the build script does not work, install the pip packages manually with `pip install -r requirements.txt`
-
-And install spacy package `python3 -m spacy download en_core_web_sm`
-
+If the build script does not work, install the pip packages manually with `pip install -r requirements.txt` and install spacy package with `python3 -m spacy download en_core_web_sm`
 
 ## Project Instructions
 
