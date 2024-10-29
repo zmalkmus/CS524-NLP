@@ -11,9 +11,16 @@
 #### Installation
 
 1. Requires a modern Python environment (3.12 is what was used but it should work with similar versions)
-2. Run build.sh to install all python requirements in requirements.txt and install spacy en_core_web_sm 
+2. Requires Jupyter Notebook environment
+3. Run build.sh to install all python requirements in requirements.txt and install spacy en_core_web_sm 
 
 If the build script does not work, install the pip packages manually with `pip install -r requirements.txt` and install spacy package with `python3 -m spacy download en_core_web_sm`
+
+#### Running the project
+
+Plot progression analysis was done inside of nb.ipynb, and contains examples of a few plots of short stories.
+
+model.ipynb and neuralNet.ipynb both contain perpetrator prediction models.
 
 ## Project Instructions
 
